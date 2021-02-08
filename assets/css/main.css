@@ -1,0 +1,6 @@
+:root {
+    --color-bg: black;
+    --color-bg2: white;
+    --logo-theme: url('../img/logo-light.png');
+    --color-font: white;
+}

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="font/css/all.css">
     <title>Document</title>
@@ -14,7 +16,7 @@
     <header>
         <div class="x"></div>
         <div class="logo">
-            <img src="assets/img/Untitled-1 (1).png" alt="" srcset="">
+            <div class="img"></div>
             <a3>
             </a3>
         </div>
@@ -102,6 +104,31 @@
     </div>
 
     <div class="bekax"></div>
+
+    <script>
+
+        var toggle;
+
+        document.getElementsByClassName('logo')[0].onclick = function(){
+            
+            if(!toggle){
+                document.documentElement.style.setProperty('--color-bg', 'white');
+                document.documentElement.style.setProperty('--color-bg2', 'black');
+                document.documentElement.style.setProperty('--color-font', 'black');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+
+            }
+            else{
+                document.documentElement.style.setProperty('--color-bg', 'black');
+                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-font', 'white');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+            
+            }
+            toggle = !toggle
+        }
+
+    </script>
 </body>
 
 </html>
