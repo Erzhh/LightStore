@@ -1,0 +1,956 @@
+
+
+body{
+    background-color: rgb(243, 243, 243);
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    align-items:flex-end;
+    
+     width: 100%;
+     height: 70px;
+     background-color:black;
+     color:white;
+     
+}
+
+
+
+header div.logo {
+    
+    width: 300px;
+    height: 65px;
+    position: relative;
+
+}
+
+header div.logo img {
+    width: 300px;
+    height: 65px;
+
+}
+
+header div.logo a3 {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: 23px;
+    top: 16px;
+    
+
+}
+
+header div.x {
+    width: 320px;
+    height:30px ;
+    
+}
+header div.xx {
+    width: 40%;
+    height:30px ;
+    display: flex;
+    align-items:flex-end;
+    font-family: serif;
+    
+}
+
+
+
+/* header div.xx a4{
+    width:25px ;
+    height: 30px;
+    align-items:flex-end;
+    padding-left: 5px;
+} */
+
+
+header div.ob{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+header div.ob a1{
+    width:35px ;
+    height: 22px;
+    border-right-width: 2px; /* Толщина линии внизу */
+    border-right-style: solid; /* Стиль линии внизу */
+    border-right-color:white;
+    font-size: 16px;
+    
+}
+
+
+
+header div.ob a2{
+    width:25px ;
+    height: 22px;
+    font-size: 16px;
+    
+}
+
+
+
+header div.ob div.profile{
+    width: 130px;
+    height: 25px;
+    font-size: 20px;
+
+}
+
+header div.ob div.post{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color:black;
+    font-size: 20px;
+    border-radius:5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+
+}
+
+header div.ob div.post div.post1{
+    font-size: 20px;
+    width: 160px;
+    height: 20px;
+    
+
+}
+
+/* headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
+div.bekasylobw {
+    margin-top: 30px;
+    width: 100%;
+    height: 1500px;
+    background-color:rgb(243, 243, 243);
+    display: flex;
+
+}
+
+
+div.bekasylobw div.bekasylobw1{
+    width: 800px;
+    height: 1000px;
+} 
+
+
+div.bekasylobw div.bekx {
+    width: 230px;
+    height:1500px ;
+    background-color:rgb(243, 243, 243);
+}
+
+
+
+div.bekasylobw div.bekasylobw1 div.bekimg {
+    
+     width: 800px;
+     height: 600px;
+     background-color:white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+
+}
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekimg1 {
+     width: 600px;
+     height: 500px;
+     
+     margin-top: 50px;
+}
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekimg1 img {
+    width: 600px;
+    height: 450px;
+    border: 1px solid;
+    
+    
+}
+
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg {
+    width: 800px;
+    height: 150px;
+    display: flex;
+    
+}
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimg1 {
+    height: 95px;
+    width: 200px;
+    
+}
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimgxx {
+    width: 470px;
+    height: 95px;
+    
+
+}
+
+div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimg2{
+    width: 130px;
+    height: 65px;
+    
+    padding-top: 30px;
+}
+
+div.bekasylobw div.bekxx2{
+    width: 800px;
+    height: 10px;
+} 
+
+
+div.bekasylobw div.bekasylobw1 div.bekasyltrade {
+    width: 800px;
+    height: 300px;
+    background-color: white;
+   
+}
+
+div.bekasylobw div.bekasylobw1 div.bekasyltrade div.bektr {
+    width: 800px;
+    height: 26px;
+    font-size: 26px;
+    padding: 20px;
+     
+
+}
+
+
+
+div.bekasylobw1 div.bekasyltrade div.bektrade {
+    width: 800px;
+    height: 30px;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+div.bekasylobw1 div.bekasyltrade div.bekdescription {
+    width: 800px;
+    height: 30px;
+    padding-left: 20px;
+    font-size: 22px;
+    
+
+}
+
+
+
+div.bekasylobw1 div.bekasyltrade div.bekdescription1 {
+    width: 800px;
+    height: 50px;
+    padding-left: 20px;
+
+}
+
+div.bekasylobw1 div.bekasyltrade div.bektradehistory{
+    width: 750px;
+    height: 50px;
+    border-top: black solid;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    
+}
+
+/* cdcdcdcdcdcdcddcd */
+
+div.bekasylobw div.bekxx {
+    width: 10px;
+    height: 1000px;
+    background-color:rgb(243, 243, 243);
+
+}
+
+
+
+div.bekasylobw div.bekusermap {
+    
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: block;
+    
+
+}
+
+div.bekasylobw div.bekusermap div.bekuser {
+    width: 400px;
+    height: 260px;
+    background-color: white;
+    
+}
+
+
+div.bekasylobw div.bekusermap div.bekuser div.bekuser1{    
+    height: 30px;
+    padding: 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;   
+}
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek {
+    height: 100px;
+    background-color: white;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+    
+    
+
+
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekimguser {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    
+    
+
+}
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekimguser img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    
+    
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik {
+      height: 90px;
+      display: block;
+      margin-left: 20px;
+}
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik div.beknik {
+    height: 15px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: monospace;
+    
+    
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik div.bekaduser {
+     height: 15px;
+     width: 180px;
+     padding-bottom: 5px;
+     border-bottom: 2px solid;
+     border-color: black;
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekuser div.bektelmess {
+    width: 360px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+
+}
+
+div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bektel {
+    width: 170px;
+    height: 30px;
+    border: 2.3px solid;
+    border-color: black;
+    background-color: white;
+    color: black;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+    border-radius: 5px;
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bekmess {
+    width: 170px;
+    height: 35px;
+    /* border: 1px solid;
+    border-color: black; */
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+div.bekasylobw div.bekusermap div.bek1x {
+    width: 400px;
+    height: 10px;
+    background-color:rgb(243, 243, 243) ;
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekmap1 {
+    width: 360px;
+    height: 290px;
+    background-color: white;
+    display: block;
+    padding: 20px;
+}
+   
+
+div.bekasylobw div.bekusermap div.bekmap1 div.bekadd {
+    width: 150px;
+    height: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekmap1 div.bekmapadd {
+    height: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+div.bekasylobw div.bekusermap div.bekmap1 div.bekmap {
+    width: 360px;
+    height: 195px;
+    
+
+    
+
+}
+
+div.bekasylobw div.bekusermap div.bekmap1 div.bekmap img {
+    width: 360px;
+    height: 195px;
+    
+
+    
+
+}
+
+
+
+
+/* ejfnuehfuefufuefjufjefjuefuefejudcededededededdedededeedededededdedededededededededededede */
+
+@media(max-width:600px){
+    body{
+        background-color: rgb(243, 243, 243);
+        margin: 0px;
+    }
+    
+    header {
+        display: flex;
+        align-items:flex-end;
+        
+         width: 100%;
+         height: 70px;
+         background-color:black;
+         color:white;
+         display: none;
+         
+    }
+    
+    
+    
+    header div.logo {
+        
+        width: 300px;
+        height: 65px;
+        position: relative;
+    
+    }
+    
+    header div.logo img {
+        width: 300px;
+        height: 65px;
+    
+    }
+    
+    header div.logo a3 {
+        width: 2px;
+        height: 2px;
+        position: absolute;
+        left: 23px;
+        top: 16px;
+        
+    
+    }
+    
+    header div.x {
+        width: 320px;
+        height:30px ;
+        
+    }
+    header div.xx {
+        width: 40%;
+        height:30px ;
+        display: flex;
+        align-items:flex-end;
+        font-family: serif;
+        
+    }
+    
+    
+    
+    header div.xx a4{
+        width:25px ;
+        height: 30px;
+        align-items:flex-end;
+        padding-left: 5px;
+    }
+    
+    
+    header div.ob{
+        width: 600px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    
+    }
+    
+    header div.ob a1{
+        width:35px ;
+        height: 22px;
+        border-right-width: 2px; 
+        border-right-style: solid;
+        border-right-color:white;
+        font-size: 16px;
+        
+    }
+    
+    
+    
+    header div.ob a2{
+        width:25px ;
+        height: 22px;
+        font-size: 16px;
+        
+    }
+    
+    
+    
+    header div.ob div.profile{
+        width: 130px;
+        height: 25px;
+        font-size: 20px;
+    
+    }
+    
+    header div.ob div.post{
+        width: 200px;
+        height: 50px;
+        background-color: white;
+        color:black;
+        font-size: 20px;
+        border-radius:5px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        
+    
+    
+    }
+    
+    header div.ob div.post div.post1{
+        font-size: 20px;
+        width: 160px;
+        height: 20px;
+        
+    
+    }
+    
+
+    div.bekasylobw {
+        margin-top: 0px;
+        width: 100%;
+        height: 1500px;
+        background-color:rgb(243, 243, 243);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    div.bekasylobw div.bekasylobw1{
+        width: 100%;
+        height: 650px;
+    } 
+    
+    
+    div.bekasylobw div.bekx {
+        width: 230px;
+        height:1500px ;
+        background-color:rgb(243, 243, 243);
+        display: none;
+    }
+    
+    
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg {
+        
+         width: 100%;
+         height: 360px;
+         background-color:white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+    
+    
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekimg1 {
+         width: 100%;
+         height: 379px;
+         
+         margin-top: 0px;
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekimg1 img {
+        width: 100%;
+        height: 370px;
+        border: 0px solid;
+        
+        
+    }
+    
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg {
+        width: 800px;
+        height: 150px;
+        display: none;
+        
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimg1 {
+        height: 95px;
+        width: 200px;
+        
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimgxx {
+        width: 470px;
+        height: 95px;
+        
+    
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekimg div.bekbigimg div.bekbigimg2{
+        width: 130px;
+        height: 65px;
+        
+        padding-top: 30px;
+    }
+    
+    div.bekasylobw div.bekxx2{
+        width: 800px;
+        height: 10px;
+        display: none;
+    } 
+    
+    
+    div.bekasylobw div.bekasylobw1 div.bekasyltrade {
+        width: 100%;
+        height: 300px;
+        background-color: #324846;
+        color: white;
+       
+    }
+    
+    div.bekasylobw div.bekasylobw1 div.bekasyltrade div.bektr {
+        width: 94%;
+        height: 26px;
+        font-size: 26px;
+        padding: 0px;
+        margin: 3%;
+         
+    
+    }
+    
+    
+    
+    div.bekasylobw1 div.bekasyltrade div.bektrade {
+        width: 95%;
+        height: 30px;
+        font-size: 30px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        margin-left: 5%;
+    
+    }
+    
+    
+    
+    div.bekasylobw1 div.bekasyltrade div.bekdescription {
+        width: 95%;
+        height: 30px;
+        padding-left: 0px;
+        font-size: 22px;
+        margin-left: 5%;
+        background-color: black;
+        
+    
+    }
+    
+    
+    
+    div.bekasylobw1 div.bekasyltrade div.bekdescription1 {
+        width: 100%;
+        height: 50px;
+        padding-left: 0px;
+        margin: 0px;
+        background-color: black;
+    
+    }
+    
+    div.bekasylobw1 div.bekasyltrade div.bektradehistory{
+        width: 100%;
+        height: 50px;
+        border-top:0px black solid;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        margin-left: 5%;
+        
+    }
+    
+   
+    div.bekasylobw div.bekxx {
+        width: 10px;
+        height: 1000px;
+        background-color:rgb(243, 243, 243);
+        display: none;
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap {
+        
+        width: 100%;
+        height: 420px;
+        background-color: white;
+        display: block;
+        
+    
+    }
+    
+    div.bekasylobw div.bekusermap div.bekuser {
+        width: 100%;
+        height: 160px;
+        background-color: #324846;
+        color: white;
+        
+    }
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.bekuser1{    
+        height: 30px;
+        padding: 20px;
+        padding-top: 25px;
+        padding-bottom: 15px; 
+        display: none;  
+    }
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek {
+        height: 100px;
+        background-color: #324846;
+        
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+    }
+        
+        
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekimguser {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        
+        
+    
+    }
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekimguser img {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        
+        
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik {
+          height: 35%;
+          display: block;
+          margin-left: 20px;
+    }
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik div.beknik {
+        height: 15px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        font-family: monospace;
+        
+        
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.userbek div.bekadnik div.bekaduser {
+         height: 15px;
+         width: 180px;
+         padding-bottom: 5px;
+         border-bottom: 2px solid;
+         border-color: white;
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.bektelmess {
+        width: 100%;
+        background-color: #324846;
+        padding: 0px;
+        display: flex;
+        margin: 2%;
+    
+    }
+    
+    div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bektel {
+        width: 40%;
+        height: 30px;
+        border: 2.3px solid;
+        border-color: white;
+        background-color: #324846;
+        color: white;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+        margin-right: 2%;
+        border-radius: 5px;
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bekmess {
+        width: 40%;
+        height: 35px;
+       
+        background-color: white;
+        color:black;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bek1x {
+        width: 400px;
+        height: 10px;
+        background-color:rgb(243, 243, 243) ;
+        display: none;
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekmap1 {
+        width: 96%;
+        height: 250px;
+        background-color: #324846;
+        display: block;
+        padding: 2%;
+        color: white;
+        margin: 0%;
+    }
+       
+    
+    div.bekasylobw div.bekusermap div.bekmap1 div.bekadd {
+        width: 150px;
+        height: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        display: none;
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekmap1 div.bekmapadd {
+        height: 30px;
+        padding-left: 5%;
+        padding-bottom: 20px;
+        width: 95%;
+    
+    }
+    
+    
+    
+    div.bekasylobw div.bekusermap div.bekmap1 div.bekmap {
+        width: 100%;
+        height: 195px;
+        
+    
+        
+    
+    }
+    
+    div.bekasylobw div.bekusermap div.bekmap1 div.bekmap img {
+        width: 100%;
+        height: 195px;
+        
+    
+        
+    
+    }
+    
+
+
+}

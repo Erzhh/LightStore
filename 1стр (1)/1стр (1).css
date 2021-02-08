@@ -1,0 +1,149 @@
+header {
+    width: 94%;
+    height: 35px;
+    /* border-radius: 0%; */
+    display:flex;
+    position: fixed;
+    top: 25px;
+    left: 3%;
+  }
+  
+  header input.biksearch {
+      width: 100%;
+      height: 30px;
+      padding-left: 3%;
+      /* border-radius: 9%; */
+      background-color: #101010;
+  }
+  
+  body{
+      display: block;
+      /* height: 2000px; */
+      background-color: #272727;
+      margin: 0%;
+  }
+  
+  div.bikadvert {
+      width: 100%;
+      height: 200px;
+      margin-top: 70px;
+      margin-bottom: 10px;
+      display: flex;
+      background-color: #101010;
+  }
+  
+  
+  
+  div.bikVipAd {
+      width: 97%;
+      height: 25px;
+      font-size: 22px;
+      margin-left: 5%;
+      /* background-color: blanchedalmond; */
+      color: white;
+  }
+  
+  
+  
+  div.bikad {
+      width: 94%;
+      margin: 3%;
+      flex-wrap: wrap;
+      display: flex;
+      background-color: #272727;
+      color: white;
+  }
+  
+  div.bikad div.bikAd1 {
+    width: 47%;
+    height: 200px;
+    background-color: #101010;
+    display: block;
+    /* flex-direction: column; */
+    margin-bottom: 10px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    border-radius: 10px;
+  }
+  
+  div.bikad div.bikAd1 div.bikImg {
+      width: 100%;
+      height: 100px;
+  }
+  
+  div.bikad div.bikAd1 div.bikImg img {
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      /* background-color: yellow; */
+  }
+  
+  
+  
+  div.bikad div.bikAd1 div.bekTitle {
+      width: 94%;
+      height: 27px;
+      font-size: 17px;
+      margin: 3%;
+      margin-top: 7px;
+      /* background-color: cyan; */
+  }
+  
+  
+  
+  div.bikad div.bikAd1 div.bikPrice {
+      width: 94%;
+      height: 26px;
+      font-size: 20px;
+      margin: 3%;
+      /* background-color: blue; */
+  }
+  
+  
+  
+  div.bikad div.bikAd1 div.bikTime {
+      width: 94%;
+      height: 20px;
+      margin: 3%;
+      /* background-color: firebrick; */
+  }
+  
+  
+  
+  div.bikHeaderx {
+      width: 100%;
+      height: 40px;
+      background-color: #101010;
+      display: flex;
+      position: fixed;
+      bottom: 0px;
+      justify-content: space-evenly;
+  }
+  
+  div.bikHeaderx div.bikhome {
+      width: 20%;
+      height: 40px;
+      background-color: cornflowerblue;
+  
+  }
+  
+  
+  
+  div.bikHeaderx div.bikCreate {
+      width: 20%;
+      height: 40px;
+      background-color: rosybrown;
+  
+  
+  
+  }
+  
+  
+  
+  div.bikHeaderx div.bikProfile {
+      width: 20%;
+      height: 40px;
+      background-color: crimson;
+  
+  
+  }

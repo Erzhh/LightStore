@@ -1,0 +1,269 @@
+
+
+header {
+    display: flex;
+    align-items:flex-end;
+    position: fixed;
+     width: 100%;
+     height: 70px;
+     background-color:black;
+     color:white;
+     display: flex;
+     
+}
+
+
+
+header div.logo {
+    
+    width: 300px;
+    height: 65px;
+    position: relative;
+
+}
+
+header div.logo img {
+    width: 300px;
+    height: 65px;
+
+}
+
+header div.logo a3 {
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    left: 23px;
+    top: 16px;
+    
+
+}
+
+header div.x {
+    width: 320px;
+    height:30px ;
+    
+}
+header div.xx {
+    width: 40%;
+    height:30px ;
+    display: flex;
+    align-items:flex-end;
+    font-family: serif;
+    
+}
+
+
+
+header div.xx a4{
+    width:25px ;
+    height: 30px;
+    align-items:flex-end;
+    padding-left: 5px;
+}
+
+
+header div.ob{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+header div.ob a1{
+    width:35px ;
+    height: 22px;
+    border-right-width: 2px; 
+    border-right-style: solid;
+    border-right-color:white;
+    font-size: 16px;
+    
+}
+
+
+
+header div.ob a2{
+    width:25px ;
+    height: 22px;
+    font-size: 16px;
+    
+}
+
+
+
+header div.ob div.profile{
+    width: 130px;
+    height: 25px;
+    font-size: 20px;
+
+}
+
+header div.ob div.post{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color:black;
+    font-size: 20px;
+    border-radius:5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+
+}
+
+header div.ob div.post div.post1{
+    font-size: 20px;
+    width: 160px;
+    height: 20px;
+    
+
+}
+
+
+
+/* headerrrrrrrrrrrrr */
+
+body{
+    display: flex;
+    margin: 0%;
+    background-color: rgb(243, 243, 243);
+}
+
+div.bekaobw{
+    margin-top: 100px;
+    display: block;
+}
+
+
+
+div.bekaobw div.bekaSearch {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    /* background-color: blanchedalmond; */
+}
+
+
+div.bekax {
+    width: 21%;
+    height: 1700px;
+    /* background-color: coral; */
+}
+
+
+div.bekaobw div.bekaSearch div.bekaSearch1 {
+    width: 54%;
+    height: 70px;
+    margin-right: 1%;
+}
+
+div.bekaobw div.bekaSearch div.bekaSearch1 input.bekasearch{
+    width: 100%;
+    height: 64px;
+    padding-left: 4%;
+    font-size: 22px;
+}
+
+div.bekaobw div.bekaSearch div.bekaregion {
+    width: 35%;
+    height: 70px;
+    font-size: 22px;
+}
+
+div.bekaobw div.bekaSearch div.bekaregion select#ad_city.opt {
+    width: 100%;
+    height: 70px;
+    font-size: 22px;
+    padding-left: 4%;
+}
+
+/* div.bekaSearch div.bekaSearch1 select#ad_city.opt option {
+
+} */
+
+
+
+div.bekaobw div.bekaSearch div.bekafind {
+    width: 10%;
+    height: 70px;
+}
+
+div.bekaobw div.bekaSearch div.bekafind button {
+    width: 100%;
+    height: 70px;
+    font-size: 22px;
+}
+
+
+
+div.bekaobw div.bekaadvert {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: cyan; */
+}
+
+
+
+div.bekaobw div.bekaVipAd {
+    width: 100%;
+    font-size: 28px;
+    height: 50px;
+}
+
+
+
+div.bekaobw div.bekaAd {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    padding: 7px;
+    background-color: white;
+    margin-bottom: 1%;
+}
+
+div.bekaobw div.bekaAd div.bekaAdImg {
+    width: 18%;
+    height: 170px;
+}
+
+div.bekaobw div.bekaAd div.bekaAdImg img {
+    width: 100%;
+    height: 170px;
+    border: 1px black solid;
+}
+
+
+
+div.bekaobw div.bekaAd div.bekaTitle {
+    width: 38%;
+    height: 60px;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-left: 1%;
+    flex-direction: column;
+}
+
+
+
+div.bekaobw div.bekaAd div.bekaTime {
+    width: 39%;
+    height: 10px;
+
+}
+
+
+
+div.bekaobw div.headerxx {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    border-top: 1px black solid;
+    font-size: 24px;
+    padding-top: 50px;
+}
