@@ -1,0 +1,217 @@
+body{
+	display: flex;
+	justify-content: center;
+	color: white;
+	background-color: #1a1a1a;
+}
+.nik_main{
+	width: 64%;
+	height: auto;
+	margin-left: 18%;
+	margin-right: 18%;
+}
+.div{
+	width: 100%;
+	height: auto;
+	border-radius: 7px;
+	border: 2px solid white;
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	background-color:  #333333;
+}
+.text{
+	width: 650px;
+	height: 300px;
+	border-radius: 7px;
+}
+input{
+	height: 40px;
+	border-radius: 7px;
+}
+.rrr{
+	display: flex;
+}
+.r{
+	display: none;
+}
+.radio{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 40px;
+	border-radius: 7px;
+	border: 2px solid white;
+}
+.tit{
+	width: 450px;
+}
+.cost{
+	display: none;                            
+	width: 306px;
+	margin-top: 20px;
+}
+.contract{
+	display: none;                            
+	width: 306px;
+	justify-content: space-between;
+	align-items: center;
+}
+.nik_doIt{
+	height: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.inputfile{
+	display: flex;
+}
+button{
+	width: 200px;
+	height: 60px;
+	border-radius: 7px;
+	margin-right: 20px;
+	background-color: #FCFF00;
+}
+.opt{
+	width: 200px;
+	height: 40px;
+	border-radius: 7px;
+}
+
+
+/* SLIDE TWO */
+.slideTwo {
+	width: 80px;
+	height: 30px;
+	background: #333;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideTwo:after {
+	content: '';
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	height: 2px;
+	width: 52px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #111;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideTwo label {
+	display: block;
+	width: 22px;
+	height: 22px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	-ms-transition: all .4s ease;
+	transition: all .4s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 4px;
+	z-index: 1;
+	left: 4px;
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.slideTwo label:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: #333;
+	left: 6px;
+	top: 6px;
+
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,1), 0px 1px 0px rgba(255,255,255,0.9);
+}
+
+.slideTwo input[type=checkbox]:checked + label {
+	left: 54px;
+}
+
+.slideTwo input[type=checkbox]:checked + label:after {
+	background: #FCFF00;
+}
+/* SLIDE TWO */
+
+/* input file */
+.example-1 .form-group{padding:1em;margin:1em}
+.example-1 input[type=file]{outline:0;opacity:0;pointer-events:none;user-select:none}
+.example-1 .label{width:120px;border:2px dashed grey;border-radius:5px;display:block;padding:1.2em;transition:border 300ms ease;cursor:pointer;text-align:center}
+.example-1 .label i{display:block;font-size:42px;padding-bottom:16px}
+.example-1 .label i,.example-1 .label .title{color:grey;transition:200ms color}
+.example-1 .label:hover{border:2px solid #000}
+.example-1 .label:hover i,.example-1 .label:hover .title{color:#000}
+/* input file */
+
+
+@media(max-width:600px) {
+
+	.body{
+		margin: 0px;
+	}
+	.nik_main{
+		width: 82%;
+		height: auto;
+		margin-left: 9%;
+		margin-right: 9%;
+	}
+	.radio{
+		width: 90px;
+	}
+	.tit{
+		width: 230px;
+	}
+	.text{
+		width: 280px;
+		height: 150px;
+	}
+	.cost{
+		width: 230px;
+	}
+	.contract{
+		width: 280px;
+	}
+
+}
