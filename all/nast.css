@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+}
+.kas1{
+   width: 100%;
+   height: 250px;
+   background: rgb(255, 255, 255); 
+   margin: 0px;
+}
+.kas2{
+    width: 100%;
+    height: 110px;
+    background: rgb(255, 255, 255); 
+    margin: 0px;
+}
+.kas1 .kas_h2{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.06;
+    margin-bottom:0px;
+    margin-left:28px;
+}
+.kas_a{
+    text-decoration: none;
+    color: black;
+}
+.kas1 .kas_ul{
+
+}
+.kas1 .kas_li{
+    float: left;
+    list-style:none;
+    margin-left:30px;
+    font-weight: inherit;
+    margin-top:30px;
+}
+.kas1 .kas_li.f1{
+      margin-left:50px;
+}
+.kas3{
+    width: 100%;
+    height: 800px;
+    background: #f2f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.kas3 .kas_div1{
+    width: 90%;
+    height: 700px;
+    background:#f2f4f5; 
+    flex-wrap: wrap;  
+}
+.kas3 .kas_div1 .kas_d1{
+    width: 90%;
+    height: 60px;
+    background: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    flex-wrap: wrap; 
+}
+.kas3 .kas_div1 .kas_d1 .kas_span_div{
+    display: flex;
+    flex-direction: row;  
+}
+.kas3 .kas_div1 .kas_d1 .kas_hr{
+    width: 10%;
+    display: none;
+    margin-top: 20px;
+}
+.kas3 .kas_div1 .kas_d1 .kas_hr.open_hr{
+    display: block;
+}
+.kas3 .kas_div1 .kas_d1 .kas_span_div .kas_sp{
+    width: 50px;
+}
+.kas3 .kas_div1 .kas_d1 .kas_span_div .kas_span{
+  padding-top: 20px;
+}
+.kas_password_glav_div .kas_pass_k1{
+    padding-left: 20px;
+    width: 90%;
+}
+.kas_password_glav_div{
+    width: 90%;
+    height:0px;
+    overflow: hidden;
+    background:white;
+    transition: 0.4s;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.kas_password_glav_div.open1{
+    height: max-content;
+    transition: 0.6s;
+}
+.kas_password_glav_div .kas_password_div{   
+    display: flex;
+    flex-direction: column;
+}
+.kas_password_glav_div .kas_password_div .kas_password_input{
+    padding: 1% 1%;
+    background: #f2f4f5;
+    width: 300px;
+    border: none;
+    border-radius: 4px;
+}
+.kas_password_glav_div .kas_password_div .span_class_pass{
+    padding: 15px;
+}
+.kas_password_glav_div .kas_btn_password{
+    width: 190px;
+    padding:12px ;
+    border: none;
+    background: rgb(50, 58, 173);
+    margin-top: 20px;
+    border-radius: 4px;
+    color: white;
+}
+.kas_password_glav_div .kas_pass_k1 .kas_password_div .kas_password_input.i1{
+
+}
+.kas_password_glav_div .kas_pass_k1 .kas_hr1{
+    width: 90%;
+    margin-top: 20px;
+}
+
+
