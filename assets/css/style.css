@@ -131,7 +131,8 @@ header div.ob div.post div.post1{
 body{
     display: flex;
     margin: 0%;
-    background-color: rgb(243, 243, 243);
+    background-color:var(--color-bg2);
+    /* color:var(--color-bg); */
 }
 
 div.bekaobw{
@@ -157,7 +158,7 @@ div.bekax {
 
 
 div.bekaobw div.bekaSearch div.bekaSearch1 {
-    width: 54%;
+    width: 53%;
     height: 70px;
     margin-right: 1%;
 }
@@ -167,6 +168,7 @@ div.bekaobw div.bekaSearch div.bekaSearch1 input.bekasearch{
     height: 64px;
     padding-left: 4%;
     font-size: 22px;
+    border-radius: 10px 0px  0px 10px;
 }
 
 div.bekaobw div.bekaSearch div.bekaregion {
@@ -197,6 +199,9 @@ div.bekaobw div.bekaSearch div.bekafind button {
     width: 100%;
     height: 70px;
     font-size: 22px;
+    background-color: #ffd007;
+    /* border-radius: 10px; */
+    border-radius: 0px 10px 10px 0px;
 }
 
 
@@ -215,6 +220,7 @@ div.bekaobw div.bekaVipAd {
     width: 100%;
     font-size: 28px;
     height: 50px;
+    color: var(--color-bg);
 }
 
 
@@ -224,8 +230,9 @@ div.bekaobw div.bekaAd {
     height: 170px;
     display: flex;
     padding: 7px;
-    background-color: white;
+    background-color: var(--color-bg);
     margin-bottom: 1%;
+    color: var(--color-bg2);
 }
 
 div.bekaobw div.bekaAd div.bekaAdImg {
@@ -248,6 +255,7 @@ div.bekaobw div.bekaAd div.bekaTitle {
     margin-top: 10px;
     margin-left: 1%;
     flex-direction: column;
+    /* color: var(--color-bg); */
 }
 
 
@@ -267,4 +275,5 @@ div.bekaobw div.headerxx {
     border-top: 1px var(--color-bg) solid;
     font-size: 24px;
     padding-top: 50px;
+    color: var(--color-bg);
 }
