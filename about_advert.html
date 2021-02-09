@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="beka.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="font/css/all.css">
     <title>Document</title>
 </head>
@@ -12,7 +14,7 @@
     <header>
         <div class="x"></div>
         <div class="logo">
-          <img src="Untitled-1 (1).png" alt="" srcset="">
+            <div class="img"></div>
           <a3>
           </a3>
         </div>
@@ -39,7 +41,7 @@
 
                 <div class="bekimg">
                     <div class="bekimg1">
-                        <img src="вело.jpg" alt="">
+                        <img src="assets/img/вело.jpg" alt="">
                     </div>
                     <div class="bekbigimg">
                         <div class="bekbigimg1"></div>
@@ -74,7 +76,7 @@
 
                     <div class="userbek">
                         <div class="bekimguser">
-                            <img src="user.png" alt="">
+                            <img src="assets/img/user.png" alt="">
                         </div>
                         <div class="bekadnik">
                         <div class="beknik">Бекасыл</div>
@@ -98,7 +100,7 @@
 
                     </div>
                     <div class="bekmap">
-                        <img src="карта-шымкента.jpg" alt="" srcset="">
+                        <img src="assets/img/карта-шымкента.jpg" alt="" srcset="">
                     </div>
                 </div>
             </div>
@@ -109,6 +111,30 @@
         <div class="bek1x"></div>
 
     
+        <script>
+
+            var toggle;
+    
+            document.getElementsByClassName('logo')[0].onclick = function(){
+                
+                if(!toggle){
+                    document.documentElement.style.setProperty('--color-bg', 'white');
+                    document.documentElement.style.setProperty('--color-bg2', 'black');
+                    document.documentElement.style.setProperty('--color-font', 'black');
+                    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+    
+                }
+                else{
+                    document.documentElement.style.setProperty('--color-bg', 'black');
+                    document.documentElement.style.setProperty('--color-bg2', 'white');
+                    document.documentElement.style.setProperty('--color-font', 'white');
+                    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+                
+                }
+                toggle = !toggle
+            }
+    
+        </script>
 
 </body>
 </html>
