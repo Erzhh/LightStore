@@ -117,7 +117,7 @@ header {
   
   div.bikHeaderx {
       width: 100%;
-      height: 40px;
+      height: 60px;
       background-color: #101010;
       display: flex;
       position: fixed;
@@ -126,29 +126,34 @@ header {
   }
   
   div.bikHeaderx div.bikhome {
-      width: 20%;
-      height: 40px;
+      width: 15%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background-color: cornflowerblue;
-  
   }
+
+  div.bikHeaderx div.bikhome i.fas.fa-home{
+      
+      color: white;
+      font-size: 30px;
+  }
+  
+
   
   
   
   div.bikHeaderx div.bikCreate {
-      width: 20%;
-      height: 40px;
+      width: 15%;
+      height: 60px;
       background-color: rosybrown;
-  
-  
-  
   }
   
   
   
   div.bikHeaderx div.bikProfile {
-      width: 20%;
-      height: 40px;
+      width: 15%;
+      height: 60px;
       background-color: crimson;
-  
-  
   }
