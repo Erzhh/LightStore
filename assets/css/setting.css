@@ -4,13 +4,13 @@ body{
 .kas1{
    width: 100%;
    height: 250px;
-   background: rgb(255, 255, 255); 
+   background: var(--color-bg2); 
    margin: 0px;
 }
 .kas2{
     width: 100%;
     height: 110px;
-    background: rgb(255, 255, 255); 
+    background:var(--color-bg2); 
     margin: 0px;
 }
 .kas1 .kas_h2{
@@ -22,7 +22,7 @@ body{
 }
 .kas_a{
     text-decoration: none;
-    color: black;
+    color: var(--color-fontbl);
 }
 .kas1 .kas_ul{
 
@@ -40,7 +40,7 @@ body{
 .kas3{
     width: 100%;
     height: 800px;
-    background: #f2f4f5;
+    background: var(--color-bg3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +48,13 @@ body{
 .kas3 .kas_div1{
     width: 90%;
     height: 700px;
-    background:#f2f4f5; 
+    background:var(--color-bg3); 
     flex-wrap: wrap;  
 }
 .kas3 .kas_div1 .kas_d1{
     width: 90%;
     height: 60px;
-    background: white;
+    background:  var(--color-bg2);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     display: flex;
@@ -88,7 +88,7 @@ body{
     width: 90%;
     height:0px;
     overflow: hidden;
-    background:white;
+    background: var(--color-bg2);
     transition: 0.4s;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -103,7 +103,7 @@ body{
 }
 .kas_password_glav_div .kas_password_div .kas_password_input{
     padding: 1% 1%;
-    background: #f2f4f5;
+    background: var(--color-bg3);
     width: 300px;
     border: none;
     border-radius: 4px;
@@ -118,7 +118,7 @@ body{
     background: rgb(50, 58, 173);
     margin-top: 20px;
     border-radius: 4px;
-    color: white;
+    color: var(--color-font);
 }
 .kas_password_glav_div .kas_pass_k1 .kas_password_div .kas_password_input.i1{
 

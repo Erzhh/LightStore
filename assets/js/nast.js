@@ -14,3 +14,28 @@ kas_d1[1].onclick = function(){
         kas_hr[1].classList.toggle('open_hr')
     }
 }
+var toggle;
+
+document.getElementsByClassName('logo')[0].onclick = function(){
+    
+    if(!toggle){
+        document.documentElement.style.setProperty('--color-fontbl', 'white');
+        document.documentElement.style.setProperty('--color-bg3', '#2b2929');
+        document.documentElement.style.setProperty('--color-border', '#2b2929');
+        document.documentElement.style.setProperty('--color-bg', 'white');
+        document.documentElement.style.setProperty('--color-bg2', 'black');
+        document.documentElement.style.setProperty('--color-font', 'black');
+        document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+
+    }
+    else{
+        document.documentElement.style.setProperty('--color-bg', 'black');
+        document.documentElement.style.setProperty('--color-bg2', 'white');
+        document.documentElement.style.setProperty('--color-bg3', '#f2f4f5');
+        document.documentElement.style.setProperty('--color-font', 'white');
+        document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+        document.documentElement.style.setProperty('--color-fontbl', 'black');
+        document.documentElement.style.setProperty('--color-border', 'white');
+    }
+    toggle = !toggle
+}
