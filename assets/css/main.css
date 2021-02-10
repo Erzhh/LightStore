@@ -7,13 +7,14 @@
     --color-fontbl:black;
     --color-border:white;
 
-	--color-bg3:#101010;
-	--color-bg4:#272727;
+	--color-bg103:#101010;
+	--color-bg104:#272727;
 }
 
 /* header startttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 
 header {
+    top: 0px;
     display: flex;
     align-items:flex-end;
     position: fixed;
