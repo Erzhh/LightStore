@@ -16,11 +16,11 @@ kas_d1[1].onclick = function(){
 }
 var toggle;
 
-document.getElementsByClassName('logo')[0].onclick = function(){
+document.getElementsByClassName('l')[0].onclick = function(){
     
     if(!toggle){
         document.documentElement.style.setProperty('--color-fontbl', 'white');
-        document.documentElement.style.setProperty('--color-bg3', '#2b2929');
+        document.documentElement.style.setProperty('--color-bg_3', '#2b2929');
         document.documentElement.style.setProperty('--color-border', '#2b2929');
         document.documentElement.style.setProperty('--color-bg', 'white');
         document.documentElement.style.setProperty('--color-bg2', 'black');
@@ -31,7 +31,7 @@ document.getElementsByClassName('logo')[0].onclick = function(){
     else{
         document.documentElement.style.setProperty('--color-bg', 'black');
         document.documentElement.style.setProperty('--color-bg2', 'white');
-        document.documentElement.style.setProperty('--color-bg3', '#f2f4f5');
+        document.documentElement.style.setProperty('--color-bg_3', '#f2f4f5');
         document.documentElement.style.setProperty('--color-font', 'white');
         document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
         document.documentElement.style.setProperty('--color-fontbl', 'black');
