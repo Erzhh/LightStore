@@ -1,4 +1,4 @@
-header {
+div.header12 {
     width: 94%;
     height: 35px;
     /* border-radius: 0%; */
@@ -8,18 +8,18 @@ header {
     left: 3%;
   }
   
-  header input.biksearch {
+  div.header12 input.biksearch {
       width: 100%;
       height: 30px;
       padding-left: 3%;
       /* border-radius: 9%; */
-      background-color: #101010;
+      background-color: var(--color-bg104);
   }
   
   body{
       display: block;
       /* height: 2000px; */
-      background-color: #272727;
+      background-color: var(--color-bg103);
       margin: 0%;
   }
   
@@ -29,7 +29,7 @@ header {
       margin-top: 70px;
       margin-bottom: 10px;
       display: flex;
-      background-color: #101010;
+      background-color:var(--color-bg103);
   }
   div.bikadvert img{
       width: 100%;
@@ -45,7 +45,7 @@ header {
       font-size: 22px;
       margin-left: 5%;
       /* background-color: blanchedalmond; */
-      color: white;
+      color: var(--color-font);
   }
   
   
@@ -55,14 +55,14 @@ header {
       margin: 3%;
       flex-wrap: wrap;
       display: flex;
-      background-color: #272727;
-      color: white;
+      background-color: var(--color-bg103);
+      color: var(--color-font);
   }
   
   div.bikad div.bikAd1 {
     width: 47%;
     height: 200px;
-    background-color: #101010;
+    background-color: var(--color-bg104);
     display: block;
     /* flex-direction: column; */
     margin-bottom: 10px;
@@ -117,38 +117,98 @@ header {
   
   div.bikHeaderx {
       width: 100%;
-      height: 40px;
-      background-color: #101010;
-      display: flex;
+      height: 60px;
+      background-color: var(--color-bg104);
+      display:  flex;
       position: fixed;
       bottom: 0px;
       justify-content: space-evenly;
   }
   
-  div.bikHeaderx div.bikhome {
-      width: 20%;
-      height: 40px;
-      background-color: cornflowerblue;
+        div.bikHeaderx div.bikhome {
+            width: 15%;
+            height: 60px;
+            display:  block;
+            align-items: center;
+            justify-content: center;
+            /* background-color: cornflowerblue; */
+            color: var(--color-font);
+        }
+
+        div.bikHeaderx div.bikhome i.fas.fa-home{
+            
+            
+            font-size: 25px;
+        }
+        
+
+
+
+
+div.bikHeaderx div.bikchosen{
+    width: 15%;
+            height: 60px;
+            display:  block;
+            align-items: center;
+            justify-content: center;
+            /* background-color: rgb(100, 237, 123); */
+            color: var(--color-font);
+            font-size: 14px;
+
+}
+div.bikHeaderx div.bikchosen i.far.fa-heart{
+   
+            font-size: 25px;
+
+}
+
+    
+        div.bikHeaderx div.bikCreate {
+            width: 15%;
+            height: 60px;
+            display:  block;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-font);
+            /* background-color: rgb(253, 157, 2); */
+        }
+        div.bikHeaderx div.bikCreate i.fas.fa-cart-plus{
+           
+            font-size: 25px;
+
+        }
+
+
+div.bikHeaderx div.bikprofile{
+    width: 15%;
+            height: 60px;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-font);
+            /* background-color: rgb(180, 142, 250); */
+
+}
+div.bikHeaderx div.bikprofile i.far.fa-user{
+    
+            font-size: 25px;
+
+}
+
   
-  }
   
-  
-  
-  div.bikHeaderx div.bikCreate {
-      width: 20%;
-      height: 40px;
-      background-color: rosybrown;
-  
-  
-  
-  }
-  
-  
-  
-  div.bikHeaderx div.bikProfile {
-      width: 20%;
-      height: 40px;
-      background-color: crimson;
-  
-  
-  }
+
+            div.bikHeaderx div.change1 {
+                width: 15%;
+                height: 60px;
+                display: block;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-font);
+                /* background-color: rgb(255, 38, 0); */
+            }
+            div.bikHeaderx div.change1 i.fas.fa-star-half-alt{
+                
+                font-size: 25px;
+
+            }

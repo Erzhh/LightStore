@@ -7,8 +7,9 @@
     --color-fontbl:black;
     --color-border:white;
 
-	--color-bg103:#101010;
-	--color-bg104:#272727;
+	--color-bg103:#6e6e6e;
+	--color-bg104:#bcbcbc;
+    
 }
 
 /* header startttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
@@ -106,6 +107,14 @@ header div.ob a2{
     color:var(--color-font);
 }
 
+header div.ob div.bikchosen1{
+    width: 13%;
+    height: 22px;
+    color:var(--color-font);
+}
+header div.ob div.bikchosen1 i.far.fa-heart{
+    font-size: 25px;
+}
 
 
 header div.ob div.profile{
@@ -114,6 +123,10 @@ header div.ob div.profile{
     font-size: 20px;
     color:var(--color-font);
 }
+header div.ob div.profile i.far.fa-user{
+    font-size: 25px;
+}
+
 
 header div.ob div.post{
     width: 200px;
