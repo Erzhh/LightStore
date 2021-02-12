@@ -1,8 +1,11 @@
 :root {
     --color-bg: black;
     --color-bg2: white;
+    --color-bg_3:#f2f4f5;
     --logo-theme: url('../img/logo-light.png');
     --color-font: white;
+    --color-fontbl:black;
+    --color-border:white;
 
 	--color-bg103:#6e6e6e;
 	--color-bg104:#bcbcbc;
@@ -12,6 +15,7 @@
 /* header startttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 
 header {
+    top: 0px;
     display: flex;
     align-items:flex-end;
     position: fixed;
