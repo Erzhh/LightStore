@@ -45,7 +45,7 @@ header div.logo a3 {
 }
 
 header div.x {
-    width: 320px;
+    width: 200px;
     height:30px ;
     
 }
@@ -95,6 +95,7 @@ header div.ob a2{
     height: 22px;
     font-size: 16px;
     color:var(--color-font);
+    margin-left: 10px;
 }
 
 
@@ -104,6 +105,7 @@ header div.ob div.profile{
     height: 25px;
     font-size: 20px;
     color:var(--color-font);
+    margin-left: 10px;
 }
 
 header div.ob div.post{
@@ -128,6 +130,20 @@ header div.ob div.post div.post1{
     
 
 }
+.error_icon{
+    width: 200px;
+}
+.star_icon{
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.star_icon .far.fa-star{
+    font-size: 30px;
+}
+
 /* /header */
 .kas1{
    width: 100%;
