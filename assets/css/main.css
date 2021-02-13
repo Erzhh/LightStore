@@ -15,7 +15,6 @@
 /* header startttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 
 header {
-    top: 0px;
     display: flex;
     align-items:flex-end;
     position: fixed;
@@ -24,6 +23,7 @@ header {
      background-color:var(--color-bg);
      color:white;
      display: flex;
+     top: 0px;
      
 }
 
@@ -84,14 +84,12 @@ header div.ob{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
 header div.ob a1{
-    width:35px ;
+    width: 35px;
     height: 22px;
-    border-right-width: 2px; 
+    border-right-width: 2px;
     border-right-style: solid;
     border-right-color: var(--color-font);
     font-size: 16px;
@@ -101,32 +99,22 @@ header div.ob a1{
 
 
 header div.ob a2{
-    width:25px ;
+    width: 50px;
     height: 22px;
     font-size: 16px;
     color:var(--color-font);
+    padding-left: 10px;
 }
 
-header div.ob div.bikchosen1{
-    width: 13%;
-    height: 22px;
-    color:var(--color-font);
-}
-header div.ob div.bikchosen1 i.far.fa-heart{
-    font-size: 25px;
-}
 
 
 header div.ob div.profile{
-    width: 130px;
+    width: 170px;
     height: 25px;
     font-size: 20px;
     color:var(--color-font);
+    margin-left: 10px;
 }
-header div.ob div.profile i.far.fa-user{
-    font-size: 25px;
-}
-
 
 header div.ob div.post{
     width: 200px;
