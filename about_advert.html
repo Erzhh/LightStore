@@ -61,8 +61,9 @@
 
                 <div class="bekxx2"></div>
 
+               
                 <div class="bekasyltrade">
-                    <div class="bektr">Велосипед. цена оканчательная</div>
+                    <div class="bektr">Велосипед. цена оканчательная</div>                                                                         
                     <div class="bektrade">78000 тг </div>
                     <div class="bekdescription">Описания</div>
                     <div class="bekdescription1">Велосипед новый цена оканчательная</div>
@@ -119,6 +120,8 @@
 
         <div class="bek1x"></div>
 
+
+       
     
         <script>
 
@@ -143,6 +146,28 @@
                 toggle = !toggle
             }
     
+            
+
+            // console.log( window.innerWidth )
+             
+           
+            
+           
+
+            function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile_about_advert.html'
+
+                }   
+            }
+
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+
+
         </script>
 
 </body>

@@ -5,127 +5,23 @@ body{
     margin: 0px;
 }
 
-header {
-    display: flex;
-    align-items:flex-end;
-    
-     width: 100%;
-     height: 70px;
-     background-color:black;
-     color:white;
-     display: none;
-     
-}
-
-
-
-header div.logo {
-    
-    width: 300px;
-    height: 65px;
-    position: relative;
-
-}
-
-header div.logo img {
-    width: 300px;
-    height: 65px;
-
-}
-
-header div.logo a3 {
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    left: 23px;
-    top: 16px;
-    
-
-}
-
-header div.x {
-    width: 320px;
-    height:30px ;
-    
-}
-header div.xx {
-    width: 40%;
-    height:30px ;
-    display: flex;
-    align-items:flex-end;
-    font-family: serif;
-    
-}
-
-
-
-/* header div.xx a4{
-    width:25px ;
-    height: 30px;
-    align-items:flex-end;
-    padding-left: 5px;
-} */
-
-
-header div.ob{
-    width: 600px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
-}
-
-header div.ob a1{
-    width:35px ;
-    height: 22px;
-    border-right-width: 2px; /* Толщина линии внизу */
-    border-right-style: solid; /* Стиль линии внизу */
-    border-right-color:white;
-    font-size: 16px;
-    
-}
-
-
-
-header div.ob a2{
-    width:25px ;
-    height: 22px;
-    font-size: 16px;
-    
-}
-
-
-
-header div.ob div.profile{
-    width: 130px;
-    height: 25px;
-    font-size: 20px;
-
-}
-
-header div.ob div.post{
-    width: 200px;
+div.header112 {
+    width: 100%;
     height: 50px;
-    background-color: white;
-    color:black;
-    font-size: 20px;
-    border-radius:5px;
+    /* border-radius: 0%; */
+    display:flex;
+    position: fixed;
     align-items: center;
-    justify-content: center;
-    display: flex;
     
-
-
-}
-
-header div.ob div.post div.post1{
-    font-size: 20px;
-    width: 160px;
-    height: 20px;
     
+    
+    
+  }
 
+div.header112 i.fas.fa-angle-left {
+    font-size: 30PX;
+    margin-left: 2%;
+    
 }
 
 /* headerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/

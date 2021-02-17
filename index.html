@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    
+    <link rel="stylesheet" href="assets/font/css/icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="font/css/all.css">
+    
     <title>index.html</title>
 </head>
 
@@ -17,21 +17,30 @@
         <div class="x"></div>
         <div class="logo">
             <div class="img"></div>
-            <a3>
-            </a3>
+          <a3>
+          </a3>
         </div>
         <div class="xx">
-
-
+            
+            
         </div>
-        <div class="ob">
-            <a1>каз</a1>
-            <a2>рус</a2>
-            <div class="profile">Мой профиль</div>
-            <div class="post">
-                <div class="post1">Подать объявение</div>
-            </div>
+      <div class="ob">
+          <div class="toggle12">
+        <input class="l" type="checkbox">
+          </div>
+        <a1>каз</a1>
+        <a2>рус</a2>
+        <div class="bikchosen1">
+            <i class="far fa-heart"></i>
+            
         </div>
+        <div class="profile">
+            <i class="far fa-user"></i>
+            Мой профиль</div>
+        <div class="post">
+          <div class="post1">Подать объявение</div>
+        </div>
+      </div>
         <div class="x"></div>
     </header>
 
@@ -67,25 +76,41 @@
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            <div class="bekaTitle">Продается овощи</div>
+            
+                <div class="bekaTitle">
+                    <a href="about_advert.html">Велосипед</a>
+                </div>
+                
+            
             <div class="bekaTime">25.03.2021</div>
         </div>
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            <div class="bekaTitle">Велосипед</div>
+           
+            <div class="bekaTitle"><a href="about_advert.html">Велосипед</a></div>
+        
             <div class="bekaTime">25.03.2021</div>
         </div>
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            <div class="bekaTitle">Игрушки продается</div>
+            
+                <div class="bekaTitle">
+                    <a href="about_advert.html">Велосипед</a>
+                </div>
+                
+            
             <div class="bekaTime">25.03.2021</div>
         </div>
-
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            <div class="bekaTitle">обувь по низким ценом</div>
+            
+                <div class="bekaTitle">
+                    <a href="about_advert.html">Велосипед</a>
+                </div>
+                
+            
             <div class="bekaTime">25.03.2021</div>
         </div>
 
@@ -127,6 +152,19 @@
             }
             toggle = !toggle
         }
+
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.html'
+
+                }   
+            }
+
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
 
     </script>
 </body>
