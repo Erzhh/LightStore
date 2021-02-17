@@ -1,13 +1,14 @@
+<?php 
+    include "setting/language.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/font/css/icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
     <title>index.html</title>
 </head>
 
@@ -28,17 +29,21 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
+        <a href="?lang=kz">каз</a>
+        <a href="?lang=ru">рус</a>
+
         <div class="bikchosen1">
             <i class="far fa-heart"></i>
             
         </div>
         <div class="profile">
             <i class="far fa-user"></i>
-            Мой профиль</div>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+            <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>

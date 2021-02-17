@@ -117,8 +117,8 @@ header div.ob div.profile{
 }
 
 header div.ob div.post{
-    width: 200px;
-    height: 50px;
+    /* width: 200px; */
+    /* height: 50px; */
     background-color: #ffd007;
     color:var(--color-bg);
     font-size: 20px;
@@ -126,14 +126,14 @@ header div.ob div.post{
     align-items: center;
     justify-content: center;
     display: flex;
+    padding: 12px 18px;
+    white-space: nowrap;
 }
 
 header div.ob div.post div.post1{
     font-size: 20px;
-    width: 160px;
-    height: 20px;
-    
-
+    /* width: 160px; */
+    /* height: 20px; */
 }
 
 
