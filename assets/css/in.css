@@ -6,7 +6,7 @@ input{
 	border-radius: 7px;
 }
 .pasha_main{
-	background-color: white;
+	background-color:var(--color-bg);
 	width: 30%;
 	margin-left: 35%;
 	margin-top: 10%;
@@ -16,6 +16,7 @@ input{
 .forinput{
 	display: flex;
 	flex-direction: column;
+	color: var(--color-bg2);
 }
 .or{
 	height: 60px;
@@ -24,6 +25,7 @@ input{
 	align-items: center;
 }
 .in{
+	color: var(--color-bg2);
 	height: 65%;
 	width: 50%;
 	display: flex;
