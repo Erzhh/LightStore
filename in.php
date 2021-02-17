@@ -47,7 +47,7 @@
 				<a>Войти</a>
 			</div>
 			<div class="reg">
-				 <a href='registr.html' style="text-decoration: none;color: var(--color-bg2);">Регистрация</a>
+				 <a href='registr.php' style="text-decoration: none;color: var(--color-bg2);">Регистрация</a>
 			</div>
 		</div>
 
