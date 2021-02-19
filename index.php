@@ -31,6 +31,7 @@
           </div>
         <a href="?lang=kz">каз</a>
         <a href="?lang=ru">рус</a>
+        
 
         <div class="bikchosen1">
             <i class="far fa-heart"></i>
@@ -68,14 +69,14 @@
                     <option>Taraz</option>
                 </select>
             </div>
-            <div class="bekafind"><button>Найти</button></div>
+            <div class="bekafind"><button><?=$L['find']?></button></div>
         </div>
 
         <div class="bekaadvert"></div>
 
 
         <div class="bekaVipAd">
-            VIP-объявления
+        <?=$L['vipad']?>
         </div>
 
 

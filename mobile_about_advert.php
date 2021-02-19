@@ -33,10 +33,10 @@
         <div class="bekxx2"></div>
 
         <div class="bekasyltrade">
-            <div class="bektradeviews">Просмотры:1972</div>
+            <div class="bektradeviews"><?=$L['views']?>:1972</div>
             <div class="bektr">Велосипед. цена оканчательная</div>
             <div class="bektrade">78000 тг </div>
-            <div class="bekdescription">Описания <button onclick="bekdescription1()"><i class="fas fa-angle-down"></i> 
+            <div class="bekdescription"> <?=$L['description']?> <button onclick="bekdescription1()"><i class="fas fa-angle-down"></i> 
                <!-- style="vertical-align: middle">--></button></p></button> </div>  
             
             <div class="bekdescription1"> 
@@ -73,7 +73,7 @@
     <div class="bekusermap">
         <div class="bekuser">
             
-            <div class="bekuser1">Пользователь</div>
+            <div class="bekuser1"> <?=$L['user']?> </div>
 
             <div class="userbek">
                 <div class="bekimguser">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="bekadnik">
                 <div class="beknik">Бекасыл</div>
-                <div class="bekaduser">Другие объявления автора</div>
+                <div class="bekaduser"><?=$L['aduser']?></div>
                 </div>
             </div>
 
@@ -91,10 +91,9 @@
         
 
         <div class="bekmap1">
-            <div class="bekadd">Точный адрес</div>
+            <div class="bekadd"><?=$L['add']?></div>
             <div class="bekmapadd">
-                Шымкент <br>
-                Туркестанская область
+            <?=$L['mapadd']?>
 
             </div>
             <div class="bekmap">
@@ -111,8 +110,8 @@
     </div>
     
     <div class="bektelmess">
-        <div class="bektel">Показать телефон</div>
-        <div class="bekmess">Написать автору</div>
+        <div class="bektel"><?=$L['tell']?></div>
+        <div class="bekmess"><?=$L['mess']?></div>
     </div>
     
 </div>
