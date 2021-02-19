@@ -10,7 +10,7 @@
 <body>
     
     <div class="header112">
-        <a href="mobile.html">
+        <a href="mobile.php">
                     <i class="fas fa-angle-left"></i>
         </a>
     </div>
@@ -120,7 +120,7 @@
 
 function bekaaa(){
                 if(window.innerWidth>600){
-                    window.location.href = 'about_advert.html'
+                    window.location.href = 'about_advert.php'
 
                 }   
             }

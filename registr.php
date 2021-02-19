@@ -1,3 +1,6 @@
+<?php 
+    include "setting/language.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,17 +27,21 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
+        <a href="?lang=kz">каз</a>
+        <a href="?lang=ru">рус</a>
+
         <div class="bikchosen1">
             <i class="far fa-heart"></i>
             
         </div>
         <div class="profile">
             <i class="far fa-user"></i>
-            Мой профиль</div>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+            <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>
@@ -44,10 +51,10 @@
 	<div class="pasha_main">
 		<div class="or">
 			<div class="in">
-				<a  href='in.php' style="text-decoration: none; color: var(--color-bg2);">Войти</a>
+				<a  href='in.php' style="text-decoration: none; color: var(--color-bg2);"><?=$L['enter']?></a>
 			</div>
 			<div class="reg">
-				 <a>Регистрация</a>
+				 <a><?=$L['registration']?></a>
 			</div>
 		</div>
 
@@ -56,57 +63,89 @@
 			<div class="da" style="width: 100%; height: auto;">
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
-					<label for="firstName" class="form-label">Nikname</label>
-					<input type="text"  placeholder="Придумайте Nik"name="firster">
+					<label for="firstName" class="form-label">Nickname</label>
+					<input type="text"  placeholder="<?=$L['nickr']?>"name="firster">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="Впишите ваш Email"name="laster">
+					<input type="text" placeholder="<?=$L['email']?>"name="laster">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="email" class="form-label">Number</label>
-					<input type="email" placeholder="Номер телефона" name="email">
+					<input type="email" placeholder="<?=$L['phone']?>" name="email">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="Придумайте пороль для своего аккаунта" name="email">
+					<input type="email" placeholder="<?=$L['passwordr']?>" name="email">
 				</div>
 
 
 
-				<button class="pasha_btn" type="submit">Зарегистрироваться</button>
+				<button class="pasha_btn" type="submit"><?=$L['registration']?></button>
 			</div>
 
 	</div>
 </form>
 <script>
 
-	var toggle;
 
-	document.getElementsByClassName('l')[0].onclick = function(){
-		
-		if(!toggle){
-			document.documentElement.style.setProperty('--color-bg', 'white');
-			document.documentElement.style.setProperty('--color-bg2', 'black');
-			document.documentElement.style.setProperty('--color-font', 'black');
-			document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-
+document.getElementsByClassName('l')[0].onclick = function(){
+	
+	if(localStorage.getItem('toogle')){
+		if(localStorage.getItem('toogle')=='dark'){
+			LightOrDark('light')
+			localStorage.setItem('toogle','light');
 		}
 		else{
-			document.documentElement.style.setProperty('--color-bg', 'black');
-			document.documentElement.style.setProperty('--color-bg2', 'white');
-			document.documentElement.style.setProperty('--color-font', 'white');
-			document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-		
+			LightOrDark('dark')
+			localStorage.setItem('toogle','dark');
 		}
-		toggle = !toggle
 	}
+	else{
+		localStorage.setItem('toogle','light');
+		LightOrDark('light')
+	}
+   
+}
+
+function LightOrDark(color){
+	if(color == 'dark'){
+		document.documentElement.style.setProperty('--color-bg', 'white');
+		document.documentElement.style.setProperty('--color-bg2', 'black');
+		document.documentElement.style.setProperty('--color-font', 'black');
+		document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+	}
+	else{
+		document.documentElement.style.setProperty('--color-bg', 'black');
+		document.documentElement.style.setProperty('--color-bg2', 'white');
+		document.documentElement.style.setProperty('--color-font', 'white');
+		document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+	}
+}
+
+LightOrDark(localStorage.getItem('toogle'));
+
+function bekaaa(){
+		if(window.innerWidth<600){
+			window.location.href = 'mobile.php'
+
+		}   
+	}
+	window.onresize = function(){
+		bekaaa()           
+	}
+
+	bekaaa()
+
+	console.log( localStorage.getItem('toogle') );
+	//localStorage.setItem('toogle', 'dark');
+
 
 </script>
 

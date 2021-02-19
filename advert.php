@@ -1,3 +1,6 @@
+<?php
+    include "setting/language.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
 
 </head>
 <body>
-    <header>
+<header>
         <div class="x"></div>
         <div class="logo">
             <div class="img"></div>
@@ -25,26 +28,36 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
-        <div class="profile">Мой профиль</div>
+        <a href="?lang=kz">каз</a>
+        <a href="?lang=ru">рус</a>
+
+        <div class="bikchosen1">
+            <i class="far fa-heart"></i>
+            
+        </div>
+        <div class="profile">
+            <i class="far fa-user"></i>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+            <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>
     </header>
     <div class="nik_main">
-        <h1>Подать объявление на Light Store</h1>
+        <h1><?=$L['aDvert']?></h1>
         <div class="nik_title div">
-            <h2>Заголовок</h2><br>
+            <h2><?=$L['TITle']?></h2><br>
 
-            <label for="ad_title">Заголовок*</label><br>
+            <label for="ad_title"><?=$L['TITle']?>*</label><br>
             <input class="tit" type="text" id="ad_title"><br>
 
            
             <div id="ad.category">
-                <label for="ad_сategory">Рубрика*</label>
+                <label for="ad_сategory"><?=$L['CATEGory']?>*</label>
                 <!-- <div class="chooseC">
                     
                 </div> -->
@@ -54,9 +67,9 @@
 
 
         <div class="nik_location div">
-            <h2>Местоположение</h2>
+            <h2><?=$L['LOCation']?></h2>
 
-            <label for="ad_city">Город*</label><br>
+            <label for="ad_city"><?=$L['CIty']?>*</label><br>
             <select class="opt" id="ad_city">
                     <option>Astana</option>
                     <option>Almaty</option>
@@ -69,18 +82,18 @@
 
 
         <div class="nik_price  div">
-            <h2>Цена</h2>
+            <h2><?=$L['COst']?></h2>
             <div class="rrr">
                 <div class="radio" onclick="free()">
-                    <p>Бесплатно</p>
+                    <p><?=$L['FRee']?></p>
                     <input class="r r1" type="radio" id="ad_cost1" name="da">
                 </div> 
                 <div class="radio" onclick="exchange()">
-                    <p>Обмен</p>
+                    <p><?=$L['EXCHange']?></p>
                     <input class="r r2" type="radio" id="ad_cost2" name="da">
                 </div>
                 <div class="radio" onclick="price()">
-                    <p>Цена</p>
+                    <p><?=$L['COst']?></p>
                     <input class="r r3" type="radio" id="ad_cost3" name="da"><br>    
                 </div>
             </div>
@@ -88,7 +101,7 @@
             <input class="cost" type="text"><br>
 
             <div class="contract">
-                <h2>Договорная</h2>
+                <h2><?=$L['CONTract']?></h2>
                 <div class="slideTwo">	
                     <input type="checkbox" value="None" id="slideTwo" name="check" style="display: none;" />
                     <label for="slideTwo"></label>
@@ -100,24 +113,24 @@
 
 
         <div class="nik_discription  div">
-            <h2>Описание</h2>
+            <h2><?=$L['DISCription']?></h2>
 
-            <label for="ad_text">Описание*</label><br>
+            <label for="ad_text"><?=$L['DISCription']?>*</label><br>
             <textarea class="text" id="ad_text"></textarea>
         </div>
 
 
         <div class="nik_images  div">
-            <h2>Фотографии</h2>
+            <h2><?=$L['PHOTos']?></h2>
 
-            <label for="ad_img">Фотографии*</label><br>
+            <label for="ad_img"><?=$L['PHOTos']?>*</label><br>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <div class="inputfile">    
             <div class="example-1">
                 <div class="form-group">
                     <label class="label">
                         <i class="material-icons">attach_file</i>
-                        <span class="title">Добавить файл</span>
+                        <span class="title"><?=$L['FIle']?></span>
                         <input type="file">
                     </label>
                 </div>
@@ -129,7 +142,7 @@
 
 
         <div class="nik_doIt  div">
-            <button><h2>Опубликовать</h2></button>
+            <button><h2><?=$L['PUBLik']?></h2></button>
         </div>
     </div>
 
@@ -158,15 +171,31 @@
             document.getElementsByClassName('cost')[0].style.display = 'block';
             document.getElementsByClassName('contract')[0].style.display = 'flex';
         }
-
+   
     </script>
     <script>
-
-        var toggle;
-
-        document.getElementsByClassName('toggle12')[0].onclick = function(){
+    
+    document.getElementsByClassName('l')[0].onclick = function(){
             
-            if(!toggle){
+            if(localStorage.getItem('toogle')){
+                if(localStorage.getItem('toogle')=='dark'){
+                    LightOrDark('light')
+                    localStorage.setItem('toogle','light');
+                }
+                else{
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle','dark');
+                }
+            }
+            else{
+                localStorage.setItem('toogle','light');
+                LightOrDark('light')
+            }
+           
+        }
+
+        function LightOrDark(color){
+            if(color == 'dark'){
                 document.documentElement.style.setProperty('--color-bg', 'white');
                 document.documentElement.style.setProperty('--color-bg2', 'black');
                 document.documentElement.style.setProperty('--color-font', 'black');
@@ -180,8 +209,24 @@
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
                 document.documentElement.style.setProperty('--color-bgD', 'white');
             }
-            toggle = !toggle
         }
+
+        LightOrDark(localStorage.getItem('toogle'));
+
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
+
+                }   
+            }
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+
+            console.log( localStorage.getItem('toogle') );
+            //localStorage.setItem('toogle', 'dark');
 
     </script>
 
