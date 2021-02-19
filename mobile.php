@@ -19,7 +19,7 @@
                 </div>
 
                     <div class="bikVipAd">
-                                    VIP-объявления 
+                        <?=$L['vipad']?>
                     </div>
                     <div class="bikad">
                       <a href="mobile_about_advert.html">
