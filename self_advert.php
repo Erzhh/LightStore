@@ -1,3 +1,6 @@
+<?php 
+include "setting/language.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +32,11 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>   
-        <a1>каз</a1>
-        <a2>рус</a2>
-        <div class="profile">Мой профиль</div>
+        <a href ="?lang=kz">каз</a>
+        <a href ="?lang=ru">рус</a>
+        <div class="profile"><?=$L['profile']?></div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1"><?=$L['advert']?></div>
         </div>
         
       </div>
@@ -42,12 +45,12 @@
 
     <div class="kas1">
         <div class="kas2"></div>
-            <h2 class="kas_h2">Объявления</h2>
+            <h2 class="kas_h2"><?=$L['advert_j']?></h2>
                 <ul class = "kas_ul">
-                        <li class="kas_li">Объявления</li>
+                        <li class="kas_li"><?=$L['advert_j']?></li>
                             <li class="kas_li f1">
                                     
-                                    <a class="kas_a" href="setting.html">Настройки</a>
+                                    <a class="kas_a" href="setting.php"><?=$L['settings']?></a>
                             </li>
                 </ul>
                 
@@ -61,9 +64,9 @@
                     <div class="kas_ob " id="kas_ob">
                                     <img src="assets/img/iphone.jpg" alt="" class="kas_img i1">
                             <div class="kas_op">
-                                <h3 class="kas_h3">Халявный айфон даром</h3>
+                                <h3 class="kas_h3"><?=$L['iPhone_description'] ?></h3>
                                 <p class="kas_p">0тг</p>
-                                <p class="kas_p">Шымкент, Абайский район</p>
+                                <p class="kas_p"><?= $L['Street'] ?></p>
                             </div>
                     </div>
 
@@ -73,9 +76,9 @@
                         
                         
                 <div class="kas_op">
-                    <h3 class="kas_h3">Халявный айфон даром</h3>
+                    <h3 class="kas_h3"><?=$L['iPhone_description'] ?></h3>
                     <p class="kas_p">0тг</p>
-                    <p class="kas_p">Шымкент, Абайский район</p>
+                    <p class="kas_p"><?= $L['Street'] ?></p>
                 </div>
 </div>
         </div>
