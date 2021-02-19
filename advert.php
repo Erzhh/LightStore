@@ -171,15 +171,31 @@
             document.getElementsByClassName('cost')[0].style.display = 'block';
             document.getElementsByClassName('contract')[0].style.display = 'flex';
         }
-
+   
     </script>
     <script>
-
-        var toggle;
-
-        document.getElementsByClassName('toggle12')[0].onclick = function(){
+    
+    document.getElementsByClassName('l')[0].onclick = function(){
             
-            if(!toggle){
+            if(localStorage.getItem('toogle')){
+                if(localStorage.getItem('toogle')=='dark'){
+                    LightOrDark('light')
+                    localStorage.setItem('toogle','light');
+                }
+                else{
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle','dark');
+                }
+            }
+            else{
+                localStorage.setItem('toogle','light');
+                LightOrDark('light')
+            }
+           
+        }
+
+        function LightOrDark(color){
+            if(color == 'dark'){
                 document.documentElement.style.setProperty('--color-bg', 'white');
                 document.documentElement.style.setProperty('--color-bg2', 'black');
                 document.documentElement.style.setProperty('--color-font', 'black');
@@ -193,8 +209,24 @@
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
                 document.documentElement.style.setProperty('--color-bgD', 'white');
             }
-            toggle = !toggle
         }
+
+        LightOrDark(localStorage.getItem('toogle'));
+
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
+
+                }   
+            }
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+
+            console.log( localStorage.getItem('toogle') );
+            //localStorage.setItem('toogle', 'dark');
 
     </script>
 
