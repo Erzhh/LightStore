@@ -1,8 +1,8 @@
 body{
 	display: flex;
 	justify-content: center;
-	color: #1a1a1a;
-	background-color: /*#1a1a1a*/ white; 
+	color: var(--color-bg);
+	background-color: /*#1a1a1a*/ var(--color-bg2); 
 }
 .nik_main{
 	width: 64%;
@@ -14,11 +14,11 @@ body{
 	width: 100%;
 	height: auto;
 	border-radius: 7px;
-	 border: 2px solid  #1a1a1a;
+	border: 2px solid  #1a1a1a;
 	margin-top: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
-	/* background-color:  /* #333333 */;  
+	background-color: var(--color-bgD) ;  
 }
 .text{
 	width: 650px;
