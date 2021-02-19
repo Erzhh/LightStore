@@ -19,7 +19,7 @@
                 </div>
 
                     <div class="bikVipAd">
-                                    VIP-объявления 
+                        <?=$L['vipad']?>
                     </div>
                     <div class="bikad">
                       <a href="mobile_about_advert.html">
@@ -127,7 +127,7 @@
 
             function bekaaa(){
                 if(window.innerWidth>600){
-                    window.location.href = 'index.html'
+                    window.location.href = 'index.php'
 
                 }   
             }

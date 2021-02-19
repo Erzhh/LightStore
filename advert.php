@@ -1,15 +1,19 @@
+<?php
+    include "setting/language.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Light Store</title>
+    <title>Light Store</title>    
+    
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/advert.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 
 </head>
 <body>
-    <header>
+<header>
         <div class="x"></div>
         <div class="logo">
             <div class="img"></div>
@@ -24,21 +28,31 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
-        <div class="profile">Мой профиль</div>
+        <a href="?lang=kz">каз</a>
+        <a href="?lang=ru">рус</a>
+
+        <div class="bikchosen1">
+            <i class="far fa-heart"></i>
+            
+        </div>
+        <div class="profile">
+            <i class="far fa-user"></i>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+            <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>
     </header>
     <div class="nik_main">
-        <h1>Подать объявление на Light Store</h1>
+        <h1><?=$L['aDvert']?></h1>
         <div class="nik_title div">
-            <h2>Заголовок</h2><br>
+            <h2><?=$L['TITle']?></h2><br>
 
-            <label for="ad_title">Заголовок*</label><br>
+            <label for="ad_title"><?=$L['TITle']?>*</label><br>
             <input class="tit" type="text" id="ad_title"><br>
 
            
@@ -107,9 +121,9 @@
 
 
         <div class="nik_images  div">
-            <h2>Фотографии</h2>
+            <h2><?=$L['PHOTos']?></h2>
 
-            <label for="ad_img">Фотографии*</label><br>
+            <label for="ad_img"><?=$L['PHOTos']?>*</label><br>
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <div class="inputfile">    
             <div class="example-1">
@@ -170,14 +184,14 @@
                 document.documentElement.style.setProperty('--color-bg2', 'black');
                 document.documentElement.style.setProperty('--color-font', 'black');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-
+                document.documentElement.style.setProperty('--color-bgD', '#333333');
             }
             else{
                 document.documentElement.style.setProperty('--color-bg', 'black');
                 document.documentElement.style.setProperty('--color-bg2', 'white');
                 document.documentElement.style.setProperty('--color-font', 'white');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-            
+                document.documentElement.style.setProperty('--color-bgD', 'white');
             }
             toggle = !toggle
         }

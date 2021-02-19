@@ -1,3 +1,6 @@
+<?php 
+    include "setting/language.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +12,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body style="background-color:var(--color-bg2);">
-	<header>
+
+<header>
         <div class="x"></div>
         <div class="logo">
             <div class="img"></div>
@@ -24,17 +28,21 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
+        <a href="?lang=kz">каз</a>
+        <a href="?lang=ru">рус</a>
+
         <div class="bikchosen1">
             <i class="far fa-heart"></i>
             
         </div>
         <div class="profile">
             <i class="far fa-user"></i>
-            Мой профиль</div>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+            <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>
@@ -44,10 +52,10 @@
 	<div class="pasha_main">
 		<div class="or">
 			<div class="in">
-				<a>Войти</a>
+				<a><?=$L['enter']?></a>
 			</div>
 			<div class="reg">
-				 <a href='registr.php' style="text-decoration: none;color: var(--color-bg2);">Регистрация</a>
+				 <a href='registr.php' style="text-decoration: none;color: var(--color-bg2);"><?=$L['registration']?></a>
 			</div>
 		</div>
 
@@ -57,24 +65,24 @@
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
 					<label for="firstName" class="form-label">Nikname</label>
-					<input type="text"  placeholder="Ваш текущий Nik"name="firster">
+					<input type="text"  placeholder="<?=$L['nick']?>"name="firster">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="Впишите ваш Email"name="laster">
+					<input type="text" placeholder="<?=$L['email']?>"name="laster">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="Ваш текущий пороль от Light Store" name="email">
+					<input type="email" placeholder="<?=$L['password']?>" name="email">
 				</div>
 
 
 
-				<button class="pasha_btn" type="submit">Войти</button>
+				<button class="pasha_btn" type="submit"><?=$L['enter']?></button>
 			</div>
 
 	</div>

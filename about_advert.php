@@ -1,3 +1,7 @@
+<?php 
+    include "setting/language.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +30,20 @@
           <div class="toggle12">
         <input class="l" type="checkbox">
           </div>
-        <a1>каз</a1>
-        <a2>рус</a2>
+          <a href="?lang=kz">каз</a>
+          <a href="?lang=ru">рус</a>
         <div class="bikchosen1">
             <i class="far fa-heart"></i>
             
         </div>
         <div class="profile">
             <i class="far fa-user"></i>
-            Мой профиль</div>
+            <?=$L['profile']?>
+        </div>
         <div class="post">
-          <div class="post1">Подать объявение</div>
+          <div class="post1">
+          <?=$L['advert']?>
+          </div>
         </div>
       </div>
         <div class="x"></div>
@@ -65,11 +72,11 @@
                 <div class="bekasyltrade">
                     <div class="bektr">Велосипед. цена оканчательная</div>                                                                         
                     <div class="bektrade">78000 тг </div>
-                    <div class="bekdescription">Описания</div>
+                    <div class="bekdescription"><?=$L['description']?></div>
                     <div class="bekdescription1">Велосипед новый цена оканчательная</div>
                     <div class="bektradehistory">
                         <div class="bektradehistory1">Добавлено в 18:48,27 января 2021</div>
-                        <div class="bektradeviews">Просмотры:1972</div>
+                        <div class="bektradeviews"> <?=$L['views']?> </div>
                         <div class="bektradeid">Номер объявления:27783748</div>
                     </div>
                 </div>
@@ -82,7 +89,7 @@
             <div class="bekusermap">
                 <div class="bekuser">
                     
-                    <div class="bekuser1">Пользователь</div>
+                    <div class="bekuser1"> <?=$L['user']?> </div>
 
                     <div class="userbek">
                         <div class="bekimguser">
@@ -90,23 +97,22 @@
                         </div>
                         <div class="bekadnik">
                         <div class="beknik">Бекасыл</div>
-                        <div class="bekaduser">Другие объявления автора</div>
+                        <div class="bekaduser"><?=$L['aduser']?></div>
                         </div>
                     </div>
 
                     <div class="bektelmess">
-                        <div class="bektel">Показать телефон</div>
-                        <div class="bekmess">Написать автору</div>
+                        <div class="bektel"><?=$L['tell']?></div>
+                        <div class="bekmess"></div>
                     </div>
                 </div>
 
                 <div class="bek1x"></div>
 
                 <div class="bekmap1">
-                    <div class="bekadd">Точный адрес</div>
+                    <div class="bekadd"><?=$L['add']?></div>
                     <div class="bekmapadd">
-                        Шымкент <br>
-                        Туркестанская область
+                    <?=$L['mapadd']?>
 
                     </div>
                     <div class="bekmap">
@@ -156,7 +162,7 @@
 
             function bekaaa(){
                 if(window.innerWidth<600){
-                    window.location.href = 'mobile_about_advert.html'
+                    window.location.href = 'mobile_about_advert.php'
 
                 }   
             }
