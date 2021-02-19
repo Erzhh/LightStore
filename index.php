@@ -84,7 +84,7 @@
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
             
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
                 </div>
                 
             
@@ -94,7 +94,7 @@
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
            
-            <div class="bekaTitle"><a href="about_advert.html">Велосипед</a></div>
+            <div class="bekaTitle"><a href="about_advert.php">Велосипед</a></div>
         
             <div class="bekaTime">25.03.2021</div>
         </div>
@@ -103,7 +103,7 @@
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
             
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
                 </div>
                 
             
@@ -113,7 +113,7 @@
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
             
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
                 </div>
                 
             
