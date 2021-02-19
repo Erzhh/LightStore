@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Light Store</title>
+    <title>Light Store</title>    
+    
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/advert.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 
 </head>
 <body>
@@ -170,14 +171,14 @@
                 document.documentElement.style.setProperty('--color-bg2', 'black');
                 document.documentElement.style.setProperty('--color-font', 'black');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-
+                document.documentElement.style.setProperty('--color-bgD', '#333333');
             }
             else{
                 document.documentElement.style.setProperty('--color-bg', 'black');
                 document.documentElement.style.setProperty('--color-bg2', 'white');
                 document.documentElement.style.setProperty('--color-font', 'white');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-            
+                document.documentElement.style.setProperty('--color-bgD', 'white');
             }
             toggle = !toggle
         }
