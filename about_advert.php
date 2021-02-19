@@ -162,7 +162,7 @@
 
             function bekaaa(){
                 if(window.innerWidth<600){
-                    window.location.href = 'mobile_about_advert.html'
+                    window.location.href = 'mobile_about_advert.php'
 
                 }   
             }
