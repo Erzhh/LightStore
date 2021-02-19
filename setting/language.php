@@ -5,6 +5,9 @@
         $_SESSION['lang'] = $_GET['lang'];
         //                     kz | ru
     }
+    else{
+        $_SESSION['lang'] = 'ru';
+    }
     $Lang = [ 
         'kz'=>[
             'profile' => 'Менің профилім',
