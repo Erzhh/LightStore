@@ -120,7 +120,7 @@
 
 function bekaaa(){
                 if(window.innerWidth>600){
-                    window.location.href = 'about_advert.html'
+                    window.location.href = 'about_advert.php'
 
                 }   
             }

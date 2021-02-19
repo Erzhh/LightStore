@@ -3,6 +3,7 @@ body{
 	justify-content: center;
 	color: var(--color-bg);
 	background-color: /*#1a1a1a*/ var(--color-bg2); 
+	margin-top: 60px;
 }
 .nik_main{
 	width: 64%;

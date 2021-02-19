@@ -161,7 +161,7 @@
 
         function bekaaa(){
                 if(window.innerWidth<600){
-                    window.location.href = 'mobile.html'
+                    window.location.href = 'mobile.php'
 
                 }   
             }

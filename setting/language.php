@@ -5,6 +5,9 @@
         $_SESSION['lang'] = $_GET['lang'];
         //                     kz | ru
     }
+    else{
+        $_SESSION['lang']= 'ru';
+    }
     $Lang = [ 
         'kz'=>[
             'profile' => 'Менің профилім',
@@ -22,7 +25,19 @@
             
             'enter' => 'Кіру',
             'registration' => 'Тіркеу',
+<<<<<<< HEAD
             'mp' => 'мобильді қосымшалар',
+=======
+           'nick' => 'сіздің ағымдағы Nick',
+           'email' => 'Email жазыңыз',
+            'password' => 'Сіздің ағымдағы Light Store пароліңіз',
+            'nickr' => 'Nick ойлап табыңыз',
+            'phone' => 'Телефон нөмірі',
+            'passwordr' => 'Пароль ойлап табыңыз және',
+            'aDvert' => 'Lightstore-ға хабарландыру беру',
+            'TITle' => 'Тақырыбы',
+            'PHOTos' => 'Суреттер',
+>>>>>>> 8ba09f8aef1f56ede10ad22377164b5abe6f6b0a
         ],
 
         'ru'=>[
@@ -42,7 +57,20 @@
             'advert' => 'Подать объявение',
             'enter' => 'Войти',
             'registration' => 'Регистрация',
+<<<<<<< HEAD
             'mp' => 'мобильные приложения',
+=======
+            'nick' => 'Ваш текущий Nick',
+            'email' => 'Впишите ваш Email',
+            'password' => 'Ваш текущий пороль от Light Store',
+            'nickr' => 'Придумайте Nick',
+            'phone' => 'Номер телефона',
+            'passwordr' => 'Придумайте пороль',
+           
+            'aDvert' => 'Подать объявление на Light Store',
+            'TITle' => 'Заголовок',
+            'PHOTos' => 'Фотографии',
+>>>>>>> 8ba09f8aef1f56ede10ad22377164b5abe6f6b0a
         ],
 
     ];
