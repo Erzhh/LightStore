@@ -65,24 +65,24 @@
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
 					<label for="firstName" class="form-label">Nikname</label>
-					<input type="text"  placeholder="Ваш текущий Nik"name="firster">
+					<input type="text"  placeholder="<?=$L['nick']?>"name="firster">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="Впишите ваш Email"name="laster">
+					<input type="text" placeholder="<?=$L['email']?>"name="laster">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="Ваш текущий пороль от Light Store" name="email">
+					<input type="email" placeholder="<?=$L['password']?>" name="email">
 				</div>
 
 
 
-				<button class="pasha_btn" type="submit">Войти</button>
+				<button class="pasha_btn" type="submit"><?=$L['enter']?></button>
 			</div>
 
 	</div>
