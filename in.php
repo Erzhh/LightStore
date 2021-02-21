@@ -87,6 +87,8 @@
 
 	</div>
 </form>
+
+
 <script>
 
         document.getElementsByClassName('l')[0].onclick = function(){
@@ -124,22 +126,6 @@
         }
 
         LightOrDark(localStorage.getItem('toogle'));
-
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
-
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
-
-            bekaaa()
-
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
-
     </script>
 
 
