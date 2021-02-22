@@ -1,5 +1,25 @@
 <?php 
     include "setting/language.php";
+    session_start();
+    if(isset($_POST['nik'])) {
+        
+        $c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
+
+        $q = mysqli_query($c, "SELECT `name`, `email`, `password` FROM `users` WHERE  `name`='$_POST[nik]' and `email`='$_POST[ema]' and `password`='$_POST[pass]'");
+
+        if(mysqli_num_rows($q)){
+            $_SESSION['nik'] = $_POST['nik'];
+            $_SESSION['email'] = $_POST['ema'];
+            $_SESSION['password'] = $_POST['pass'];
+            header("location: advert.php");
+        }
+
+        else{
+            echo "<div class='alert alert-danger' role='role'>Такой пользователь не существует
+            </div>";
+        }
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +67,7 @@
       </div>
         <div class="x"></div>
     </header>
-<form>
+<form method="POST">
 
 	<div class="pasha_main">
 		<div class="or">
@@ -65,19 +85,19 @@
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
 					<label for="firstName" class="form-label">Nikname</label>
-					<input type="text"  placeholder="<?=$L['nick']?>"name="firster">
+					<input type="text"  placeholder="<?=$L['nick']?>"name="nik">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="<?=$L['email']?>"name="laster">
+					<input type="email" placeholder="<?=$L['email']?>"name="ema">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="<?=$L['password']?>" name="email">
+					<input type="text" placeholder="<?=$L['password']?>" name="pass">
 				</div>
 
 
@@ -87,7 +107,6 @@
 
 	</div>
 </form>
-
 
 <script>
 
