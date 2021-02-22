@@ -8,5 +8,11 @@
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers .= 'From: Your@gmail.com' . "\r\n";
 
-     mail($mail, 'Код подтверждений',$message, $headers);
+    $m = mail($mail, 'Код подтверждений',$message, $headers);
+
+     if($m) {
+		echo "The email message was sent.";
+    } else {
+    	echo "The email message was not sent.";
+    }
      ?>
