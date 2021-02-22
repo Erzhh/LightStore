@@ -75,7 +75,7 @@
             <h2><?=$L['LOCation']?></h2>
 
             <label for="ad_city"><?=$L['CIty']?>*</label><br>
-            <select class="opt" id="ad_city" name="location">
+            <select class="opt" id="ad_city" name="city_id">
                     <option>Astana</option>
                     <option>Almaty</option>
                     <option>Shymkent</option>
@@ -244,7 +244,7 @@
           if(isset($_POST['title'])){
          $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
         mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`); 
-        VALUES ('$_POST[title]','$_POST[description]','$_POST[prise]','$_POST[images]','$_POST[location]')");
+        VALUES ('$_POST[title]','$_POST[description]','$_POST[prise]','$_POST[images]','$_POST[city_id]')");
         }
 
         ?> 
