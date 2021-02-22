@@ -6,7 +6,7 @@
 
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
-    $headers .= 'From: Myarena.kz  <bekasyl00106@icloud.com>' . "\r\n";
+    $headers .= 'From: Myarena.com  <bekasyl00106@icloud.com>' . "\r\n";
 
     $m = mail($mail, 'Код подтверждений',$message, $headers);
 
