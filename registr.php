@@ -46,7 +46,7 @@
       </div>
         <div class="x"></div>
     </header>
-<form>
+<form method="POST">
 
 	<div class="pasha_main">
 		<div class="or">
@@ -63,26 +63,27 @@
 			<div class="da" style="width: 100%; height: auto;">
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
-					<label for="firstName" class="form-label">Nickname</label>
-					<input type="text"  placeholder="<?=$L['nickr']?>"name="firster">
+					<label for="nickName" class="form-label">Nickname</label>
+					<input type="text"  placeholder="<?=$L['nickr']?>"name="nickname">
+				</div>
+
+
+				<div class="forinput" style="margin-left: 10%;
+	margin-right: 10%;width: 80%;margin-top: 5%;">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" placeholder="<?=$L['email']?>"name="email">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="<?=$L['email']?>"name="laster">
+					<label for="number" style="margin-bottom: 10px;">Number</label>
+					<input  placeholder="<?=$L['phone']?>" name="number">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="email" class="form-label">Number</label>
-					<input type="email" placeholder="<?=$L['phone']?>" name="email">
-				</div>
-
-				<div class="forinput" style="margin-left: 10%;
-	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="<?=$L['passwordr']?>" name="email">
+					<label for="password" class="form-label">Password</label>
+					<input placeholder="<?=$L['passwordr']?>" name="password">
 				</div>
 
 
@@ -92,6 +93,31 @@
 
 	</div>
 </form>
+
+
+
+<?php
+	
+    if(isset($_POST['nickname'])){
+		$c = mysqli_connect('localhost', 'root', 'root','light store'); 
+
+		mysqli_query($c, "INSERT INTO `users`(`name`, `email`, `password`, `number`,) VALUES ('$_POST[nickname]','$_POST[email]','$_POST[password]','$_POST[number]')");
+
+
+	}
+
+?>
+
+
+
+
+
+
+
+
+
+
+
 <script>
 
 
@@ -130,24 +156,6 @@ function LightOrDark(color){
 }
 
 LightOrDark(localStorage.getItem('toogle'));
-
-function bekaaa(){
-		if(window.innerWidth<600){
-			window.location.href = 'mobile.php'
-
-		}   
-	}
-	window.onresize = function(){
-		bekaaa()           
-	}
-
-	bekaaa()
-
-	console.log( localStorage.getItem('toogle') );
-	//localStorage.setItem('toogle', 'dark');
-
-
-</script>
 
 
 	</body>

@@ -1,0 +1,27 @@
+.form-control{
+    width: 300px;
+}
+body{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.glav{
+    width:400px;
+    height:auto;
+
+}
+.x{
+    width:400px;
+    height:auto;  
+}
+.btn1{
+    border: none;
+    background: rgba(0, 60, 255, 0.664);
+    margin-top: 30px;
+    padding:6px;
+    width:17%;
+    border-radius:4px;
+}
