@@ -4,7 +4,7 @@
     $mail = "kasymhr@gmail.com";
 
 
-    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "X-PHP-Originating-Script: 0:1.php";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers .= 'From: github17112005@gmail.com' . "\r\n";
 

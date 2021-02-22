@@ -260,12 +260,13 @@ div.bekasylobw div.bekusermap div.bekuser div.bektelmess {
 }
 
 div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bektel {
+    
+
     width: 170px;
     height: 30px;
     border: 2.3px solid;
-    border-color: black;
-    background-color: white;
-    color: black;
+    border-color: var(--color-bg2);
+    color: var(--color-font);
     padding-left: 20px;
     padding-top: 10px;
     font-size: 18px;
@@ -278,12 +279,10 @@ div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bektel {
 div.bekasylobw div.bekusermap div.bekuser div.bektelmess div.bekmess {
     width: 170px;
     height: 31px;
-    /* border: 1px solid;
-    border-color: black; */
-    background-color: black;
+    background-color: var(--color-bg2);
     border: 1px solid;
     border-color: var(--color-bg2);
-    color: white;
+    color: var(--color-font);
     padding-left: 20px;
     padding-top: 10px;
     font-size: 18px;

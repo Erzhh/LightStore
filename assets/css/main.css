@@ -1,6 +1,6 @@
 :root {
-    --color-bg: black;
-    --color-bg2: white;
+    --color-bg: #454545;
+    --color-bg2: #202020;
     --color-bg_3:#f2f4f5;
     --logo-theme: url('../img/logo-light.png');
     --color-font: white;
@@ -23,7 +23,7 @@ header {
      width: 100%;
      height: 70px;
      background-color:var(--color-bg);
-     color:white;
+     color:var(--color-font);
      display: flex;
      top: 0px;
      z-index: 4;
@@ -121,8 +121,8 @@ header div.ob div.profile{
 header div.ob div.post{
     /* width: 200px; */
     /* height: 50px; */
-    background-color: #ffd007;
-    color:var(--color-bg);
+    background-color:var(--color-bg) ;
+    color:var(--color-font);
     font-size: 20px;
     border-radius:5px;
     align-items: center;
