@@ -157,24 +157,6 @@ function LightOrDark(color){
 
 LightOrDark(localStorage.getItem('toogle'));
 
-function bekaaa(){
-		if(window.innerWidth<600){
-			window.location.href = 'mobile.php'
-
-		}   
-	}
-	window.onresize = function(){
-		bekaaa()           
-	}
-
-	bekaaa()
-
-	console.log( localStorage.getItem('toogle') );
-	//localStorage.setItem('toogle', 'dark');
-
-
-</script>
-
 
 	</body>
 	</html>
