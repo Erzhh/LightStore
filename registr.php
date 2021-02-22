@@ -96,6 +96,13 @@
 
 
 
+
+
+
+<script>
+
+
+
 <?php
 
     if(isset($_POST['nick'])){
@@ -130,7 +137,7 @@
            
         }
 
-        function LightOrDark(color){
+        	function LightOrDark(color){
             if(color == 'dark'){
                 document.documentElement.style.setProperty('--color-bg', 'white');
                 document.documentElement.style.setProperty('--color-bg2', 'black');
@@ -146,22 +153,6 @@
         }
 
         LightOrDark(localStorage.getItem('toogle'));
-
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
-
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
-
-            bekaaa()
-
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
-
     </script>
 
 
