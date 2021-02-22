@@ -47,13 +47,18 @@
       </div>
         <div class="x"></div>
     </header>
+
+
+    <form method="POST">
+
+
     <div class="nik_main">
         <h1><?=$L['aDvert']?></h1>
         <div class="nik_title div">
             <h2><?=$L['TITle']?></h2><br>
 
             <label for="ad_title"><?=$L['TITle']?>*</label><br>
-            <input class="tit" type="text" id="ad_title"><br>
+            <input class="tit" type="text" id="ad_title" name="title"><br>
 
            
             <div id="ad.category">
@@ -70,7 +75,7 @@
             <h2><?=$L['LOCation']?></h2>
 
             <label for="ad_city"><?=$L['CIty']?>*</label><br>
-            <select class="opt" id="ad_city">
+            <select class="opt" id="ad_city" name="location">
                     <option>Astana</option>
                     <option>Almaty</option>
                     <option>Shymkent</option>
@@ -98,7 +103,7 @@
                 </div>
             </div>
 
-            <input class="cost" type="text"><br>
+            <input class="cost" type="text" name="price"><br>
 
             <div class="contract">
                 <h2><?=$L['CONTract']?></h2>
@@ -116,7 +121,7 @@
             <h2><?=$L['DISCription']?></h2>
 
             <label for="ad_text"><?=$L['DISCription']?>*</label><br>
-            <textarea class="text" id="ad_text"></textarea>
+            <textarea class="text" id="ad_text" name="discription"></textarea>
         </div>
 
 
@@ -131,7 +136,7 @@
                     <label class="label">
                         <i class="material-icons">attach_file</i>
                         <span class="title"><?=$L['FIle']?></span>
-                        <input type="file">
+                        <input type="file" name="images">
                     </label>
                 </div>
             </div>
@@ -145,6 +150,8 @@
             <button><h2><?=$L['PUBLik']?></h2></button>
         </div>
     </div>
+
+    </form>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
@@ -229,6 +236,18 @@
             //localStorage.setItem('toogle', 'dark');
 
     </script>
+
+
+
+        <?php
+          
+          if(isset($_POST['title'])){
+         $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`); 
+        VALUES ('$_POST[title]','$_POST[description]','$_POST[prise]','$_POST[images]','$_POST[location]')");
+        }
+
+        ?> 
 
 </body>
 </html>
