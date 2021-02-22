@@ -46,7 +46,7 @@
       </div>
         <div class="x"></div>
     </header>
-<form>
+<form method="POST">
 
 	<div class="pasha_main">
 		<div class="or">
@@ -63,26 +63,27 @@
 			<div class="da" style="width: 100%; height: auto;">
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;">
-					<label for="firstName" class="form-label">Nickname</label>
-					<input type="text"  placeholder="<?=$L['nickr']?>"name="firster">
+					<label for="nickName" class="form-label">Nickname</label>
+					<input type="text"  placeholder="<?=$L['nickr']?>"name="nick">
+				</div>
+
+
+				<div class="forinput" style="margin-left: 10%;
+	margin-right: 10%;width: 80%;margin-top: 5%;">
+					<label for="email" class="form-label">Email</label>
+					<input type="email" placeholder="<?=$L['email']?>"name="em">
 				</div>
 
 				<div class="forinput"style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="lastName" class="form-label">Email</label>
-					<input type="text" placeholder="<?=$L['email']?>"name="laster">
+					<label for="number" style="margin-bottom: 10px;">Number</label>
+					<input  placeholder="<?=$L['phone']?>" name="num">
 				</div>
 
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="email" class="form-label">Number</label>
-					<input type="email" placeholder="<?=$L['phone']?>" name="email">
-				</div>
-
-				<div class="forinput" style="margin-left: 10%;
-	margin-right: 10%;width: 80%;margin-top: 5%;">
-					<label for="email" class="form-label">Password</label>
-					<input type="email" placeholder="<?=$L['passwordr']?>" name="email">
+					<label for="password" class="form-label">Password</label>
+					<input placeholder="<?=$L['passwordr']?>" name="pass">
 				</div>
 
 
@@ -92,62 +93,77 @@
 
 	</div>
 </form>
+
+
+
+<?php
+
+    if(isset($_POST['nick'])){
+		$c = mysqli_connect('localhost', 'root', '','lightstore'); 
+
+		 mysqli_query($c, "INSERT INTO `users`(`name`, `email`, `password`, `number`) VALUES ('$_POST[nick]','$_POST[em]','$_POST[pass]','$_POST[num]')");
+ 
+
+	}
+
+?>
+
+
 <script>
 
+        document.getElementsByClassName('l')[0].onclick = function(){
+            
+            if(localStorage.getItem('toogle')){
+                if(localStorage.getItem('toogle')=='dark'){
+                    LightOrDark('light')
+                    localStorage.setItem('toogle','light');
+                }
+                else{
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle','dark');
+                }
+            }
+            else{
+                localStorage.setItem('toogle','light');
+                LightOrDark('light')
+            }
+           
+        }
 
-document.getElementsByClassName('l')[0].onclick = function(){
-	
-	if(localStorage.getItem('toogle')){
-		if(localStorage.getItem('toogle')=='dark'){
-			LightOrDark('light')
-			localStorage.setItem('toogle','light');
-		}
-		else{
-			LightOrDark('dark')
-			localStorage.setItem('toogle','dark');
-		}
-	}
-	else{
-		localStorage.setItem('toogle','light');
-		LightOrDark('light')
-	}
-   
-}
+        function LightOrDark(color){
+            if(color == 'dark'){
+                document.documentElement.style.setProperty('--color-bg', 'white');
+                document.documentElement.style.setProperty('--color-bg2', 'black');
+                document.documentElement.style.setProperty('--color-font', 'black');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+            }
+            else{
+                document.documentElement.style.setProperty('--color-bg', 'black');
+                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-font', 'white');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+            }
+        }
 
-function LightOrDark(color){
-	if(color == 'dark'){
-		document.documentElement.style.setProperty('--color-bg', 'white');
-		document.documentElement.style.setProperty('--color-bg2', 'black');
-		document.documentElement.style.setProperty('--color-font', 'black');
-		document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-	}
-	else{
-		document.documentElement.style.setProperty('--color-bg', 'black');
-		document.documentElement.style.setProperty('--color-bg2', 'white');
-		document.documentElement.style.setProperty('--color-font', 'white');
-		document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-	}
-}
+        LightOrDark(localStorage.getItem('toogle'));
 
-LightOrDark(localStorage.getItem('toogle'));
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
 
-function bekaaa(){
-		if(window.innerWidth<600){
-			window.location.href = 'mobile.php'
+                }   
+            }
+            window.onresize = function(){
+                bekaaa()           
+            }
 
-		}   
-	}
-	window.onresize = function(){
-		bekaaa()           
-	}
+            bekaaa()
 
-	bekaaa()
+            console.log( localStorage.getItem('toogle') );
+            //localStorage.setItem('toogle', 'dark');
 
-	console.log( localStorage.getItem('toogle') );
-	//localStorage.setItem('toogle', 'dark');
+    </script>
 
-
-</script>
 
 
 	</body>
