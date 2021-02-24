@@ -73,7 +73,17 @@
             <div class="bekafind"><button><?=$L['find']?></button></div>
         </div>
 
-        <div class="bekaadvert"></div>
+        <div class="bekaadvert">
+            <div class="glav_slider">
+                <div class="slider2">
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <button class ="btn_send">send</button>
+                </div>
+            </div>
+        </div>
 
 
         <div class="bekaVipAd">
@@ -83,32 +93,28 @@
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            
+              
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             
-            <div class="bekaTime">25.03.2021</div>
+                
         </div>
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-           
-            <div class="bekaTitle"><a href="about_advert.php">Велосипед</a></div>
-        
-            <div class="bekaTime">25.03.2021</div>
-        </div>
-
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            
+              
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             
-            <div class="bekaTime">25.03.2021</div>
+                
         </div>
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
@@ -116,6 +122,19 @@
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
                     <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
+                </div>
+                
+            
+                
+        </div>
+        <div class="bekaAd">
+            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
+              
+                <div class="bekaTitle">
+                    <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             
@@ -176,22 +195,23 @@
 
         LightOrDark(localStorage.getItem('toogle'));
 
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
+        // function bekaaa(){
+        //         if(window.innerWidth<600){
+        //             window.location.href = 'mobile.php'
 
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
+        //         }   
+        //     }
+        //     window.onresize = function(){
+        //         bekaaa()           
+        //     }
 
-            bekaaa()
+        //     bekaaa()
 
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
+        //     console.log( localStorage.getItem('toogle') );
+        //     //localStorage.setItem('toogle', 'dark');
 
     </script>
+    <script src = "assets/js/slider.js"></script> 
 </body>
 
 </html>

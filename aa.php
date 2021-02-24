@@ -9,6 +9,7 @@
 <title>Document</title>
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/font/css/icons.css">
+<link rel="stylesheet" href="assets/css/main.css">
 
 
 <link rel="stylesheet" href="assets/css/aa.css">
@@ -123,13 +124,24 @@
         
         
 </div>
-                </div>
 
+                </div>
+                <div class="headerxx">
+            Мобильные приложения<br>
+            Помощь и Обратная связь<br>
+            Платные услуги<br>
+            Реклама на сайте<br>
+            Сотрудничество<br>
+            Блог OLX<br>
+            Условия использования<br>
+            Политика конфиденциальности
+        </div>
 
 
 
 
 </div>
+
 <script>
     document.getElementsByClassName('btn1')[0].onclick = function(){
     var all_div = document.getElementsByClassName('c1')
