@@ -17,35 +17,37 @@
     
     <header>
         <div class="x"></div>
-        <div class="logo">
-            <div class="img"></div>
-          <a3>
-          </a3>
-        </div>
-        <div class="xx">
-            
-            
-        </div>
-      <div class="ob">
-          <div class="toggle12">
-        <input class="l" type="checkbox">
-          </div>
-          <a href="?lang=kz">каз</a>
-          <a href="?lang=ru">рус</a>
-        <div class="bikchosen1">
-            <i class="far fa-heart"></i>
-            
-        </div>
-        <div class="profile">
-            <i class="far fa-user"></i>
-            <?=$L['profile']?>
-        </div>
-        <div class="post">
-          <div class="post1">
-          <?=$L['advert']?>
-          </div>
-        </div>
-      </div>
+                <div class="headerob">
+                        <div class="logo">
+                            <div class="img"></div>
+                        <a3>
+                        </a3>
+                        </div>
+                        <div class="xx">
+                            
+                            
+                        </div>
+                    <div class="ob">
+                        <div class="toggle12">
+                        <input class="l" type="checkbox">
+                        </div>
+                        <a href="?lang=kz">каз</a>
+                        <a href="?lang=ru">рус</a>
+                        <div class="bikchosen1">
+                            <i class="far fa-heart"></i>
+                            
+                        </div>
+                        <div class="profile">
+                            <i class="far fa-user"></i>
+                            <?=$L['profile']?>
+                        </div>
+                        <div class="post">
+                        <div class="post1">
+                        <?=$L['advert']?>
+                        </div>
+                        </div>
+                    </div>
+                 </div> <!-- headerob       -->
         <div class="x"></div>
     </header>
 
