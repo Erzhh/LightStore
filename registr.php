@@ -51,7 +51,7 @@
 	<div class="pasha_main">
 		<div class="or">
 			<div class="in">
-				<a  href='in.php' style="text-decoration: none; color: var(--color-bg2);"><?=$L['enter']?></a>
+				<a  href='in.php' style="text-decoration: none;color: white;"><?=$L['enter']?></a>
 			</div>
 			<div class="reg">
 				 <a><?=$L['registration']?></a>
