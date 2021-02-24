@@ -26,10 +26,11 @@ body{
 	height: 300px;
 	border-radius: 7px;
 }
-input{
+/* {
 	height: 40px;
 	border-radius: 7px;
-}
+	font-size: 14px;
+} */
 .rrr{
 	display: flex;
 }
@@ -45,8 +46,12 @@ input{
 	border-radius: 7px;
 	border: 2px solid #1a1a1a;
 }
-.tit{
+input.tit{
 	width: 450px;
+	font-size: 14px;
+}
+input{
+	font-size: 14px;
 }
 .cost{
 	display: none;                            
@@ -215,4 +220,8 @@ button{
 		width: 280px;
 	}
 
+}
+
+input{
+	font-size: 14px;
 }

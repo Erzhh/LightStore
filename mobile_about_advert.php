@@ -1,3 +1,7 @@
+<?php 
+    include "setting/language.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

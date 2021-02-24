@@ -166,6 +166,8 @@ div.bekaobw div.bekaSearch div.bekaSearch1 input.bekasearch{
     padding-left: 4%;
     font-size: 22px;
     border-radius: 10px 0px  0px 10px;
+    background-color: var(--color-bg);
+    
 }
 
 div.bekaobw div.bekaSearch div.bekaregion {
@@ -179,6 +181,7 @@ div.bekaobw div.bekaSearch div.bekaregion select#ad_city.opt {
     height: 70px;
     font-size: 22px;
     padding-left: 4%;
+    background-color: var(--color-bg);
 }
 
 /* div.bekaSearch div.bekaSearch1 select#ad_city.opt option {
@@ -246,20 +249,29 @@ div.bekaobw div.bekaAd div.bekaAdImg img {
 
 
 div.bekaobw div.bekaAd div.bekaTitle {
-    width: 38%;
-    height: 60px;
+    width: 82%;
+    height: 170px;
     font-size: 26px;
     margin-top: 10px;
     margin-left: 1%;
     flex-direction: column;
+    display: flex;
     /* color: var(--color-bg); */
 }
 
+div.bekaobw div.bekaAd div.bekaTitle a{
+    width: 80%;
+    height: 100px;
+    color: var(--color-font)
+    
+    
 
+}
 
-div.bekaobw div.bekaAd div.bekaTime {
-    width: 39%;
+div.bekaobw div.bekaAd div.bekaTitle div.bekaTime {
+    width: 80%;
     height: 10px;
+    font-size: 14px;
 
 }
 

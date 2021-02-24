@@ -1,3 +1,7 @@
+<?php 
+    include "setting/language.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +26,7 @@
                         <?=$L['vipad']?>
                     </div>
                     <div class="bikad">
-                      <a href="mobile_about_advert.html">
+                      <a href="mobile_about_advert.php">
                         <div class="bikAd1">
                             <div class="bikImg"><img src="assets/img/вело.jpg" alt=""></div>
                             <div class="bekTitle">Продается велосипед</div>
@@ -30,7 +34,7 @@
                             <div class="bikTime">13.01.21</div>
                         </div>
                       </a>
-                         <a href="mobile_about_advert.html">
+                         <a href="mobile_about_advert.php">
                         <div class="bikAd1">
                             <div class="bikImg"><img src="assets/img/вело.jpg" alt=""></div>
                             <div class="bekTitle">Продается велосипед</div>
@@ -38,7 +42,7 @@
                             <div class="bikTime">13.01.21</div>
                         </div>
                       </a>
-                         <a href="mobile_about_advert.html">
+                         <a href="mobile_about_advert.php">
                         <div class="bikAd1">
                             <div class="bikImg"><img src="assets/img/вело.jpg" alt=""></div>
                             <div class="bekTitle">Продается велосипед</div>
@@ -46,7 +50,7 @@
                             <div class="bikTime">13.01.21</div>
                         </div>
                       </a>
-                         <a href="mobile_about_advert.html">
+                         <a href="mobile_about_advert.php">
                         <div class="bikAd1">
                             <div class="bikImg"><img src="assets/img/вело.jpg" alt=""></div>
                             <div class="bekTitle">Продается велосипед</div>
@@ -54,7 +58,7 @@
                             <div class="bikTime">13.01.21</div>
                         </div>
                       </a>
-                         <a href="mobile_about_advert.html">
+                         <a href="mobile_about_advert.php">
                         <div class="bikAd1">
                             <div class="bikImg"><img src="assets/img/вело.jpg" alt=""></div>
                             <div class="bekTitle">Продается велосипед</div>
