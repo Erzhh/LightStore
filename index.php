@@ -176,20 +176,20 @@
 
         LightOrDark(localStorage.getItem('toogle'));
 
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
+        // function bekaaa(){
+        //         if(window.innerWidth<600){
+        //             window.location.href = 'mobile.php'
 
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
+        //         }   
+        //     }
+        //     window.onresize = function(){
+        //         bekaaa()           
+        //     }
 
-            bekaaa()
+        //     bekaaa()
 
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
+        //     console.log( localStorage.getItem('toogle') );
+        //     //localStorage.setItem('toogle', 'dark');
 
     </script>
 </body>
