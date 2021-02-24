@@ -1,6 +1,6 @@
 :root {
-    --color-bg: #454545;
-    --color-bg2: #202020;
+    --color-bg: black;
+    --color-bg2: white;
     --color-bg_3:#f2f4f5;
     --logo-theme: url('../img/logo-light.png');
     --color-font: white;
@@ -23,18 +23,13 @@ header {
      width: 100%;
      height: 70px;
      background-color:var(--color-bg);
-     color:var(--color-font);
+     color:white;
      display: flex;
      top: 0px;
-     z-index: 4;
+     
 }
 
-header div.headerob{
-    width: 1200px; 
-    height: 70px;
-}
-
-header div.headerob div.logo {
+header div.logo {
     
     width: 300px;
     height: 65px;
@@ -42,7 +37,7 @@ header div.headerob div.logo {
 
 }
 
-header div.headerob div.logo .img {
+header div.logo .img {
     width: 100%;
     height: 87%;
     background-image: var(--logo-theme);
@@ -51,7 +46,7 @@ header div.headerob div.logo .img {
 
 }
 
-header div.headerob div.logo a3 {
+header div.logo a3 {
     width: 2px;
     height: 2px;
     position: absolute;
@@ -66,7 +61,7 @@ header div.x {
     height:30px ;
     
 }
-header div.headerob div.xx {
+header div.xx {
     width: 40%;
     height:30px ;
     display: flex;
@@ -77,15 +72,15 @@ header div.headerob div.xx {
 
 
 
-/* header div.xx a4{
+header div.xx a4{
     width:25px ;
     height: 30px;
     align-items:flex-end;
     padding-left: 5px;
-} */
+}
 
 
-header div.headerob div.ob{
+header div.ob{
     width: 600px;
     height: 70px;
     display: flex;
@@ -93,7 +88,7 @@ header div.headerob div.ob{
     justify-content: space-between;
 }
 
-header div.headerob div.ob a{
+header div.ob a1{
     width: 35px;
     height: 22px;
     border-right-width: 2px;
@@ -105,7 +100,7 @@ header div.headerob div.ob a{
 
 
 
-header div.headerob div.ob a2{
+header div.ob a2{
     width: 50px;
     height: 22px;
     font-size: 16px;
@@ -115,7 +110,7 @@ header div.headerob div.ob a2{
 
 
 
-header div.headerob div.ob div.profile{
+header div.ob div.profile{
     width: 170px;
     height: 25px;
     font-size: 20px;
@@ -123,11 +118,11 @@ header div.headerob div.ob div.profile{
     margin-left: 10px;
 }
 
-header div.headerob div.ob div.post{
+header div.ob div.post{
     /* width: 200px; */
     /* height: 50px; */
-    background-color:var(--color-bg) ;
-    color:var(--color-font);
+    background-color: #ffd007;
+    color:var(--color-bg);
     font-size: 20px;
     border-radius:5px;
     align-items: center;
@@ -137,9 +132,8 @@ header div.headerob div.ob div.post{
     white-space: nowrap;
 }
 
-header div.headerob div.ob div.post div.post1{
+header div.ob div.post div.post1{
     font-size: 20px;
-    
     /* width: 160px; */
     /* height: 20px; */
 }

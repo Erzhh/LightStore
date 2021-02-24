@@ -1,0 +1,14 @@
+header  #233447
+text color white 
+
+id searchmain #232526
+
+
+.maincategories #1c1f20
+
+mainpage-gallery clr #232526
+
+
+.gallerywide > li    #233547
+
+id="footer-container" #1c1f20
