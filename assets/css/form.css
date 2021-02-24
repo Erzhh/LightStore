@@ -5,7 +5,7 @@ body{
 	background-color: /*#1a1a1a*/ var(--color-bg2); 
 	margin-top: 60px;
 }
-.nik_main{
+form{
 	width: 64%;
 	height: auto;
 	margin-left: 18%;
@@ -26,11 +26,12 @@ body{
 	height: 300px;
 	border-radius: 7px;
 }
-/* {
+.tit{
+	width: 450px;
 	height: 40px;
 	border-radius: 7px;
 	font-size: 14px;
-} */
+}
 .rrr{
 	display: flex;
 }
@@ -46,10 +47,6 @@ body{
 	border-radius: 7px;
 	border: 2px solid #1a1a1a;
 }
-input.tit{
-	width: 450px;
-	font-size: 14px;
-}
 input{
 	font-size: 14px;
 }
@@ -57,6 +54,8 @@ input{
 	display: none;                            
 	width: 306px;
 	margin-top: 20px;
+	height: 40px;
+	border-radius: 7px;
 }
 .contract{
 	display: none;                            
