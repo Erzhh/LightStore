@@ -66,7 +66,7 @@
 
 
 
-<button class="ds">Очистить избранные</button>
+<button class="ds"><?=$L['Dizbrannoe']?></button>
 
 <div class="ss">
 

@@ -83,32 +83,28 @@
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            
+              
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             
-            <div class="bekaTime">25.03.2021</div>
+                
         </div>
 
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-           
-            <div class="bekaTitle"><a href="about_advert.php">Велосипед</a></div>
-        
-            <div class="bekaTime">25.03.2021</div>
-        </div>
-
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            
+              
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             
-            <div class="bekaTime">25.03.2021</div>
+                
         </div>
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
@@ -116,6 +112,19 @@
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
                     <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
+                </div>
+                
+            
+                
+        </div>
+        <div class="bekaAd">
+            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
+              
+                <div class="bekaTitle">
+                    <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
+                    <div class="bekaPrice"></div>
                 </div>
                 
             

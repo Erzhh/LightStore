@@ -1,7 +1,7 @@
 <?php 
 
     $message =  "Hello";
-    $mail = "erzhigit1407@gmail.com";
+    $mail = "kasymhr@gmail.com";
 
 
     // $headers .= "X-PHP-Originating-Script: 0:1.php";
