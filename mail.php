@@ -23,5 +23,5 @@
     $headers .= "From: From<yourmail@gmail.com>\r\n";
     $result =  $mailSMTP->send('yourmail@gmail.com', 'Subject', "Text", $headers);
 
-    
+
      ?>
