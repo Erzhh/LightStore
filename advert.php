@@ -76,8 +76,8 @@
 
             <label for="ad_city"><?=$L['CIty']?>*</label><br>
             <select class="opt" id="ad_city" name="city_id">
-                    <option>Astana</option>
-                    <option>Almaty</option>
+                  <option>Astana</option>
+                    <option>Almaty</option>a
                     <option>Shymkent</option>
                     <option>Qaraǵandy</option>
                     <option>Aqtóbe</option>
@@ -220,20 +220,6 @@
 
         LightOrDark(localStorage.getItem('toogle'));
 
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
-
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
-
-            bekaaa()
-
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
 
     </script>
 
@@ -243,11 +229,20 @@
           
           if(isset($_POST['title'])){
          $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
-        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`); 
-        VALUES ('$_POST[title]','$_POST[description]','$_POST[prise]','$_POST[images]','$_POST[city_id]')");
+        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`)
+        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
+
+        echo "INSERT INTO `advert`(`description`,`title`,`price`)
+        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')";
         }
 
-        ?> 
+        // if(isset($_POST['title'])){
+        //     $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+        //    mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`p`); 
+        //    VALUES ('$_POST[title]','$_POST[description]','$_POST[images]',)");
+        //    }
+
+     ?> 
 
 </body>
 </html>
