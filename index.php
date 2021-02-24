@@ -97,7 +97,7 @@
                 <div class="bekaTitle">
                     <a href="about_advert.php">Велосипед</a>
                     <div class="bekaTime">25.03.2021</div>
-                    <div class="bekaPrice"></div>
+                    <div class="bekaPrice">70000тг</div>
                 </div>
                 
             
