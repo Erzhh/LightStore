@@ -209,6 +209,31 @@ div.bekaobw div.bekaadvert {
     margin-top: 20px;
     margin-bottom: 20px;
     /* background-color: cyan; */
+
+}
+div.bekaobw div.bekaadvert .glav_slider{
+    width: auto;
+    height: 470px;
+    position: relative;
+    background: red;
+    overflow: hidden;
+}
+div.bekaobw div.bekaadvert .glav_slider .slider2{
+    width: fit-content;
+    height: 460px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background: blue;
+}
+div.bekaobw div.bekaadvert .glav_slider .slider2 .sli{
+    height: 460px;
+    background: rgb(13, 184, 64);
+}
+div.bekaobw div.bekaadvert .glav_slider .slider2 .btn_send{
+    position: relative;
+    right: 20px;
+    top: 200px;
 }
 
 

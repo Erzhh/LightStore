@@ -73,7 +73,17 @@
             <div class="bekafind"><button><?=$L['find']?></button></div>
         </div>
 
-        <div class="bekaadvert"></div>
+        <div class="bekaadvert">
+            <div class="glav_slider">
+                <div class="slider2">
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <div class="sli"></div>
+                    <button class ="btn_send">send</button>
+                </div>
+            </div>
+        </div>
 
 
         <div class="bekaVipAd">
@@ -191,6 +201,7 @@
             //localStorage.setItem('toogle', 'dark');
 
     </script>
+    <script src = "assets/js/slider.js"></script> 
 </body>
 
 </html>
