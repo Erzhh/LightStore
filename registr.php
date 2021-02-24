@@ -86,7 +86,7 @@
 				<div class="forinput" style="margin-left: 10%;
 	margin-right: 10%;width: 80%;margin-top: 5%;">
 					<label for="password" class="form-label">Password</label>
-					<input placeholder="<?=$L['passwordr']?>" name="password">
+					<input placeholder="<?=$L['passwordr']?>" name="pass">
 				</div>
 
 
@@ -97,6 +97,8 @@
 		</div>
 	</form>
 
+    if(isset($_POST['nick'])){
+		$c = mysqli_connect('localhost', 'root', '','lightstore'); 
 
 	<script>
 		document.getElementsByClassName('l')[0].onclick = function () {
@@ -132,7 +134,43 @@
 
 		LightOrDark(localStorage.getItem('toogle'));
 
+        document.getElementsByClassName('l')[0].onclick = function(){
+            
+            if(localStorage.getItem('toogle')){
+                if(localStorage.getItem('toogle')=='dark'){
+                    LightOrDark('light')
+                    localStorage.setItem('toogle','light');
+                }
+                else{
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle','dark');
+                }
+            }
+            else{
+                localStorage.setItem('toogle','light');
+                LightOrDark('light')
+            }
+           
+        }
 
-		<
-		/body> <
-		/html>
+        	function LightOrDark(color){
+            if(color == 'dark'){
+                document.documentElement.style.setProperty('--color-bg', 'white');
+                document.documentElement.style.setProperty('--color-bg2', 'black');
+                document.documentElement.style.setProperty('--color-font', 'black');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+            }
+            else{
+                document.documentElement.style.setProperty('--color-bg', 'black');
+                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-font', 'white');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+            }
+        }
+
+        LightOrDark(localStorage.getItem('toogle'));
+    </script>
+
+		
+	</body> 
+		</html>
