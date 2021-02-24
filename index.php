@@ -95,7 +95,7 @@
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
             
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
                 </div>
                 
             
@@ -105,7 +105,7 @@
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
            
-            <div class="bekaTitle"><a href="about_advert.html">Велосипед</a></div>
+            <div class="bekaTitle"><a href="about_advert.php">Велосипед</a></div>
         
             <div class="bekaTime">25.03.2021</div>
         </div>
@@ -114,7 +114,7 @@
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
             
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
                 </div>
                 
             
@@ -122,13 +122,14 @@
         </div>
         <div class="bekaAd">
             <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-            
+              
                 <div class="bekaTitle">
-                    <a href="about_advert.html">Велосипед</a>
+                    <a href="about_advert.php">Велосипед</a>
+                    <div class="bekaTime">25.03.2021</div>
                 </div>
                 
             
-            <div class="bekaTime">25.03.2021</div>
+                
         </div>
 
 
@@ -170,14 +171,14 @@
 
         function LightOrDark(color){
             if(color == 'dark'){
-                document.documentElement.style.setProperty('--color-bg', 'white');
-                document.documentElement.style.setProperty('--color-bg2', 'black');
+                document.documentElement.style.setProperty('--color-bg', '#454545');
+                document.documentElement.style.setProperty('--color-bg2', '#202020');
                 document.documentElement.style.setProperty('--color-font', 'black');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
             }
             else{
-                document.documentElement.style.setProperty('--color-bg', 'black');
-                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-bg', '#9b9b9b');
+                document.documentElement.style.setProperty('--color-bg2', '#bcbcbc');
                 document.documentElement.style.setProperty('--color-font', 'white');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
             }
