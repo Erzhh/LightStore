@@ -31,12 +31,20 @@
 <<<<<<< HEAD
     require_once "setting/SMTP.php";
 <<<<<<< HEAD
+<<<<<<< HEAD
     $mailSMTP = new SendMailSmtpClass('kasymhr@gmail.com', 'password', 'ssl://smtp.gmail.com', 'From', 465);
     $headers= "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
     $headers .= "From: From<kasymhr@gmail.com>\r\n";
     $result =  $mailSMTP->send('kasymhr@gmail.com', 'Subject', "Text", $headers);
 
+=======
+    $mailSMTP = new SendMailSmtpClass('paamp89@mail.ru', 'pasha142313', 'ssl://smtp.gmail.com', 'From', 465);
+    $headers= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
+    $headers .= "From: From<paamp89@mail.ru>\r\n";
+    $result =  $mailSMTP->send('erzhigit1407@gmail.com', 'Subject', "CUUUUUUUM", $headers);
+>>>>>>> 7dbe2b2e41dba6c5ecb44dd32e4d3912ecf00782
 =======
     $mailSMTP = new SendMailSmtpClass('github17112005@gmail.com', 'era17112005', 'ssl://smtp.gmail.com', 'From', 465);
     $headers= "MIME-Version: 1.0\r\n";
