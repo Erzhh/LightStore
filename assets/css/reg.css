@@ -4,6 +4,7 @@ input{
 	background-color: #f2f4f5 ;
 	border-radius: 7px;
 }
+
 .pasha_main{
 	background-color:var(--color-bg);
 	width: 30%;
@@ -15,7 +16,7 @@ input{
 .forinput{
 	display: flex;
 	flex-direction: column;
-	color: var(--color-bg2);
+	color: var(--color-bg_3);
 }
 .or{
 	height: 60px;
@@ -40,8 +41,11 @@ input{
 	align-items: center;
 	border-bottom: 3px solid;
 	font-size: 20px;
-	color: var(--color-bg2);
+	color: var(--color-bg_3);
 
+}
+label{
+	color: var(--color-bg_3);
 }
 .pasha_btn{
 	background-color: #FCFF00;
