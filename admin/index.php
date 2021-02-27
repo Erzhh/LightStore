@@ -1,6 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -11,22 +9,8 @@
     <base href="https://appstack.bootlab.io">
 	<title>Default Dashboard | AppStack - Admin &amp; Dashboard Template</title>
 
-	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html" />
-	<link rel="shortcut icon" href="img/favicon.ico">
-
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
-	<script src="js/settings.js"></script>
-	<!-- END SETTINGS -->
 
 </head>
-<!--
-  HOW TO USE: 
-  data-theme: default (default), dark, light
-  data-layout: fluid (default), boxed
-  data-sidebar-position: left (default), right
-  data-sidebar-behavior: sticky (default), fixed, compact
--->
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
 	<div class="wrapper">
