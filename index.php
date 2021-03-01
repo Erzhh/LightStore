@@ -41,7 +41,7 @@
                                         <a href="#" class="clear-input-button hidden" data-icon="close"></a>
                                         <div class="distanceseparator abs"></div>
                                         <i data-icon="location"></i>
-                                        <div class="proposals hidden" id="proposalContainer">
+                                      <div class="proposals hidden" id="proposalContainer">
                                             <div class="lastbox">
                                                 <p>Недавно избранные:</p>
                                                 <ul id="last-locations-ul">
@@ -149,131 +149,6 @@
             </div>
 
 
-
-
-<<<<<<< HEAD
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-              
-                <div class="bekaTitle">
-                    <a href="about_advert.php">Велосипед</a>
-                    <div class="bekaTime">25.03.2021</div>
-                    <div class="bekaPrice">70000тг</div>
-                </div>
-                
-            
-                
-        </div>
-
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-              
-                <div class="bekaTitle">
-                    <a href="about_advert.php">Велосипед</a>
-                    <div class="bekaTime">25.03.2021</div>
-                    <div class="bekaPrice"></div>
-                </div>
-                
-            
-                
-        </div>
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-              
-                <div class="bekaTitle">
-                    <a href="about_advert.php">Велосипед</a>
-                    <div class="bekaTime">25.03.2021</div>
-                    <div class="bekaPrice"></div>
-                </div>
-                
-            
-                
-        </div>
-        <div class="bekaAd">
-            <div class="bekaAdImg"><img src="assets/img/вело.jpg" alt=""></div>
-              
-                <div class="bekaTitle">
-                    <a href="about_advert.php">Велосипед</a>
-                    <div class="bekaTime">25.03.2021</div>
-                    <div class="bekaPrice"></div>
-                </div>
-                
-            
-                
-        </div>
-
-
-
-        <div class="headerxx">
-            Мобильные приложения<br>
-            Помощь и Обратная связь<br>
-            Платные услуги<br>
-            Реклама на сайте<br>
-            Сотрудничество<br>
-            Блог OLX<br>
-            Условия использования<br>
-            Политика конфиденциальности
-        </div>
-    </div>
-
-    <div class="bekax"></div>
-
-    <script>
-
-        document.getElementsByClassName('l')[0].onclick = function(){
-            
-            if(localStorage.getItem('toogle')){
-                if(localStorage.getItem('toogle')=='dark'){
-                    LightOrDark('light')
-                    localStorage.setItem('toogle','light');
-                }
-                else{
-                    LightOrDark('dark')
-                    localStorage.setItem('toogle','dark');
-                }
-            }
-            else{
-                localStorage.setItem('toogle','light');
-                LightOrDark('light')
-            }
-           
-        }
-
-        function LightOrDark(color){
-            if(color == 'dark'){
-                document.documentElement.style.setProperty('--color-bg', '#454545');
-                document.documentElement.style.setProperty('--color-bg2', '#202020');
-                document.documentElement.style.setProperty('--color-font', 'black');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-            }
-            else{
-                document.documentElement.style.setProperty('--color-bg', '#9b9b9b');
-                document.documentElement.style.setProperty('--color-bg2', '#bcbcbc');
-                document.documentElement.style.setProperty('--color-font', 'white');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-            }
-        }
-
-        LightOrDark(localStorage.getItem('toogle'));
-
-        function bekaaa(){
-                if(window.innerWidth<600){
-                    window.location.href = 'mobile.php'
-
-                }   
-            }
-            window.onresize = function(){
-                bekaaa()           
-            }
-
-            bekaaa()
-
-            console.log( localStorage.getItem('toogle') );
-            //localStorage.setItem('toogle', 'dark');
-
-    </script>
-    <script src = "assets/js/slider.js"></script> 
-=======
         </section>
         <section class="mainpage-gallery clr" >
             <header>
@@ -332,10 +207,23 @@
 
 
         <?php include "includes/footer.php";?>
+    <script>
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
 
+                }   
+            }
+
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+    </script>
         
     </div> <!-- BODY CONTRIB -->
->>>>>>> dab85bf428edb25b6aa0300d85d4a8c492694821
+
 </body>
 
 </html>

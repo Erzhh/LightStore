@@ -16,41 +16,7 @@
 		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
-<body style="background-color:var(--color-bg2);">
-	<header>
-		<div class="x"></div>
-		<div class="logo">
-			<div class="img"></div>
-			<a3>
-			</a3>
-		</div>
-		<div class="xx">
-
-
-		</div>
-		<div class="ob">
-			<div class="toggle12">
-				<input class="l" type="checkbox">
-			</div>
-			<a href="?lang=kz">каз</a>
-			<a href="?lang=ru">рус</a>
-
-			<div class="bikchosen1">
-				<i class="far fa-heart"></i>
-
-			</div>
-			<div class="profile">
-				<i class="far fa-user"></i>
-				<?=$L['profile']?>
-			</div>
-			<div class="post">
-				<div class="post1">
-					<?=$L['advert']?>
-				</div>
-			</div>
-		</div>
-		<div class="x"></div>
-	</header>
+<body style="background-color:var(--color-bg2);">	
 	<form method="POST">
 
 		<div class="pasha_main">

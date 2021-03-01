@@ -13,35 +13,7 @@ include "setting/language.php";
     <title>:D</title>
     
 </head>
-<body>
-    <header>
-        <div class="x"></div>
-        <div class="logo">
-            <div class="img"></div>
-          <a3>
-          </a3>
-        </div>
-        <div class="error_icon">
-        </div>
-         <div class="star_icon">
-          <i class="far fa-star"></i>
-      </div>
-        <div class="xx">
-        </div>
-      <div class="ob">
-          <div class="toggle12">
-        <input class="l" type="checkbox">
-          </div>   
-        <a href ="?lang=kz">каз</a>
-        <a href ="?lang=ru">рус</a>
-        <div class="profile"><?=$L['profile']?></div>
-        <div class="post">
-          <div class="post1"><?=$L['advert']?></div>
-        </div>
-        
-      </div>
-        <div class="x"></div>
-    </header>
+<body>   
 
     <div class="kas1">
         <div class="kas2"></div>
