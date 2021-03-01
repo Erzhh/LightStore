@@ -1,3 +1,6 @@
+<?php
+	include "../components/check_admin.php"
+?>
 <html lang="en">
 <head>
 			<?php include "includesforadmin/headforadmin.php";?>
