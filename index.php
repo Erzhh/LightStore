@@ -41,7 +41,7 @@
                                         <a href="#" class="clear-input-button hidden" data-icon="close"></a>
                                         <div class="distanceseparator abs"></div>
                                         <i data-icon="location"></i>
-                                        <div class="proposals hidden" id="proposalContainer">
+                                      <div class="proposals hidden" id="proposalContainer">
                                             <div class="lastbox">
                                                 <p>Недавно избранные:</p>
                                                 <ul id="last-locations-ul">
@@ -149,8 +149,6 @@
             </div>
 
 
-
-
         </section>
         <section class="mainpage-gallery clr" >
             <header>
@@ -209,9 +207,23 @@
 
 
         <?php include "includes/footer.php";?>
+    <script>
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
 
+                }   
+            }
+
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+    </script>
         
     </div> <!-- BODY CONTRIB -->
+
 </body>
 
 </html>
