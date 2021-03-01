@@ -13,46 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <?php include "includes/head.php";?>
 </head>
 
 <body style="background-color:var(--color-bg2);">
-
-    <header>
-        <div class="x"></div>
-        <div class="logo">
-            <div class="img"></div>
-            <a3>
-            </a3>
-        </div>
-        <div class="xx">
-
-
-        </div>
-        <div class="ob">
-            <div class="toggle12">
-                <input class="l" type="checkbox">
-            </div>
-            <a href="?lang=kz">каз</a>
-            <a href="?lang=ru">рус</a>
-
-            <div class="bikchosen1">
-                <i class="far fa-heart"></i>
-
-            </div>
-            <div class="profile">
-                <i class="far fa-user"></i>
-                <?=$L['profile']?>
-            </div>
-            <div class="post">
-                <div class="post1">
-                    <?=$L['advert']?>
-                </div>
-            </div>
-        </div>
-        <div class="x"></div>
-    </header>
+      <?php include "includes/header.php";?>
     <form method="POST">
-
+        
         <div class="pasha_main">
             <div class="or">
                 <div class="in">

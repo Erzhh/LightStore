@@ -1,3 +1,12 @@
+<?php 
+    include "components/db.php";
+    include "setting/language.php";
+    
+?>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/olx-demo.css">
+
+
 <header id="header-container">
             <div class="navi">
                 <div class="wrapper clr rel">
@@ -8,16 +17,19 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-
+                        <input class="l" type="checkbox">
+                        
                         <div class="lang-selector small">
                             <ul class="breaklist inlblk">
                                 <li class="inlblk">
-                                    <span class="x-normal">pyc</span>
+                                    <span class="x-normal">
+                                    
+                                     <a href="?lang=ru">рус</a>
+                                    </span>
                                 </li>
                                 <li class="inlblk">
                                     <a class="x-normal" id="changeLang"
-                                        href="https://www.olx.kz/changelang/?lang=kk&amp;l=https%3A%2F%2Fwww.olx.kz%2Fkk%2F"
-                                        data-baselink="https://www.olx.kz/changelang/?lang=kk">қаз</a>
+                                    <a href="?lang=kz">каз</a>
                                 </li>
                             </ul>
                         </div>
@@ -37,11 +49,11 @@
                             </li>
                             <li class="inlblk nowrap vtop noslash " id="my-account-link">
                                 <div class="inlblk rel">
-                                    <a href="https://www.olx.kz/myaccount/" class="userbox-login tdnone"
+                                    <a href="self_advert.php" class="userbox-login tdnone"
                                         id="topLoginLink">
                                         <i data-icon="account"></i>
                                         <span class="link inlblk" data-cy="common_link_header_myaccount">
-                                            <strong>Мой профиль</strong>
+                                            <strong><?=$L['profile']?></strong>
                                         </span>
                                     </a>
 
@@ -51,10 +63,48 @@
 
                         <a id="postNewAdLink" data-cy="common_link_header_postnewad" class="postnewlink fbold tdnone"
                             href="advert.php">
-                            <span>Подать объявление</span>
+                            <span><?=$L['advert']?></span>
                         </a>
                     </div>
 
                 </div>
             </div>
         </header>
+
+        <script>
+        document.getElementsByClassName('l')[0].onclick = function () {
+
+            if (localStorage.getItem('toogle')) {
+                if (localStorage.getItem('toogle') == 'dark') {
+                    LightOrDark('light')
+                    localStorage.setItem('toogle', 'light');
+                } else {
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle', 'dark');
+                }
+            } else {
+                localStorage.setItem('toogle', 'light');
+                LightOrDark('light')
+            }
+
+        }
+
+        function LightOrDark(color) {
+            if (color == 'dark') {
+                document.documentElement.style.setProperty('--color-bg', '#233447');
+               
+                document.documentElement.style.setProperty('--color-font', 'black');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+                
+            } else {
+                document.documentElement.style.setProperty('--color-bg', '#386caa');
+               
+                document.documentElement.style.setProperty('--color-font', 'white');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+               
+            }
+        }
+
+        LightOrDark(localStorage.getItem('toogle'));
+    </script>
+

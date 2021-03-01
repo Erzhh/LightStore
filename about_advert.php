@@ -11,46 +11,12 @@
     <link rel="stylesheet" href="assets/font/css/icons.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/font/css/icons.css">
+    <?php include "includes/head.php";?>
     <title>Document</title>
 </head>
 <body>
-    
-    <header>
-        <div class="x"></div>
-                <div class="headerob">
-                        <div class="logo">
-                            <div class="img"></div>
-                        <a3>
-                        </a3>
-                        </div>
-                        <div class="xx">
-                            
-                            
-                        </div>
-                    <div class="ob">
-                        <div class="toggle12">
-                        <input class="l" type="checkbox">
-                        </div>
-                        <a href="?lang=kz">каз</a>
-                        <a href="?lang=ru">рус</a>
-                        <div class="bikchosen1">
-                            <i class="far fa-heart"></i>
-                            
-                        </div>
-                        <div class="profile">
-                            <i class="far fa-user"></i>
-                            <?=$L['profile']?>
-                        </div>
-                        <div class="post">
-                        <div class="post1">
-                        <?=$L['advert']?>
-                        </div>
-                        </div>
-                    </div>
-                 </div> <!-- headerob       -->
-        <div class="x"></div>
-    </header>
-
+<section id="searchmain-container">
+         <?php include "includes/header.php";?>
 
 
         <div class="bekasylobw">
@@ -130,7 +96,7 @@
 
 
        
-    
+  </session>  
         <script>
 
 document.getElementsByClassName('l')[0].onclick = function(){
@@ -155,15 +121,15 @@ document.getElementsByClassName('l')[0].onclick = function(){
 
 function LightOrDark(color){
             if(color == 'dark'){
-                document.documentElement.style.setProperty('--color-bg', '#454545');
-                document.documentElement.style.setProperty('--color-bg2', '#202020');
-                document.documentElement.style.setProperty('--color-font', 'black');
+                document.documentElement.style.setProperty('--color-bg', '#233547');
+                document.documentElement.style.setProperty('--color-bg2', '#232526');
+                document.documentElement.style.setProperty('--color-font', 'white');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
             }
             else{
-                document.documentElement.style.setProperty('--color-bg', '#9b9b9b');
-                document.documentElement.style.setProperty('--color-bg2', '#bcbcbc');
-                document.documentElement.style.setProperty('--color-font', 'white');
+                document.documentElement.style.setProperty('--color-bg', '#386caa');
+                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-font', 'black');
                 document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
             }
         }
@@ -172,7 +138,7 @@ function LightOrDark(color){
 
             // console.log( window.innerWidth )
              
-           
+                    
             
            
 

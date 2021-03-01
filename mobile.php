@@ -81,19 +81,23 @@
                 <i class="fas fa-home"></i>
                 <p11>Главная</p11>
             </div>
+            
             <div class="bikchosen">
                 <i class="far fa-heart"></i>
                 <p12>Избранные</p12>
             </div>
-            <div class="bikCreate">
-                <i class="fas fa-cart-plus"></i>
-                <p13>Создать</p13>
-            </div>
-            <div class="bikprofile">
-                <i class="far fa-user"></i>
-                <p14>Профиль</p14>
-            </div>
-            
+            <a href="registr.php">
+                <div class="bikCreate">
+                    <i class="fas fa-cart-plus"></i>
+                    <p13>Создать</p13>
+                </div>
+            </a>
+            <a href="self_advert.php">
+                <div class="bikprofile">
+                    <i class="far fa-user"></i>
+                    <p14>Профиль</p14>
+                </div>
+            </a>
             <div class="change1">
                 <i class="fas fa-star-half-alt"></i>
                 <p15>L/d</p15>
@@ -109,15 +113,15 @@
             document.getElementsByClassName('change1')[0].onclick = function(){
                 
                 if(!toggle){
-                    document.documentElement.style.setProperty('--color-bg103', '#101010');
-                    document.documentElement.style.setProperty('--color-bg104', '#272727');
+                    document.documentElement.style.setProperty('--color-bg104', '#233547');
+                    document.documentElement.style.setProperty('--color-bg103', '#232526');
                     document.documentElement.style.setProperty('--color-font', 'white');
                     ;
     
                 }
                 else{
-                    document.documentElement.style.setProperty('--color-bg103', '#6e6e6e');
-                    document.documentElement.style.setProperty('--color-bg104', '#bcbcbc');
+                    document.documentElement.style.setProperty('--color-bg104', '#386caa');
+                    document.documentElement.style.setProperty('--color-bg103', 'white');
                     document.documentElement.style.setProperty('--color-font', 'black');
                     
                 
