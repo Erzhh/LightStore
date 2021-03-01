@@ -11,34 +11,12 @@ include "setting/language.php";
     
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/setting.css">
+    <?php include "includes/head.php";?>
     <title>Document</title>
 </head>
 
-<body>
-    <header>
-        <div class="x"></div>
-        <div class="logo">
-            <div class="img"></div>
-          <a3>
-          </a3>
-        </div>
-        <div class="xx">
-            
-            
-        </div>
-      <div class="ob">
-          <div class="toggle12">
-        <input class="l" type="checkbox">
-          </div>
-        <a href ="?lang=kz" class = "a_class a1" style = "text-decoration: none;">каз</a>
-        <a href ="?lang=ru" class = "a_class a2">рус</a>
-        <div class="profile"><?=$L['profile']?></div>
-        <div class="post">
-          <div class="post1"><?=$L['advert']?></div>
-        </div>
-      </div>
-        <div class="x"></div>
-    </header>
+<body>   
+     <?php include "includes/header.php";?> 
     <div class="kas1">
         <div class="kas2"></div>
         <h2 class="kas_h2"><?=$L['settings']?></h2>

@@ -1,48 +1,13 @@
+<?php
+	include "../components/check_admin.php"
+?>
 <html lang="en">
 <head>
 			<?php include "includesforadmin/headforadmin.php";?>
 </head>
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
-	<div class="wrapper">
-		<nav id="sidebar" class="sidebar">
-			<div class="sidebar-content js-simplebar" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-				<a class="sidebar-brand" href="index.html">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-            <path d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4
-              C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z"></path>
-            <path d="M10,15c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
-              c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,15,10.1,15,10,15z"></path>
-            <path d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
-              c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"></path>
-          </svg>
-    
-          <span class="align-middle mr-3">AppStack</span>
-        </a>
-
-				<ul class="sidebar-nav">
-					<li class="sidebar-header">
-						Pages
-					</li>
-					<li class="sidebar-item active">
-						<a href="#dashboards" data-toggle="collapse" class="sidebar-link">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders align-middle"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg> <span class="align-middle">Dashboards</span>
-              <span class="badge badge-sidebar-primary">5</span>
-            </a>
-						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
-							<li class="sidebar-item active"><a class="sidebar-link" href="dashboard-default.html">Default</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html">Analytics</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
-						</ul>
-					</li>
-					<li class="sidebar-item">
-						
-					
-
-				
-			</li></ul></div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 367px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+<?php include "../includes/site_bar.php";?>
 		</nav>
 		<div class="main">
 			<nav class="navbar navbar-expand navbar-light navbar-bg">
@@ -52,16 +17,16 @@
 
 				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
-						
+
 						<div class="input-group-append">
-							
+
 						</div>
 					</div>
 				</form>
 
 				<ul class="navbar-nav">
 					<li class="nav-item px-2 dropdown">
-						
+
 						<div class="dropdown-menu dropdown-menu-left dropdown-mega" aria-labelledby="servicesDropdown">
 							<div class="d-md-flex align-items-start justify-content-start">
 								<div class="dropdown-mega-list">
@@ -103,7 +68,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
 								<div class="dropdown-menu-header">
 									<div class="position-relative">
@@ -166,7 +131,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
 									4 New Notifications
@@ -226,7 +191,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
 								<a class="dropdown-item" href="#">
                   <img src="img/flags/us.png" alt="English" width="20" class="align-middle mr-1">
@@ -275,7 +240,7 @@
 							<h3>Dashboard</h3>
 						</div>
 
-						
+
 					</div>
 					<div class="row">
 						<div class="col-12 col-sm-6 col-xxl d-flex">
@@ -360,9 +325,9 @@
 						</div>
 					</div>
 
-					
 
-					
+
+
 
 					<div class="card flex-fill">
 						<div class="card-header">
@@ -386,15 +351,15 @@
 								<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Start Date: activate to sort column ascending">Start Date</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="End Date: activate to sort column ascending">End Date</th><th class="sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="d-none d-md-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Assignee: activate to sort column ascending">Assignee</th></tr>
 							</thead>
 							<tbody>
-								
-								
-								
-								
-								
-								
-								
-								
-								
+
+
+
+
+
+
+
+
+
 							<tr role="row" class="odd">
 									<td class="sorting_1">Project Apollo</td>
 									<td class="d-none d-xl-table-cell">01/01/2018</td>
@@ -432,7 +397,7 @@
 									<td><span class="badge badge-success">Done</span></td>
 									<td class="d-none d-md-table-cell">Ashley Briggs</td>
 								</tr></tbody>
-						
+
 					</div>
 				</div>
 			</main>
@@ -651,7 +616,7 @@
             </div>
           </div>
         </div>
-        
+
         <hr>
 
         <div class="mb-3">

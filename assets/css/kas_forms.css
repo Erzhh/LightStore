@@ -1,0 +1,11 @@
+.row{
+    width: 10%;
+}
+.btn2{
+    border: none;
+    background: rgb(0, 13, 128);
+    border-radius: 3px;
+}
+body{
+    background: #000;
+}
