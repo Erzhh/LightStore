@@ -7,7 +7,7 @@
     href="assets/img/logo-light.png">
 <link rel="search" type="application/opensearchdescription+xml" href="https://www.olx.kz/opensearch/"
     title="OLX.kz">
-    <link rel="stylesheet" type="text/css" href="/assets/css/olx-1.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/olx-2.css">
+    <link rel="stylesheet" href="../assets/css/olx-1.css">
+    <link rel="stylesheet"  href="../assets/css/olx-2.css">
 
-<link rel="stylesheet" href="/assets/css/olx-demo.css">
+<link rel="stylesheet" href="../assets/css/olx-demo.css">

@@ -11,7 +11,7 @@
     <title>Light Store</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <?php include "includes/head.php";?>
+    <?php include "../includes/head.php";?>
 </head>
 <body>   
     <?php include "includes/header.php";?>
