@@ -9,13 +9,13 @@ include "setting/language.php";
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/font/css/icons.css">
     <link rel="stylesheet" href="assets/css/sait.css">
-    
+    <?php include "includes/head.php";?>
     <title>:D</title>
     
 </head>
 <body>   
-
-    <div class="kas1">
+         <?php include "includes/header.php";?>
+       <div class="kas1">
         <div class="kas2"></div>
             <h2 class="kas_h2"><?=$L['advert_j']?></h2>
                 <ul class = "kas_ul">

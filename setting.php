@@ -11,10 +11,12 @@ include "setting/language.php";
     
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/setting.css">
+    <?php include "includes/head.php";?>
     <title>Document</title>
 </head>
 
 <body>   
+     <?php include "includes/header.php";?> 
     <div class="kas1">
         <div class="kas2"></div>
         <h2 class="kas_h2"><?=$L['settings']?></h2>
