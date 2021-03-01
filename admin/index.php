@@ -116,7 +116,7 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="docs-changelog.html">Changelog</a></li>
 						</ul>
 					</li>
-
+					<li class="form_class"><a class="form_class" href="forms.php">Forms</a></li>	
 					<li class="sidebar-header">
 						Tools & Components
 					</li>

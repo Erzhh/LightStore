@@ -1,17 +1,11 @@
 <?php 
 
-<<<<<<< HEAD
-    // $message =  "Hello";
-    // $mail = "erzhigit1407@gmail.com";
-
-=======
     $message =  "Hello";
     $mail = "erzhigit1407@gmail.com";
 
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers .= 'From: Your@gmail.com' . "\r\n";
->>>>>>> d3e0c9387f6f7cd58fc8497dd1a55cdda9951b21
 
     $m = mail($mail, 'Код подтверждений',$message, $headers);
 
