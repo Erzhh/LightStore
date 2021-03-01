@@ -1,0 +1,28 @@
+.wrapper.clr.rel{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper.clr.rel .col-md-3{
+    width: 30%;
+}
+
+.wrapper.clr.rel .col-md-3 .logo{
+    width: 100%;
+}
+
+.wrapper.clr.rel .col-md-3 .logo img{
+    width: 200px;
+}
+
+.col-md-9{
+
+display: flex;
+width: 70%;
+justify-content: flex-end;
+}
+
+#header-container .navi {
+    background: #386caa;
+}
