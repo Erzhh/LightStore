@@ -1,7 +1,6 @@
 <?php 
     include "components/db.php";
     include "setting/language.php";
-    
 ?>
 <html>
 <head>
@@ -17,9 +16,9 @@
     title="OLX.kz">
     <link rel="stylesheet" type="text/css" href="/assets/css/olx-1.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/olx-2.css">
-    <link rel="stylesheet" href="assets/font/css/icons.css">
+    <link rel="stylesheet" href="/assets/font/css/icons.css">
 
 <link rel="stylesheet" href="/assets/css/olx-demo.css">
-<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <html>
