@@ -11,11 +11,13 @@ include "setting/language.php";
     
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/setting.css">
+    <link rel="stylesheet" href="/assets/css/olx-demo.css">
     <?php include "includes/head.php";?>
     <title>Document</title>
 </head>
 
 <body>   
+<div class="wrapper">
      <?php include "includes/header.php";?> 
     <div class="kas1">
         <div class="kas2"></div>
@@ -86,6 +88,7 @@ include "setting/language.php";
         </div>
     </div>
     <script src="assets/js/nast.js"></script>
+</div>
 </body>
 
 </html>

@@ -1,15 +1,18 @@
-<html>
-<head>
-    <?php include "includes/head.php";?>
+<?php include "includes/head.php";?>
 </head>
+<div class="wrapper">
+
+
+
 <body class="homepage">
 
-    <div id="innerLayout">
+    <div id="innerLayout" class="index121">
         <div id="div-gpt-ad-listing-branding" class=""></div>
         <div id="div-gpt-ad-listing-branding-after" class=""></div>
 
-        <?php include "includes/header.php";?>
+        
         <section id="searchmain-container">
+             <?php include "includes/header.php";?>
             <form class="searchmain" id="searchmain" method="POST">
                 <div class="wrapper">
                     <fieldset>
@@ -128,73 +131,37 @@
 
 
             <div class="maincategories">
-                <div class="wrapper">
+                
                     <header>
                         <h3>Главные рубрики</h3>
                     </header>
                     <div class="maincategories-list clr">
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/elektronika/" data-id="37" class="link parent">
-                                    <span>Электроника</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-37" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                    <?php
+                        $c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/moda-i-stil/" data-id="891" class="link parent">
-                                    <span>Мода и стиль</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-891" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                        $q = mysqli_query($c, "SELECT * FROM `categories`");
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/dom-i-sad/" data-id="899" class="link parent">
-                                    <span>Дом и сад</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-899" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/detskiy-mir/" data-id="36" class="link parent">
-                                    <span>Для детей</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-36" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                        while($newArray = mysqli_fetch_assoc($q)){
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/otdam-darom/" data-id="1151" class="link parent  search search">
-                                    <span>Отдам даром</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-1151" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                            echo"
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/transport/" data-id="3" class="link parent">
-                                    <span>Транспорт</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-3" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
+                            <div class='categories'>
+                                <div class='img' style=\"background-image: url('images/$newArray[image]');\"></div> 
+                                <span>$newArray[title_ru]</span>               
                             </div>
-                        </div>
 
+                            ";
+
+                        }
+                    ?>
                     </div>
 
-                </div>
+                
             </div>
 
 
-        </section>
-        <section class="mainpage-gallery clr" >
+        <!-- </section>
+        <section class="mainpage-gallery clr" > -->
             <header>
                 <h3>
                     VIP-объявления </h3>
@@ -215,7 +182,7 @@
                     <div class="inner">
 
                         <h4 class="normal">
-                            <a href="https://www.olx.kz/obyavlenie/evakuator-nedorogo-24-7-IDj604A.html"
+                            <a href="about_advert.php"
                                 title="Эвакуатор НЕДОРОГО! 24/7" class="link linkWithHash detailsLinkPromoted">
                                 <strong>Эвакуатор НЕДОРОГО! 24/7</strong>
                             </a>
@@ -247,7 +214,7 @@
 
         </section>
 
-
+</div>
         <?php include "includes/footer.php";?>
     <script>
         function bekaaa(){
@@ -262,10 +229,55 @@
             }
 
             bekaaa()
+
+
+            
+    </script>
+
+    <script>
+
+document.getElementsByClassName('l')[0].onclick = function () {
+
+if (localStorage.getItem('toogle')) {
+    if (localStorage.getItem('toogle') == 'dark') {
+        LightOrDark('light')
+        localStorage.setItem('toogle', 'light');
+    } else {
+        LightOrDark('dark')
+        localStorage.setItem('toogle', 'dark');
+    }
+} else {
+    localStorage.setItem('toogle', 'light');
+    LightOrDark('light')
+}
+
+}
+
+function LightOrDark(color) {
+if (color == 'dark') {
+    document.documentElement.style.setProperty('--color-bg', '#233447');
+    document.documentElement.style.setProperty('--color-bg2', '#1c1f20');
+    document.documentElement.style.setProperty('--color-bg1232', '#232526');
+   
+    document.documentElement.style.setProperty('--color-font12', 'white');
+    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+    
+} else {
+    document.documentElement.style.setProperty('--color-bg', '#386caa');
+    document.documentElement.style.setProperty('--color-bg2', 'white');
+    document.documentElement.style.setProperty('--color-bg1232', 'white');
+
+   
+    document.documentElement.style.setProperty('--color-font12', 'black');
+    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+   
+}
+}
+
+LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
-
 </body>
 
 </html>

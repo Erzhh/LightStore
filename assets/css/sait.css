@@ -1,142 +1,12 @@
-body{
-    margin: 0px;
-    color: var(--color-fontbl);
-    transition: 0.5s;
+body {
+    color: #002f34;
+    background: var(--color-bg2);
 }
 
-header {
-    display: flex;
-    align-items:flex-end;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 70px;
-    background-color:var(--color-bg);
-    color:white;
-    display: flex;
-    
-}
 
-header div.logo {
-    
-    width: 300px;
-    height: 65px;
-    position: relative;
-
-}
-
-header div.logo .img {
-    width: 100%;
-    height: 87%;
-    background-image: var(--logo-theme);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-header div.logo a3 {
-    width: 2px;
-    height: 2px;
-    position: absolute;
-    left: 23px;
-    top: 16px;
-    
-
-}
-
-header div.x {
+        .error_icon{
     width: 200px;
-    height:30px ;
-    
-}
-header div.xx {
-    width: 40%;
-    height:30px ;
-    display: flex;
-    align-items:flex-end;
-    font-family: serif;
-    
-}
-
-
-
-header div.xx a4{
-    width:25px ;
-    height: 30px;
-    align-items:flex-end;
-    padding-left: 5px;
-}
-
-
-header div.ob{
-    width: 600px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-
-}
-
-header div.ob a{
-    width:35px ;
-    height: 22px;
-    font-size: 16px;
-    color:var(--color-font);
-    text-decoration: none;
-}
-header div.ob .a_class.a2{
-    width:35px ;
-    height: 22px;
-    font-size: 16px;
-    color:var(--color-font);
-    text-decoration: none;
-}
-
-
-header div.ob a2{
-    width:25px ;
-    height: 22px;
-    font-size: 16px;
-    color:var(--color-font);
-    margin-left: 10px;
-}
-
-
-
-header div.ob div.profile{
-    width: 130px;
-    height: 25px;
-    font-size: 20px;
-    color:var(--color-font);
-    margin-left: 10px;
-}
-
-header div.ob div.post{
-    width: 30%;
-    height: 50px;
-    background-color:var(--color-bg2);
-    color:var(--color-bg);
-    font-size: 20px;
-    border-radius:5px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
-
-
-}
-
-header div.ob div.post div.post1{
-    font-size: 20px;
-    width: 160px;
-    height: 20px;
-    
-
-}
-.error_icon{
-    width: 200px;
-}
+      }
 .star_icon{
     height: 70px;
     width: auto;
@@ -149,12 +19,13 @@ header div.ob div.post div.post1{
 }
 
 /* /header */
-.kas1{
-   width: 100%;
-   height: 250px;
-   background: var(--color-bg2); 
-   margin: 0px;
-   transition: 0.5s;
+
+.kas1 {
+    width: 100%;
+    height: 250px;
+    background: var(--color-bg2);
+    margin: 0px;
+    transition: 0.5s;
 }
 .kas2{
     width: 100%;
@@ -181,20 +52,21 @@ header div.ob div.post div.post1{
     transition: 0.5s;
 }
 
-.kas1 .kas_li{
+.kas1 .kas_li {
     float: left;
-    list-style:none;
-    margin-left:30px;
+    list-style: none;
+    margin-left: 30px;
     font-weight: inherit;
     padding: 20px;
+    color: var(--color-font12);
 }
 .kas1 .kas_li.f1{
     margin-left:50px;  
 }
-.kas3{
+.kas3 {
     width: 100%;
     height: 700px;
-    background: var(--color-bg_3);
+    background: var(--color-bg2);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -202,10 +74,10 @@ header div.ob div.post div.post1{
     flex-wrap: wrap;
     transition: 0.5s;
 }
-.kas3 .kas_ob{
+.kas3 .kas_ob {
     width: 300px;
     height: 350px;
-    background:  var(--color-bg2);
+    background: var(--color-bg);
     padding: 15px;
     margin-left: 20px;
     margin-top: 20px;
@@ -214,14 +86,12 @@ header div.ob div.post div.post1{
 .kas3 .kas_ob .kas_op {
     display: flex;
     flex-direction: column;
+    color: white;
 }
-.kas3 .kas_ob .kas_op{
-    
-}
-.kas3 .kas4{
+.kas3 .kas4 {
     width: 90%;
     height: auto;
-    background: var(--color-bg_3);
+    background: var(--color-bg2);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -277,4 +147,75 @@ flex-direction: row;
         height: 100px;
         align-items: center;
     }
+}
+
+
+
+/* изменение цвет */
+body {
+    color: #002f34;
+    background: var(--color-bg2);
+}
+.kas3 {
+    width: 100%;
+    height: 700px;
+    background: var(--color-bg2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.kas3 .kas4 {
+    width: 90%;
+    height: auto;
+    background: var(--color-bg2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+.kas1 .kas_li {
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+    font-weight: inherit;
+    padding: 20px;
+    color: var(--color-font12);
+}
+.kas_a {
+    text-decoration: none;
+    /* color: var(--color-fontbl); */
+    transition: 0.5s;
+    color: var(--color-font12);
+}
+.fa-bars:before {
+    content: "\f0c9";
+    color: var(--color-font12);
+}
+.kas3 .kas_ob {
+    width: 300px;
+    height: 350px;
+    background: var(--color-bg);
+    padding: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.kas3 .kas_ob .kas_op {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.kas1 {
+    width: 100%;
+    height: 250px;
+    background: var(--color-bg2);
+    margin: 0px;
+    transition: 0.5s;
+}
+body {
+    color: #002f34;
+    background: var(--color-bg2);
 }
