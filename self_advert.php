@@ -14,6 +14,7 @@ include "setting/language.php";
     
 </head>
 <body>   
+<div class="wrapper">
          <?php include "includes/header.php";?>
        <div class="kas1">
         <div class="kas2"></div>
@@ -36,7 +37,7 @@ include "setting/language.php";
                     <div class="kas_ob " id="kas_ob">
                                     <img src="assets/img/iphone.jpg" alt="" class="kas_img i1">
                             <div class="kas_op">
-                                <h3 class="kas_h3"><?=$L['iPhone_description'] ?></h3>
+                                <p class="kas_h3"><?=$L['iPhone_description'] ?></p>
                                 <p class="kas_p">0тг</p>
                                 <p class="kas_p"><?= $L['Street'] ?></p>
                             </div>
@@ -48,7 +49,7 @@ include "setting/language.php";
                         
                         
                 <div class="kas_op">
-                    <h3 class="kas_h3"><?=$L['iPhone_description'] ?></h3>
+                    <p class="kas_h3"><?=$L['iPhone_description'] ?></p>
                     <p class="kas_p">0тг</p>
                     <p class="kas_p"><?= $L['Street'] ?></p>
                 </div>
@@ -56,6 +57,7 @@ include "setting/language.php";
         </div>
         
     </div>
-    <script src="assets/js/kas_site.js"></script>
+    <script src="assets/js/dark_light.js"></script>
+<div class="wrapper">
 </body> 
 </html>

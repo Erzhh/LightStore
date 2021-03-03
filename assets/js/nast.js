@@ -14,28 +14,42 @@ kas_d1[1].onclick = function(){
         kas_hr[1].classList.toggle('open_hr')
     }
 }
-var toggle;
-
-document.getElementsByClassName('l')[0].onclick = function(){
+document.getElementsByClassName('l')[0].onclick = function () {
+            
+    if (localStorage.getItem('toogle')) {
+        if (localStorage.getItem('toogle') == 'dark') {
+            LightOrDark('light')
+            localStorage.setItem('toogle', 'light');
+        } else {
+            LightOrDark('dark')
+            localStorage.setItem('toogle', 'dark');
+        }
+    } else {
+        localStorage.setItem('toogle', 'light');
+        LightOrDark('light')
+    }
     
-    if(!toggle){
-        document.documentElement.style.setProperty('--color-fontbl', 'white');
-        document.documentElement.style.setProperty('--color-bg_3', '#2b2929');
-        document.documentElement.style.setProperty('--color-border', '#2b2929');
-        document.documentElement.style.setProperty('--color-bg', 'white');
-        document.documentElement.style.setProperty('--color-bg2', 'black');
-        document.documentElement.style.setProperty('--color-font', 'black');
+    }
+    
+    function LightOrDark(color) {
+    if (color == 'dark') {
+        document.documentElement.style.setProperty('--color-bg', '#233447');
+        document.documentElement.style.setProperty('--color-bg2', '#1c1f20');
+        document.documentElement.style.setProperty('--color-bg1232', '#232526');
+       
+        document.documentElement.style.setProperty('--color-font12', 'white');
         document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-
-    }
-    else{
-        document.documentElement.style.setProperty('--color-bg', 'black');
+        
+    } else {
+        document.documentElement.style.setProperty('--color-bg', '#386caa');
         document.documentElement.style.setProperty('--color-bg2', 'white');
-        document.documentElement.style.setProperty('--color-bg_3', '#f2f4f5');
-        document.documentElement.style.setProperty('--color-font', 'white');
+        document.documentElement.style.setProperty('--color-bg1232', 'white');
+    
+       
+        document.documentElement.style.setProperty('--color-font12', 'black');
         document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-        document.documentElement.style.setProperty('--color-fontbl', 'black');
-        document.documentElement.style.setProperty('--color-border', 'white');
+       
     }
-    toggle = !toggle
-}
+    }
+    
+    LightOrDark(localStorage.getItem('toogle'));
