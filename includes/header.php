@@ -1,6 +1,4 @@
 <?php 
-    include "components/db.php";
-    include "setting/language.php";
     
 ?>
     <link rel="stylesheet" href="assets/css/main.css">

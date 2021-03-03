@@ -37,5 +37,4 @@ document.getElementsByClassName('l')[0].onclick = function(){
         document.documentElement.style.setProperty('--color-fontbl', 'black');
         document.documentElement.style.setProperty('--color-border', 'white');
     }
-    toggle = !toggle
 }

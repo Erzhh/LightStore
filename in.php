@@ -51,40 +51,6 @@
         </div>
     </form>
 
-    <script>
-        document.getElementsByClassName('l')[0].onclick = function () {
-
-            if (localStorage.getItem('toogle')) {
-                if (localStorage.getItem('toogle') == 'dark') {
-                    LightOrDark('light')
-                    localStorage.setItem('toogle', 'light');
-                } else {
-                    LightOrDark('dark')
-                    localStorage.setItem('toogle', 'dark');
-                }
-            } else {
-                localStorage.setItem('toogle', 'light');
-                LightOrDark('light')
-            }
-
-        }
-
-        function LightOrDark(color) {
-            if (color == 'dark') {
-                document.documentElement.style.setProperty('--color-bg', 'white');
-                document.documentElement.style.setProperty('--color-bg2', 'black');
-                document.documentElement.style.setProperty('--color-font', 'black');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-            } else {
-                document.documentElement.style.setProperty('--color-bg', 'black');
-                document.documentElement.style.setProperty('--color-bg2', 'white');
-                document.documentElement.style.setProperty('--color-font', 'white');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-            }
-        }
-
-        LightOrDark(localStorage.getItem('toogle'));
-    </script>
 
 
 </body>

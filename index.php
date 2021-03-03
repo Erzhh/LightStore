@@ -1,5 +1,3 @@
-<html>
-<head>
     <?php include "includes/head.php";?>
 </head>
 <body class="homepage">
@@ -8,8 +6,7 @@
         <div id="div-gpt-ad-listing-branding" class=""></div>
         <div id="div-gpt-ad-listing-branding-after" class=""></div>
 
-        <?php include "includes/header.php";?>
-        <section id="searchmain-container">
+             <?php include "includes/header.php";?>
             <form class="searchmain" id="searchmain" method="POST">
                 <div class="wrapper">
                     <fieldset>
