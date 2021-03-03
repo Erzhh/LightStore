@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+}
 input{
 	height: 50px;
 	border: 0px solid;
@@ -9,8 +12,8 @@ input{
 	background-color:var(--color-bg);
 	width: 30%;
 	margin-left: 35%;
-	margin-top: 6%;
-	height: 580px;
+	margin-top: 9%;
+	height: 520px;
 	border-radius: 7px;
 }
 .forinput{
