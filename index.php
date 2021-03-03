@@ -41,7 +41,7 @@
                                         <a href="#" class="clear-input-button hidden" data-icon="close"></a>
                                         <div class="distanceseparator abs"></div>
                                         <i data-icon="location"></i>
-                                        <div class="proposals hidden" id="proposalContainer">
+                                      <div class="proposals hidden" id="proposalContainer">
                                             <div class="lastbox">
                                                 <p>Недавно избранные:</p>
                                                 <ul id="last-locations-ul">
@@ -135,20 +135,62 @@
                     <div class="maincategories-list clr">
                         <div class="li fleft">
                             <div class="item">
-                                <a href="https://www.olx.kz/uslugi/" data-id="7" class="link parent   ">
-                                    <span>Услуги</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-7"></span>
+                                <a href="https://www.olx.kz/elektronika/" data-id="37" class="link parent">
+                                    <span>Электроника</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-37" style="background-color: rgb(255, 206, 50);"></span>
                                 </a>
                             </div>
                         </div>
 
+                        <div class="li fleft">
+                            <div class="item">
+                                <a href="https://www.olx.kz/moda-i-stil/" data-id="891" class="link parent">
+                                    <span>Мода и стиль</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-891" style="background-color: rgb(255, 206, 50);"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="li fleft">
+                            <div class="item">
+                                <a href="https://www.olx.kz/dom-i-sad/" data-id="899" class="link parent">
+                                    <span>Дом и сад</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-899" style="background-color: rgb(255, 206, 50);"></span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="li fleft">
+                            <div class="item">
+                                <a href="https://www.olx.kz/detskiy-mir/" data-id="36" class="link parent">
+                                    <span>Для детей</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-36" style="background-color: rgb(255, 206, 50);"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="li fleft">
+                            <div class="item">
+                                <a href="https://www.olx.kz/otdam-darom/" data-id="1151" class="link parent  search search">
+                                    <span>Отдам даром</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-1151" style="background-color: rgb(255, 206, 50);"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="li fleft">
+                            <div class="item">
+                                <a href="https://www.olx.kz/transport/" data-id="3" class="link parent">
+                                    <span>Транспорт</span>
+                                    <span class="cat-icon cat-icon-circle cat-icon-3" style="background-color: rgb(255, 206, 50);"></span>
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
 
                 </div>
             </div>
-
-
 
 
         </section>
@@ -203,15 +245,27 @@
 
             </ul>
 
-
-
         </section>
 
 
         <?php include "includes/footer.php";?>
+    <script>
+        function bekaaa(){
+                if(window.innerWidth<600){
+                    window.location.href = 'mobile.php'
 
+                }   
+            }
+
+            window.onresize = function(){
+                bekaaa()           
+            }
+
+            bekaaa()
+    </script>
         
     </div> <!-- BODY CONTRIB -->
+
 </body>
 
 </html>

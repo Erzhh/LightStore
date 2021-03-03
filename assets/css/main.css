@@ -1,14 +1,14 @@
 :root {
-    --color-bg: black;
+    --color-bg: #386caa;
     --color-bg2: white;
     --color-bg_3:#f2f4f5;
     --logo-theme: url('../img/logo-light.png');
     --color-font: white;
     --color-fontbl:black;
     --color-border:white;
-
-	--color-bg103:#6e6e6e;
-    --color-bg104:#bcbcbc;
+    
+	--color-bg104:#386caa;
+    --color-bg103:white;
 
     --color-bgD: white;
     --color-bgF: #333333;
@@ -16,6 +16,7 @@
 
 /* header startttttttttttttttttttttttttttttttttttttttttttttttttttttttttt */
 
+<<<<<<< HEAD
 header {
     display: flex;
     align-items:flex-end;
@@ -26,7 +27,7 @@ header {
      color:white;
      display: flex;
      top: 0px;
-     
+     z-index: 4a;
 }
 
 header div.logo {
@@ -138,6 +139,8 @@ header div.ob div.post div.post1{
     /* height: 20px; */
 }
 
+=======
+>>>>>>> 87696831cc279e8ec90fff804033aa0e2a30f7e1
 
 
 

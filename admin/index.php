@@ -1,3 +1,6 @@
+<?php
+	include "../components/check_admin.php"
+?>
 <html lang="en">
 <head>
 			<?php include "includesforadmin/headforadmin.php";?>
@@ -54,16 +57,16 @@
 
 				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
-						
+
 						<div class="input-group-append">
-							
+
 						</div>
 					</div>
 				</form>
 
 				<ul class="navbar-nav">
 					<li class="nav-item px-2 dropdown">
-						
+
 						<div class="dropdown-menu dropdown-menu-left dropdown-mega" aria-labelledby="servicesDropdown">
 							<div class="d-md-flex align-items-start justify-content-start">
 								<div class="dropdown-mega-list">
@@ -105,7 +108,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
 								<div class="dropdown-menu-header">
 									<div class="position-relative">
@@ -168,7 +171,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
 									4 New Notifications
@@ -228,7 +231,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							
+
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
 								<a class="dropdown-item" href="#">
                   <img src="img/flags/us.png" alt="English" width="20" class="align-middle mr-1">
@@ -277,7 +280,7 @@
 							<h3>Dashboard</h3>
 						</div>
 
-						
+
 					</div>
 					<div class="row">
 						<div class="col-12 col-sm-6 col-xxl d-flex">
@@ -362,9 +365,9 @@
 						</div>
 					</div>
 
-					
 
-					
+
+
 
 					<div class="card flex-fill">
 						<div class="card-header">
@@ -388,15 +391,15 @@
 								<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Start Date: activate to sort column ascending">Start Date</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="End Date: activate to sort column ascending">End Date</th><th class="sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="d-none d-md-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Assignee: activate to sort column ascending">Assignee</th></tr>
 							</thead>
 							<tbody>
-								
-								
-								
-								
-								
-								
-								
-								
-								
+
+
+
+
+
+
+
+
+
 							<tr role="row" class="odd">
 									<td class="sorting_1">Project Apollo</td>
 									<td class="d-none d-xl-table-cell">01/01/2018</td>
@@ -434,7 +437,7 @@
 									<td><span class="badge badge-success">Done</span></td>
 									<td class="d-none d-md-table-cell">Ashley Briggs</td>
 								</tr></tbody>
-						
+
 					</div>
 				</div>
 			</main>
@@ -653,7 +656,7 @@
             </div>
           </div>
         </div>
-        
+
         <hr>
 
         <div class="mb-3">
