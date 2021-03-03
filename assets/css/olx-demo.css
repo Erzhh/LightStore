@@ -14,7 +14,7 @@
 
 .wrapper.clr.rel .col-md-3 .logo img{
     width: 200px;
-    background-image: var(--logo-theme);
+    
 }
 
 .col-md-9{
@@ -26,7 +26,7 @@ justify-content: flex-end;
 
 #header-container .navi {
     background:var(--color-bg);
-    width: 1300px;
+    width: 100%;
 }
 
 .index121{
@@ -148,4 +148,17 @@ form.searchmain .button [data-icon="search"] {
 body, input, textarea, select, option, optgroup, button {
     font-family: "Arial", Helvetica, sans-serif;
     background: var(--color-bg2);
+}
+form.searchmain .button {
+    background: var(--color-bg);
+    color: var(--color-font12);
+    height: 56px;
+}
+img, fieldset {
+    border: none;
+    display: flex;
+}
+.gallerywide .inner h4 a strong {
+    font-weight: normal;
+    color: white!important;
 }
