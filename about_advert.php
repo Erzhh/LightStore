@@ -1,6 +1,8 @@
 <?php 
     include "setting/language.php";
-?>
+    ?>
+    <?php include "includes/head.php";?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +13,11 @@
     <link rel="stylesheet" href="assets/font/css/icons.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/font/css/icons.css">
-    <?php include "includes/head.php";?>
+    
     <title>Document</title>
 </head>
 <body>
+<div class="wrapper">
 <section id="searchmain-container">
          <?php include "includes/header.php";?>
 
@@ -97,10 +100,10 @@
 
        
   </session>  
-
-
-           
-        }
+</div>
+  <script src="assets/js/dark_light.js"></script>
+       
+        <script>
 
 
 

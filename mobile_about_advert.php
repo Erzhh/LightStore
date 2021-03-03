@@ -1,6 +1,8 @@
 <?php 
     include "setting/language.php";
+    
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/mobile_advert.css">
     <link rel="stylesheet" href="assets/font/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>mobile_about_advert</title>
 </head>
 <body>
@@ -130,6 +133,42 @@
 
 <script>
 
+document.getElementsByClassName('change1')[0].onclick = function(){
+            
+            if(localStorage.getItem('toogle')){
+                if(localStorage.getItem('toogle')=='dark'){
+                    LightOrDark('light')
+                    localStorage.setItem('toogle','light');
+                }
+                else{
+                    LightOrDark('dark')
+                    localStorage.setItem('toogle','dark');
+                }
+            }
+            else{
+                localStorage.setItem('toogle','light');
+                LightOrDark('light')
+            }
+           
+        }
+
+
+       function LightOrDark(color){
+            if(color == 'dark'){
+                document.documentElement.style.setProperty('--color-bg', '#233547');
+                document.documentElement.style.setProperty('--color-bg2', '#232526');
+                document.documentElement.style.setProperty('--color-font12', 'white');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+                document.documentElement.style.setProperty('--color-border', 'black');
+            }
+            else{
+                document.documentElement.style.setProperty('--color-bg', '#386caa');
+                document.documentElement.style.setProperty('--color-bg2', 'white');
+                document.documentElement.style.setProperty('--color-font12', 'black');
+                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+                document.documentElement.style.setProperty('--color-border', 'white');
+            }
+        }
 
 
 function bekaaa(){

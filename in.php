@@ -15,7 +15,7 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <?php include "includes/head.php";?>
 </head>
-
+<div class="wrapper">
 <body style="background-color:var(--color-bg2);">
       <?php include "includes/header.php";?>
     <form method="POST">
@@ -51,8 +51,8 @@
         </div>
     </form>
 
-
-
+    <script src="assets/js/dark_light.js"></script>
+</div>
 </body>
 
 </html>

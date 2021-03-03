@@ -43,12 +43,12 @@
 
                 <label for="ad_city"><?=$L['CIty']?>*</label><br>
                 <select class="opt" id="ad_city" name="city_id">
-                    <option>Astana</option>
-                    <option>Almaty</option>a
-                    <option>Shymkent</option>
-                    <option>Qaraǵandy</option>
-                    <option>Aqtóbe</option>
-                    <option>Taraz</option>
+                    <option value="1">Astana</option>
+                    <option value="2">Almaty</option>a
+                    <option value="3">Shymkent</option>
+                    <option value="4">Qaraǵandy</option>
+                    <option value="5">Aqtóbe</option>
+                    <option value="6">Taraz</option>
                 </select>
             </div>
 
@@ -192,11 +192,11 @@
           
           if(isset($_POST['title'])){
          $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
-        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`)
+        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`city_id`)
         VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
 
         echo "INSERT INTO `advert`(`description`,`title`,`price`)
-        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')";
+        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]',$_POST[city_id])";
         }
 
         // if(isset($_POST['title'])){
