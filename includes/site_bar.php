@@ -10,7 +10,7 @@
             <path d="M10,20c-0.1,0-0.3,0-0.4-0.1l-9-4c-0.5-0.2-0.7-0.8-0.5-1.3c0.2-0.5,0.8-0.7,1.3-0.5l8.6,3.8l8.6-3.8c0.5-0.2,1.1,0,1.3,0.5
               c0.2,0.5,0,1.1-0.5,1.3l-9,4C10.3,20,10.1,20,10,20z"></path>
           </svg>
-
+    
           <span class="align-middle mr-3">AppStack</span>
         </a>
 
@@ -29,11 +29,13 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
+						
+					
 
-
-
-
+				
 			</li></ul></div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 367px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: hidden;"><div class="simplebar-scrollbar" style="height: 0px; display: none;"></div></div></div>
+		</nav>
