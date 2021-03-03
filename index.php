@@ -1,15 +1,17 @@
-<html>
-<head>
-    <?php include "includes/head.php";?>
+<?php include "includes/head.php";?>
 </head>
+<div class="wrapper">
+
+
 <body class="homepage">
 
-    <div id="innerLayout">
+    <div id="innerLayout" class="index121">
         <div id="div-gpt-ad-listing-branding" class=""></div>
         <div id="div-gpt-ad-listing-branding-after" class=""></div>
 
-        <?php include "includes/header.php";?>
+        
         <section id="searchmain-container">
+             <?php include "includes/header.php";?>
             <form class="searchmain" id="searchmain" method="POST">
                 <div class="wrapper">
                     <fieldset>
@@ -128,7 +130,7 @@
 
 
             <div class="maincategories">
-                <div class="wrapper">
+                
                     <header>
                         <h3>Главные рубрики</h3>
                     </header>
@@ -189,12 +191,12 @@
 
                     </div>
 
-                </div>
+                
             </div>
 
 
-        </section>
-        <section class="mainpage-gallery clr" >
+        <!-- </section>
+        <section class="mainpage-gallery clr" > -->
             <header>
                 <h3>
                     VIP-объявления </h3>
@@ -215,7 +217,7 @@
                     <div class="inner">
 
                         <h4 class="normal">
-                            <a href="https://www.olx.kz/obyavlenie/evakuator-nedorogo-24-7-IDj604A.html"
+                            <a href="about_advert.php"
                                 title="Эвакуатор НЕДОРОГО! 24/7" class="link linkWithHash detailsLinkPromoted">
                                 <strong>Эвакуатор НЕДОРОГО! 24/7</strong>
                             </a>
@@ -247,7 +249,7 @@
 
         </section>
 
-
+</div>
         <?php include "includes/footer.php";?>
     <script>
         function bekaaa(){
@@ -262,6 +264,52 @@
             }
 
             bekaaa()
+
+
+            
+    </script>
+
+    <script>
+
+document.getElementsByClassName('l')[0].onclick = function () {
+
+if (localStorage.getItem('toogle')) {
+    if (localStorage.getItem('toogle') == 'dark') {
+        LightOrDark('light')
+        localStorage.setItem('toogle', 'light');
+    } else {
+        LightOrDark('dark')
+        localStorage.setItem('toogle', 'dark');
+    }
+} else {
+    localStorage.setItem('toogle', 'light');
+    LightOrDark('light')
+}
+
+}
+
+function LightOrDark(color) {
+if (color == 'dark') {
+    document.documentElement.style.setProperty('--color-bg', '#233447');
+    document.documentElement.style.setProperty('--color-bg2', '#1c1f20');
+    document.documentElement.style.setProperty('--color-bg1232', '#232526');
+   
+    document.documentElement.style.setProperty('--color-font12', 'white');
+    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+    
+} else {
+    document.documentElement.style.setProperty('--color-bg', '#386caa');
+    document.documentElement.style.setProperty('--color-bg2', 'white');
+    document.documentElement.style.setProperty('--color-bg1232', 'white');
+
+   
+    document.documentElement.style.setProperty('--color-font12', 'black');
+    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+   
+}
+}
+
+LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
