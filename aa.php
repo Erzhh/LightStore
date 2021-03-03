@@ -1,6 +1,7 @@
 <?php 
     include "setting/language.php";
 ?>
+<?php include "includes/head.php";?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,41 +18,7 @@
 <link href="assets/font/css/icons.css" rel="stylesheet">
 </head>
 <body>
-<header>
-        <div class="x"></div>
-        <div class="logo">
-            <div class="img"></div>
-          <a3>
-       
-        </div>   </a3>
-        <div class="xx">
-        
-</div>
-<div class="ob">
-          <div class="toggle12">
-        <input class="l" type="checkbox">
-          </div>
-        <a href="?lang=kz">каз</a>
-        <a href="?lang=ru">рус</a>
-        
-
-        <div class="bikchosen1">
-            <a href="aa.php">
-            <i class="far fa-heart" ></i>
-</a>
-        </div>
-        <div class="profile">
-            <i class="far fa-user"></i>
-            <?=$L['profile']?>
-        </div>
-        <div class="post">
-          <div class="post1">
-            <?=$L['advert']?>
-          </div>
-        </div>
-      </div>
-        <div class="x"></div>
-</header>
+<?php include "includes/header.php";?>
 
 
 
@@ -151,41 +118,7 @@
     }
 }
 
-document.getElementsByClassName('l')[0].onclick = function(){
-            
-            if(localStorage.getItem('toogle')){
-                if(localStorage.getItem('toogle')=='dark'){
-                    LightOrDark('light')
-                    localStorage.setItem('toogle','light');
-                }
-                else{
-                    LightOrDark('dark')
-                    localStorage.setItem('toogle','dark');
-                }
-            }
-            else{
-                localStorage.setItem('toogle','light');
-                LightOrDark('light')
-            }
-           
-        }
 
-        function LightOrDark(color){
-            if(color == 'dark'){
-                document.documentElement.style.setProperty('--color-bg', 'white');
-                document.documentElement.style.setProperty('--color-bg2', 'black');
-                document.documentElement.style.setProperty('--color-font', 'black');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-            }
-            else{
-                document.documentElement.style.setProperty('--color-bg', 'black');
-                document.documentElement.style.setProperty('--color-bg2', 'white');
-                document.documentElement.style.setProperty('--color-font', 'white');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-            }
-        }
-
-        LightOrDark(localStorage.getItem('toogle'));
 
         // function bekaaa(){
         //         if(window.innerWidth<600){
@@ -199,11 +132,12 @@ document.getElementsByClassName('l')[0].onclick = function(){
 
         //     bekaaa()
 
-            console.log( localStorage.getItem('toogle') );
+          
             //localStorage.setItem('toogle', 'dark');
 
-    </script>
+    
 </script>
+<script src="assets/js/dark_light.js"></script>
 
 
     </html>
