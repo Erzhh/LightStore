@@ -4,6 +4,7 @@ input{
 	border: 0px solid;
 	background-color: #f2f4f5 ;
 	border-radius: 7px;
+	font-size: 12px;
 }
 .pasha_main{
 	background-color:var(--color-bg);
