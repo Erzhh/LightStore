@@ -1,10 +1,6 @@
-<?php
-	include "../components/check_admin.php"
-?>
 <html lang="en">
 <head>
 			<?php include "includesforadmin/headforadmin.php";?>
-			
 </head>
 
 <body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
@@ -39,7 +35,7 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">advert</a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
@@ -57,16 +53,16 @@
 
 				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
-
+						
 						<div class="input-group-append">
-
+							
 						</div>
 					</div>
 				</form>
 
 				<ul class="navbar-nav">
 					<li class="nav-item px-2 dropdown">
-
+						
 						<div class="dropdown-menu dropdown-menu-left dropdown-mega" aria-labelledby="servicesDropdown">
 							<div class="d-md-flex align-items-start justify-content-start">
 								<div class="dropdown-mega-list">
@@ -108,7 +104,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-
+							
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
 								<div class="dropdown-menu-header">
 									<div class="position-relative">
@@ -171,7 +167,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-
+							
 							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
 									4 New Notifications
@@ -231,7 +227,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-
+							
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
 								<a class="dropdown-item" href="#">
                   <img src="img/flags/us.png" alt="English" width="20" class="align-middle mr-1">
@@ -272,205 +268,200 @@
 				</div>
 			</nav>
 
-			<main class="content">
-				<div class="container-fluid p-0">
+			-------------------------------------
+            
 
-					<div class="row mb-2 mb-xl-3">
-						<div class="col-auto d-none d-sm-block">
-							<h3>Dashboard</h3>
-						</div>
+    <form method="POST">
 
 
-					</div>
-					<div class="row">
-						<div class="col-12 col-sm-6 col-xxl d-flex">
-							<div class="card illustration flex-fill">
-								<div class="card-body p-0 d-flex flex-fill">
-									<div class="row no-gutters w-100">
-										<div class="col-6">
-											<div class="illustration-text p-3 m-1">
-												<h4 class="illustration-text">Welcome Back, Chris!</h4>
-												<p class="mb-0">AppStack Dashboard</p>
-											</div>
-										</div>
-										<div class="col-6 align-self-end text-right">
-											<img src="img/illustrations/customer-support.png" alt="Customer Support" class="img-fluid illustration-img">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-xxl d-flex">
-							<div class="card flex-fill">
-								<div class="card-body py-4">
-									<div class="media">
-										<div class="media-body">
-											<h3 class="mb-2">$ 24.300</h3>
-											<p class="mb-2">Total Earnings</p>
-											<div class="mb-0">
-												<span class="badge badge-soft-success mr-2"> <i class="mdi mdi-arrow-bottom-right"></i> +5.35% </span>
-												<span class="text-muted">Since last week</span>
-											</div>
-										</div>
-										<div class="d-inline-block ml-3">
-											<div class="stat">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign align-middle text-success"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-xxl d-flex">
-							<div class="card flex-fill">
-								<div class="card-body py-4">
-									<div class="media">
-										<div class="media-body">
-											<h3 class="mb-2">43</h3>
-											<p class="mb-2">Pending Orders</p>
-											<div class="mb-0">
-												<span class="badge badge-soft-danger mr-2"> <i class="mdi mdi-arrow-bottom-right"></i> -4.25% </span>
-												<span class="text-muted">Since last week</span>
-											</div>
-										</div>
-										<div class="d-inline-block ml-3">
-											<div class="stat">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag align-middle text-danger"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-xxl d-flex">
-							<div class="card flex-fill">
-								<div class="card-body py-4">
-									<div class="media">
-										<div class="media-body">
-											<h3 class="mb-2">$ 18.700</h3>
-											<p class="mb-2">Total Revenue</p>
-											<div class="mb-0">
-												<span class="badge badge-soft-success mr-2"> <i class="mdi mdi-arrow-bottom-right"></i> +8.65% </span>
-												<span class="text-muted">Since last week</span>
-											</div>
-										</div>
-										<div class="d-inline-block ml-3">
-											<div class="stat">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign align-middle text-info"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+<div class="nik_main">
+    <h1><?=$L['aDvert']?></h1>
+    <div class="nik_title div">
+        <h2><?=$L['TITle']?></h2><br>
+
+        <label for="ad_title"><?=$L['TITle']?>*</label><br>
+        <input class="tit" type="text" id="ad_title" name="title"><br>
+
+
+        <div id="ad.category">
+            <label for="ad_сategory"><?=$L['CATEGory']?>*</label>
+            <!-- <div class="chooseC">
+            
+        </div> -->
+        </div>
+
+    </div>
+
+
+    <div class="nik_location div">
+        <h2><?=$L['LOCation']?></h2>
+
+        <label for="ad_city"><?=$L['CIty']?>*</label><br>
+        <select class="opt" id="ad_city" name="city_id">
+            <option>Astana</option>
+            <option>Almaty</option>a
+            <option>Shymkent</option>
+            <option>Qaraǵandy</option>
+            <option>Aqtóbe</option>
+            <option>Taraz</option>
+        </select>
+    </div>
+
+
+    <div class="nik_price  div">
+        <h2><?=$L['COst']?></h2>
+        <div class="rrr">
+            <div class="radio" onclick="free()">
+                <p><?=$L['FRee']?></p>
+                <input class="r r1" type="radio" id="ad_cost1" name="da">
+            </div>
+            <div class="radio" onclick="exchange()">
+                <p><?=$L['EXCHange']?></p>
+                <input class="r r2" type="radio" id="ad_cost2" name="da">
+            </div>
+            <div class="radio" onclick="price()">
+                <p><?=$L['COst']?></p>
+                <input class="r r3" type="radio" id="ad_cost3" name="da"><br>
+            </div>
+        </div>
+
+        <input class="cost" type="text" name="price"><br>
+
+        <div class="contract">
+            <h2><?=$L['CONTract']?></h2>
+            <div class="slideTwo">
+                <input type="checkbox" value="None" id="slideTwo" name="check" style="display: none;" />
+                <label for="slideTwo"></label>
+            </div>
+        </div>
+
+    </div>
 
 
 
+    <div class="nik_discription  div">
+        <h2><?=$L['DISCription']?></h2>
+
+        <label for="ad_text"><?=$L['DISCription']?>*</label><br>
+        <textarea class="text" id="ad_text" name="discription"></textarea>
+    </div>
 
 
-					<div class="card flex-fill">
-						<div class="card-header">
-							<div class="card-actions float-right">
-								<div class="dropdown show">
-									<a href="#" data-toggle="dropdown" data-display="static">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal align-middle"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
-        </a>
+    <div class="nik_images  div">
+        <h2><?=$L['PHOTos']?></h2>
 
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-								</div>
-							</div>
-							<h5 class="card-title mb-0">Latest Projects</h5>
-						</div>
-						<div id="datatables-dashboard-projects_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"></div></div><div class="row"><div class="col-sm-12"><table id="datatables-dashboard-projects" class="table table-striped my-0 dataTable no-footer" role="grid" aria-describedby="datatables-dashboard-projects_info">
-							<thead>
-								<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending">Name</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Start Date: activate to sort column ascending">Start Date</th><th class="d-none d-xl-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="End Date: activate to sort column ascending">End Date</th><th class="sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending">Status</th><th class="d-none d-md-table-cell sorting" tabindex="0" aria-controls="datatables-dashboard-projects" rowspan="1" colspan="1" aria-label="Assignee: activate to sort column ascending">Assignee</th></tr>
-							</thead>
-							<tbody>
+        <label for="ad_img"><?=$L['PHOTos']?>*</label><br>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="inputfile">
+            <div class="example-1">
+                <div class="form-group">
+                    <label class="label">
+                        <i class="material-icons">attach_file</i>
+                        <span class="title"><?=$L['FIle']?></span>
+                        <input type="file" name="images">
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 
 
+    <div class="nik_doIt  div">
+        <button>
+            <h2><?=$L['PUBLik']?></h2>
+        </button>
+    </div>
+</div>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script>
+function free() {
+    document.getElementsByClassName('radio')[0].style.backgroundColor = '#FCFF00';
+    document.getElementsByClassName('radio')[1].style.backgroundColor = '';
+    document.getElementsByClassName('radio')[2].style.backgroundColor = '';
+    document.getElementsByClassName('cost')[0].style.display = 'none';
+    document.getElementsByClassName('contract')[0].style.display = 'none';
+}
+
+function exchange() {
+    document.getElementsByClassName('radio')[0].style.backgroundColor = '';
+    document.getElementsByClassName('radio')[1].style.backgroundColor = '#FCFF00';
+    document.getElementsByClassName('radio')[2].style.backgroundColor = '';
+    document.getElementsByClassName('cost')[0].style.display = 'none';
+    document.getElementsByClassName('contract')[0].style.display = 'none';
+}
+
+function price() {
+    document.getElementsByClassName('radio')[0].style.backgroundColor = '';
+    document.getElementsByClassName('radio')[1].style.backgroundColor = '';
+    document.getElementsByClassName('radio')[2].style.backgroundColor = '#FCFF00';
+    document.getElementsByClassName('cost')[0].style.display = 'block';
+    document.getElementsByClassName('contract')[0].style.display = 'flex';
+}
+</script>
+<script>
+document.getElementsByClassName('l')[0].onclick = function () {
+
+    if (localStorage.getItem('toogle')) {
+        if (localStorage.getItem('toogle') == 'dark') {
+            LightOrDark('light')
+            localStorage.setItem('toogle', 'light');
+        } else {
+            LightOrDark('dark')
+            localStorage.setItem('toogle', 'dark');
+        }
+    } else {
+        localStorage.setItem('toogle', 'light');
+        LightOrDark('light')
+    }
+
+}
+
+function LightOrDark(color) {
+    if (color == 'dark') {
+        document.documentElement.style.setProperty('--color-bg', 'white');
+        document.documentElement.style.setProperty('--color-bg2', 'black');
+        document.documentElement.style.setProperty('--color-font', 'black');
+        document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+        document.documentElement.style.setProperty('--color-bgD', '#333333');
+    } else {
+        document.documentElement.style.setProperty('--color-bg', 'black');
+        document.documentElement.style.setProperty('--color-bg2', 'white');
+        document.documentElement.style.setProperty('--color-font', 'white');
+        document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+        document.documentElement.style.setProperty('--color-bgD', 'white');
+    }
+}
+
+LightOrDark(localStorage.getItem('toogle'));
+</script>
 
 
 
+<?php
+  
+  if(isset($_POST['title'])){
+ $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`)
+VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
 
+echo "INSERT INTO `advert`(`description`,`title`,`price`)
+VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')";
+}
 
+// if(isset($_POST['title'])){
+//     $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+//    mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`p`); 
+//    VALUES ('$_POST[title]','$_POST[description]','$_POST[images]',)");
+//    }
 
-
-							<tr role="row" class="odd">
-									<td class="sorting_1">Project Apollo</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-success">Done</span></td>
-									<td class="d-none d-md-table-cell">Carl Jenkins</td>
-								</tr><tr role="row" class="even">
-									<td class="sorting_1">Project Fireball</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-danger">Cancelled</span></td>
-									<td class="d-none d-md-table-cell">Bertha Martin</td>
-								</tr><tr role="row" class="odd">
-									<td class="sorting_1">Project Hades</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-success">Done</span></td>
-									<td class="d-none d-md-table-cell">Stacie Hall</td>
-								</tr><tr role="row" class="even">
-									<td class="sorting_1">Project Nitro</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-warning">In progress</span></td>
-									<td class="d-none d-md-table-cell">Carl Jenkins</td>
-								</tr><tr role="row" class="odd">
-									<td class="sorting_1">Project Phoenix</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-success">Done</span></td>
-									<td class="d-none d-md-table-cell">Bertha Martin</td>
-								</tr><tr role="row" class="even">
-									<td class="sorting_1">Project Romeo</td>
-									<td class="d-none d-xl-table-cell">01/01/2018</td>
-									<td class="d-none d-xl-table-cell">31/06/2018</td>
-									<td><span class="badge badge-success">Done</span></td>
-									<td class="d-none d-md-table-cell">Ashley Briggs</td>
-								</tr></tbody>
-
-					</div>
-				</div>
-			</main>
-
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-6 text-left">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Support</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Help Center</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Terms of Service</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-6 text-right">
-							<p class="mb-0">
-								© 2020 - <a href="index.html" class="text-muted">AppStack</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-	</div>
+?>
+------------------------------------------------------
 
 	<script src="js/app.js"></script><div class="notyf"></div><div class="notyf-announcer" aria-atomic="true" aria-live="polite" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; outline: 0px;"></div>
 
@@ -656,7 +647,7 @@
             </div>
           </div>
         </div>
-
+        
         <hr>
 
         <div class="mb-3">

@@ -6,6 +6,7 @@
     <base href="https://appstack.bootlab.io">
 	<title>Default Dashboard | AppStack - Admin &amp; Dashboard Template</title>
 	<link rel="stylesheet" href="assets/css/cssforadmin.css">
+	<link rel="stylesheet" href="assets/css/form.css">
 	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html">
 	<link rel="shortcut icon" href="img/favicon.ico">
 
