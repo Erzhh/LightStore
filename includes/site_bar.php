@@ -1,7 +1,7 @@
 <div class="wrapper">
 		<nav id="sidebar" class="sidebar">
 			<div class="sidebar-content js-simplebar" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden;"><div class="simplebar-content" style="padding: 0px;">
-				<a class="sidebar-brand" href="index.html">
+				<a class="sidebar-brand" href="index.php">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
             <path d="M19.4,4.1l-9-4C10.1,0,9.9,0,9.6,0.1l-9,4C0.2,4.2,0,4.6,0,5s0.2,0.8,0.6,0.9l9,4C9.7,10,9.9,10,10,10s0.3,0,0.4-0.1l9-4
               C19.8,5.8,20,5.4,20,5S19.8,4.2,19.4,4.1z"></path>
@@ -29,8 +29,12 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
+<<<<<<< HEAD
 							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="admin/forms.php">Cities</a></li>
+=======
+							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>
+>>>>>>> ee2d8eb00b63cad2bbe0846a1c7e476f5ed38bfb
 						</ul>
 					</li>
 					<li class="sidebar-item">
