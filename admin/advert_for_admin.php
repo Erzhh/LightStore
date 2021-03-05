@@ -412,8 +412,8 @@ LightOrDark(localStorage.getItem('toogle'));
   
   if(isset($_POST['title'])){
  $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
-mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`)
-VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
+mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`)
+VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$_POST[images]')");
 
 echo "INSERT INTO `advert`(`description`,`title`,`price`)
 VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')";
