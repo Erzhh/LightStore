@@ -1,23 +1,22 @@
 <?php
    if(isset($_POST['email'])) {
         
-    $q = mysqli_query($c, "SELECT `role` FROM `users` WHERE `email`='$_POST[email]' and `password`='$_POST[pass]'");
+    $q = mysqli_query($c, "SELECT `id`,`role` FROM `users` WHERE `email`='$_POST[email]' and `password`='$_POST[pass]'");
 
     if(mysqli_num_rows($q)){
   
-        $role =  mysqli_fetch_assoc($q)['role'];// 1 or 2
+        $user_data =  mysqli_fetch_assoc($q);
 
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['password'] = $_POST['pass'];
-        $_SESSION['role'] =  $role;
-        $_SESSION['id'] = $_POST['id'];
+        $_SESSION['role'] =  $user_data['role'];// 1 or 2
+        $_SESSION['id'] =  $user_data['id']; //get id user;
 
-
-       if($role == 1){
+       if($user_data['role'] == 1){
         header("location: admin/index.php");
             
        }
-       else if($role == 2){
+       else if($user_data['role'] == 2){
             header("location: self_advert.php");
        }
 

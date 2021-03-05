@@ -279,6 +279,29 @@ LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
+
+    <?php
+        $c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
+
+        $q = mysqli_query($c, "SELECT * FROM `advert`");
+
+        while($newArray = mysqli_fetch_assoc($q)){
+
+            echo"
+
+                <div class='adverts'>
+                    <div class='img_adv' style=\"background-image: url('images/$newArray[images]');\"></div> 
+                    <h3 class='title_adv'>$newArray[title]</h3> 
+                    <div class='info'>
+                        <h5>$newArray[city_id],$newArray[author_id]</h5>
+                        <h5>$newArray[public_time]</h5>  
+                    </div>
+                </div>
+
+            ";
+
+        }
+    ?>
 </body>
 
 </html>
