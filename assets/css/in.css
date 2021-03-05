@@ -1,4 +1,6 @@
-
+body{
+	overflow: hidden
+}
 input{
 	height: 50px;
 	border: 0px solid;
@@ -11,7 +13,7 @@ input{
 	width: 30%;
 	margin-left: 35%;
 	margin-top: 10%;
-	height: 450px;
+	height: 350px;
 	border-radius: 7px;
 }
 .forinput{

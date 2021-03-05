@@ -136,60 +136,24 @@
                         <h3>Главные рубрики</h3>
                     </header>
                     <div class="maincategories-list clr">
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/elektronika/" data-id="37" class="link parent">
-                                    <span>Электроника</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-37" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                    <?php
+                        $c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/moda-i-stil/" data-id="891" class="link parent">
-                                    <span>Мода и стиль</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-891" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                        $q = mysqli_query($c, "SELECT * FROM `categories`");
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/dom-i-sad/" data-id="899" class="link parent">
-                                    <span>Дом и сад</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-899" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/detskiy-mir/" data-id="36" class="link parent">
-                                    <span>Для детей</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-36" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                        while($newArray = mysqli_fetch_assoc($q)){
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/otdam-darom/" data-id="1151" class="link parent  search search">
-                                    <span>Отдам даром</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-1151" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
-                            </div>
-                        </div>
+                            echo"
 
-                        <div class="li fleft">
-                            <div class="item">
-                                <a href="https://www.olx.kz/transport/" data-id="3" class="link parent">
-                                    <span>Транспорт</span>
-                                    <span class="cat-icon cat-icon-circle cat-icon-3" style="background-color: rgb(255, 206, 50);"></span>
-                                </a>
+                            <div class='categories'>
+                                <div class='img' style=\"background-image: url('images/$newArray[image]');\"></div> 
+                                <span>$newArray[title_ru]</span>               
                             </div>
-                        </div>
 
+                            ";
+
+                        }
+                    ?>
                     </div>
 
                 
@@ -315,7 +279,6 @@ LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
-
 </body>
 
 </html>
