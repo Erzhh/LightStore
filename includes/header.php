@@ -15,7 +15,7 @@
 
                     <div class="col-md-3">
                         <div class="logo">
-                            <img src="assets/img/logo-light.png" alt="">
+                            <img src="/assets/img/logo-light.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -74,40 +74,6 @@
 </div>
         </header>
         
-        <script>
-        document.getElementsByClassName('l')[0].onclick = function () {
-
-            if (localStorage.getItem('toogle')) {
-                if (localStorage.getItem('toogle') == 'dark') {
-                    LightOrDark('light')
-                    localStorage.setItem('toogle', 'light');
-                } else {
-                    LightOrDark('dark')
-                    localStorage.setItem('toogle', 'dark');
-                }
-            } else {
-                localStorage.setItem('toogle', 'light');
-                LightOrDark('light')
-            }
-
-        }
-
-        function LightOrDark(color) {
-            if (color == 'dark') {
-                document.documentElement.style.setProperty('--color-bg', '#233447');
-               
-                document.documentElement.style.setProperty('--color-font12', 'white');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-                
-            } else {
-                document.documentElement.style.setProperty('--color-bg', '#386caa');
-               
-                document.documentElement.style.setProperty('--color-font12', 'black');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-               
-            }
-        }
-
-        LightOrDark(localStorage.getItem('toogle'));
-    </script>
+        <script src="assets/js/dark_light.js"></script>
+        
 

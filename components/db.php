@@ -1,3 +1,3 @@
 <?php 
-    $c = mysqli_connect('localhost', 'root', '','lightstore'); 
+    $c = mysqli_connect('localhost', 'root', 'root','lightstore'); 
 ?>
