@@ -10,6 +10,8 @@
         $_SESSION['email'] = $_POST['email'];
         $_SESSION['password'] = $_POST['pass'];
         $_SESSION['role'] =  $role;
+        $_SESSION['id'] = $_POST['id'];
+
 
        if($role == 1){
         header("location: admin/index.php");
