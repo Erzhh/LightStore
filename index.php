@@ -289,9 +289,13 @@ LightOrDark(localStorage.getItem('toogle'));
 
             echo"
 
-                <div class='categories'>
-                    <div class='img' style=\"background-image: url('images/$newArray[image]');\"></div> 
-                    <span>$newArray[title_ru]</span>               
+                <div class='adverts'>
+                    <div class='img_adv' style=\"background-image: url('images/$newArray[images]');\"></div> 
+                    <h3 class='title_adv'>$newArray[title]</h3> 
+                    <div class='info'>
+                        <h5>$newArray[city_id],$newArray[author_id]</h5>
+                        <h5>$newArray[public_time]</h5>  
+                    </div>
                 </div>
 
             ";

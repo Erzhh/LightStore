@@ -45,13 +45,30 @@ justify-content: flex-end;
     height: 110px;
     align-items: center;
     justify-content: center;
-}
+} 
 .img{
     width: 70px;
     height: 70px;
     background-color: rgb(255, 206, 50);
     background-size: cover;
     border-radius: 50%;
+}
+
+
+.adverts{ 
+    width: 200px;
+    height: 370px;
+    border: 1px border gray;
+    display: flex;
+    justify-content: center;
+}
+.img_adv{
+    width: 180px;
+    height: auto;
+    background-size: cover;
+}
+.info_adv{
+    display: flex;
 }
 
 
