@@ -1,8 +1,7 @@
 body{
     display: flex;
     flex-direction: row;
-    border: none;
-    background: rgb(0, 68, 255);
-    color: white;
+    align-items: center;
+    justify-content: center;
     
 }

@@ -30,6 +30,7 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="admin/forms.php">Cities</a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
