@@ -1,18 +1,10 @@
 <?php 
     include "components/checkUser.php";
-    include "setting/language.php"
+    include "includes/head.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Light Store</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <?php include "../includes/head.php";?>
-</head>
+
 <body>   
     <?php include "includes/header.php";?>
 
