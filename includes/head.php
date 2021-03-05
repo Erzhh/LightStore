@@ -21,5 +21,5 @@
 
 <link rel="stylesheet" href="/assets/css/olx-demo.css">
 <link rel="stylesheet" href="/assets/css/main.css">
+
 </head>
-<html>

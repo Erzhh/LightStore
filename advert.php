@@ -1,7 +1,8 @@
 <?php 
     include "components/checkUser.php";
-    include "setting/language.php"
+    include "includes/head.php";
 ?>
+<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,11 @@
     <link rel="stylesheet" href="assets/css/form.css">
     <?php include "includes/head.php";?>
 </head>
+=======
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+
+>>>>>>> 8ac6b3db1ff4a3cc0b498ccdf77c57b173253c16
 <body>   
 <?php include "includes/header.php";?>
     <br>
@@ -163,7 +169,7 @@
     <?php
           
           if(isset($_POST['title'])){
-         $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+         $c = mysqli_connect('localhost', 'root' , '' , 'lightstore')
         mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`city_id`)
         VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
 
