@@ -278,6 +278,12 @@ LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
+
+    <?php
+    
+        
+    
+    ?>
 </body>
 
 </html>
