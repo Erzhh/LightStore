@@ -40,13 +40,13 @@ div.header12 {
   
   
   div.bikVipAd {
-      width: 97%;
-      height: 25px;
-      font-size: 22px;
-      margin-left: 5%;
-      /* background-color: blanchedalmond; */
-      color: var(--color-font);
-  }
+    width: 97%;
+    height: 25px;
+    font-size: 22px;
+    margin-left: 5%;
+    /* background-color: blanchedalmond; */
+    color: var(--color-font);
+}
   
   
   
@@ -58,7 +58,8 @@ div.header12 {
       background-color: var(--color-bg103);
       color: var(--color-font);
   }
-  div.bikad a  {
+  
+  div.bikad a {
     width: 47%;
     height: 200px;
     background-color: var(--color-bg104);
@@ -68,14 +69,14 @@ div.header12 {
     margin-right: 1.5%;
     /* margin-left: 1.5%; */
     border-radius: 10px;
-    color:var(--color-font);
-    border:0px;
-  }
-  
+    color: var(--color-font);
+    border: 0px;
+    text-decoration: none;
+}
 
   
   
-  div.bikad a div.bikAd1 {
+div.bikad a div.bikAd1 {
     width: 100%;
     height: 200px;
     background-color: var(--color-bg104);
@@ -84,8 +85,8 @@ div.header12 {
     margin-bottom: 10px;
     margin-right: 1.5%;
     /* margin-left: 1.5%; */
-    border-radius: 10px;
-  }
+    border-radius: 5px;
+}
  
   
   div.bikad div.bikAd1 div.bikImg {
@@ -96,7 +97,7 @@ div.header12 {
   div.bikad div.bikAd1 div.bikImg img {
       width: 100%;
       height: 100px;
-      border-radius: 10px;
+      border-radius: 5px;
       /* background-color: yellow; */
   }
   

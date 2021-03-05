@@ -6,7 +6,7 @@
 
                     <div class="col-md-3">
                         <div class="logo">
-                            <img src="assets/img/logo-light.png" alt="">
+                            <img src="/assets/img/logo-light.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -64,4 +64,7 @@
             </div>
 </div>
         </header>
-  
+        
+        <script src="assets/js/dark_light.js"></script>
+        
+
