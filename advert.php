@@ -169,7 +169,7 @@
     <?php
           
           if(isset($_POST['title'])){
-         $c = mysqli_connect('localhost', 'root' , '' , 'lightstore')
+         $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore')
         mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`city_id`)
         VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
 
