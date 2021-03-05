@@ -1,6 +1,3 @@
-<?php 
-    include "setting/language.php";
-?>
 <?php include "includes/head.php";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,16 +16,6 @@
 </head>
 <body>
 <?php include "includes/header.php";?>
-
-
-
-
-
-
-
-
-
-
 
 <h2 style="margin-top:70px "><?=$L['izbrannoe']?></h2>
 
