@@ -12,8 +12,11 @@
     width: 100%;
 }
 
-.wrapper.clr.rel .col-md-3 .logo img{
+.wrapper.clr.rel .col-md-3 .logo img {
     width: 200px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
 
@@ -30,6 +33,10 @@ justify-content: flex-end;
 }
 .maincategories-list{
     display: flex;
+}
+.gallerywide .inner h4 a strong {
+    font-weight: normal;
+    color: white!important;
 }
 .categories{
     display: flex;
