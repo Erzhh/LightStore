@@ -1,13 +1,4 @@
 
-    <?php include "includes/head.php";?>
-    
-
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/olx-1.css">
-    <link rel="stylesheet" href="assets/css/olx-2.css">
-    <link rel="stylesheet" href="assets/css/olx-demo.css">
-
-
 <header id="header-container">
 <div class="wrapper">
             <div class="navi">
