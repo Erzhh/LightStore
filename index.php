@@ -281,8 +281,6 @@ LightOrDark(localStorage.getItem('toogle'));
     </div> <!-- BODY CONTRIB -->
 
     <?php
-        $c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
-
         $q = mysqli_query($c, "SELECT * FROM `advert`");
 
         while($newArray = mysqli_fetch_assoc($q)){
