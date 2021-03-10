@@ -63,8 +63,7 @@
 <body>
 	<div class="wrapper">
 	<?php 
-			include "../includes/site_bar.php"
-			
+			include "../includes/site_bar.php"		
 		?>
 		<div class="main">
 			
@@ -407,12 +406,12 @@
 														<?php 
 											
 												$query = mysqli_query($c,"SELECT * FROM `city`");
-												
+												$i = 1;
 												while($fetch=mysqli_fetch_assoc($query)){
 													echo "
 													
 													<tr role='row' class='odd'>
-														<td class='d-none d-md-table-cell'>1</td>												
+														<td class='d-none d-md-table-cell'>$i</td>												
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
@@ -420,6 +419,7 @@
 													</tr>
 																																						
 													";
+													$i++;
 												}
 
 														?>
