@@ -45,6 +45,7 @@ justify-content: flex-end;
     height: 110px;
     align-items: center;
     justify-content: center;
+    color: black;
 } 
 .img{
     width: 70px;
