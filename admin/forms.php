@@ -1,10 +1,4 @@
-<?php 
- include "../components/db.php";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
+<?php include "../components/db.php"; ?>
 <head>
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +6,9 @@
 	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
 	<meta name="author" content="Bootlab">
 	<title>Default Dashboard | AppStack - Admin &amp; Dashboard Template</title>
-	
-	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html">
 	<link rel="shortcut icon" href="img/favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
+	
 	<link class="js-stylesheet" href="https://appstack.bootlab.io/css/light.css" rel="stylesheet">
 	<script src="js/settings.js"></script>
 	<link rel="stylesheet" href="assets/font/css/icons.css">
@@ -77,35 +69,21 @@
 									<h6 class="card-subtitle text-muted"></h6>
 									
 								</div>
-								<?php
-
+													<?php
 													if(isset($_POST['title_ru'])){
-														$mysqli_q = mysqli_query($c,"INSERT INTO `city`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')");
-
-															// if($_POST['title_ru']==''){
-															// 		echo "напишите что то";
-															// 	}
-															// if(isset($mysqli_q)){
-															// 	echo "<span class='mysqli_true'>Успешно отправленo!</span>";
-															// }	
-														
-													}
-													 // echo "INSERT INTO `city`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')";
-													 
-															
-															
-													
+														 mysqli_query($c,"INSERT INTO `city`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')");
+													}	
 													?>
 								<div class="card-body">
 									<form>
 										
 										<div class="form-group">
 											<label class="form-label">Title-ru</label>
-											<input type="text" class="form-control" placeholder="title" name="title_ru">
+											<input type="text" class="form-control" placeholder="Город" name="title_ru">
 										</div>
 										<div class="form-group">
 											<label class="form-label">Title-kz</label>
-											<input type="text" class="form-control" placeholder="title" name="title_kz"></textarea>
+											<input type="text" class="form-control" placeholder="Қала" name="title_kz"></textarea>
 										</div>
 								</div>
 							</div>
@@ -412,6 +390,7 @@
 													
 													<tr role='row' class='odd'>
 														<td class='d-none d-md-table-cell'>$i</td>												
+														<td class='d-none d-md-table-cell'>$fetch[id]</td>												
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
