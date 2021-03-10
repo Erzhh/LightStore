@@ -44,15 +44,12 @@ include "setting/language.php";
                     </div>
 
                     <div class="kas_ob" id="kas_ob">
-                       
-                            <img src="assets/img/iphone.jpg" alt="" class="kas_img i1">
-                        
-                        
-                <div class="kas_op">
-                    <p class="kas_h3"><?=$L['iPhone_description'] ?></p>
-                    <p class="kas_p">0тг</p>
-                    <p class="kas_p"><?= $L['Street'] ?></p>
-                </div>
+                        <img src="assets/img/iphone.jpg" alt="" class="kas_img i1">
+                        <div class="kas_op">
+                            <p class="kas_h3"><?=$L['iPhone_description'] ?></p>
+                            <p class="kas_p">0тг</p>
+                            <p class="kas_p"><?= $L['Street'] ?></p>
+                        </div>
 </div>
         </div>
         

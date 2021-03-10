@@ -174,13 +174,24 @@
 <?php
   
 if(isset($_POST['title'])){
-
 	
-	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`author_id`)
-	VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$_POST[images]','$_POST[city_id]','$_SESSION[id]')");
+	$time = time(); // 1977 - now time
+	$random = mt_rand(10000,99999);
+	$new_name = md5( $time.$random ); 
+	//160876843567123
+	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
+	$exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+	$format = $exp[1];
+	//jpg
 
-	// echo "INSERT INTO `advert`(`description`,`title`,`price`)
-	// VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')";
+	$img_name = $new_name.'.'.$format;
+	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
+	$upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img/advert/'.$img_name);
+	
+
+	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`author_id`)
+	VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$img_name','$_POST[city_id]','$_SESSION[id]')");
+
 }
 
 
