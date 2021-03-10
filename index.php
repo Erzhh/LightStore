@@ -178,7 +178,12 @@
                 $q = mysqli_query($c, "SELECT * FROM `advert`");
 
                 while($newArray = mysqli_fetch_assoc($q)){
-
+                    $f = mysqli_query($c, "SELECT `name` FROM `users` WHERE `id`='$newArray[author_id]'");
+                    $arr = mysqli_fetch_assoc($f);
+                  
+                    $a = mysqli_query($c, "SELECT `title_kz` FROM `city` WHERE `id`='$newArray[city_id]'");
+                    $arrR = mysqli_fetch_assoc($a);
+                   
                 echo "
                 <li rel='' class='wrap tleft rel fleft ad_idj604A '>
                     <div class='mheight tcenter'>
@@ -202,7 +207,7 @@
                         </p>
                     </div>
                     <ul class='date-location'>
-                        <li>$newArray[city_id], $newArray[author_id]</li>
+                        <li>$arrR[title_kz], $arr[name]</li>
                         <li>$newArray[public_time]</li>
                     </ul>
                     <div class='price '>
