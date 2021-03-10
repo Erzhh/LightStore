@@ -24,6 +24,9 @@
               <span class="badge badge-sidebar-primary">5</span>
             </a>
 						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
+				
+							
+
 							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="forms.php">Город</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="kategori.php">Категории</a></li>
