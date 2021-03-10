@@ -55,7 +55,9 @@ justify-content: flex-end;
     border-radius: 50%;
 }
 
-
+form input[type="text"], form input[type="password"]{
+    font-size: 14px;
+}
 .adverts{ 
     width: 200px;
     height: 370px;
