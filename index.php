@@ -35,7 +35,7 @@
                             <div class="locationrequest  has-dist-picker" id="locationBox">
                                 <div class="clr rel">
                                     <div class="rel fleft input-container">
-                                       <select>
+                                       <select class = "select_city">
                                       <?php
                                       $query = mysqli_query($c,"SELECT * FROM `city`");
                                        while($fetch=mysqli_fetch_assoc($query)){
