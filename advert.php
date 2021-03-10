@@ -2,7 +2,6 @@
     include "components/checkUser.php";
     include "includes/head.php";
 ?>
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +14,6 @@
     <link rel="stylesheet" href="assets/css/form.css">
     <?php include "includes/head.php";?>
 </head>
-=======
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/form.css">
-
->>>>>>> 8ac6b3db1ff4a3cc0b498ccdf77c57b173253c16
 <body>   
 <?php include "includes/header.php";?>
     <br>
