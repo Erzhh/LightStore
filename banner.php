@@ -1,19 +1,9 @@
-<?php
-$connect=mysqli_connect('localhost','root','root','lightstore');
-$query=mysqli_query($connect,"SELECT * FROM `banner`");
-$banner=mysqli_fetch_assoc($query);
-	$c = mysqli_connect('localhost', 'root', 'root', 'lightstore');         
-	$query=mysqli_query($c, "SELECT *FROM `banner`");
-    $update = mysqli_query($c, "UPDATE  `banner` SET `btn_text_ru`='$_POST[title]', `btn_text_kz`='$_POST[titlekz]', `des_ru`='$_POST[desk]',`image`='$_POST[img]', `des_kz`='$_POST[deskkz]', WHERE `id`='$_GET[news_id]'");
-    
-	
 
-?>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Redact News</title>
+	<title>banner</title>
 
 	<link rel="stylesheet" href="insert.css">
 </head>
@@ -21,37 +11,38 @@ $banner=mysqli_fetch_assoc($query);
 
 
 	<form method="POST" enctype="multipart/form-data">
-	<div class="namen">
+	<div class="name">
 			<div class="fn">
 				<label for="tit">Заголовок</label>
 				<br>
-				<textarea type="text" name="title" id="tit" class="n"><?=$banner['title']?></textarea>
+				<textarea type="text" name="title" id="titb" class="nk"></textarea>
 				</div>
 
-				<div class="fn">
-				<label for="tit">Заголовок кз</label>
+				<div class="f">
+				<label for="ti">Заголовок кз</label>
 				<br>
-				<textarea type="text" name="titlekz" id="tit" class="n"><?=$banner['titlekz']?></textarea>
+				<textarea type="text" name="titlekz" id="titk" class="nb"></textarea>
 				</div>
-		<div class="namen">
+
+		<div class="nameng">
 			<div class="fn">
-				<label for="tit">кнопка</label>
+				<label for="tt">кнопка</label>
 				<br>
-				<textarea type="text" name="btnru" id="tit" class="n"><?=$banner['btn_text_ru']?></textarea>
+				<textarea type="text" name="btnru" id="tit" class="ng"></textarea>
               
 			</div>  
-            <div class="name">
+            <div class="namenb">
 			<div class="fn">
-				<label for="tit">кнопка кз</label>
+				<label for="t">кнопка кз</label>
 				<br>
-				<textarea type="text" name="btnkz" id="titt" class="nj" value="<?=$banner['btn_text_kz']?>"></textarea>
+				<textarea type="text" name="btnkz" id="titt" class="nj"></textarea>
               
 			</div>  
             
 			<div class="sn">
 				<label for="im">Фото</label>
 				<br>
-				<input type="file" name="img" id="im" class="n i" value="<?=$banner['image']?>">
+				<input type="file" name="img" id="im" class="n i" >
 			</div>
 		<br>
 
@@ -62,13 +53,13 @@ $banner=mysqli_fetch_assoc($query);
         <div class="dis">
 			<label for="dis">Описание</label>
 			<br>
-			<textarea type="text" name="desk" id="dis"><?=$banner['des_ru']?></textarea>
+			<textarea type="text" name="des_ru" id="dis"></textarea>
 		</div>
-        <div class="dis">
+        <div class="disk">
 
-			<label for="dis">Описание кз</label>
+			<label for="disk">Описание кз</label>
 			<br>
-			<textarea type="text" name="deskkz" id="dis"><?=$banner['des_kz']?></textarea>
+			<textarea type="text" name="des_kz" id="dis"></textarea>
 		</div>
 
 		
@@ -78,10 +69,8 @@ $banner=mysqli_fetch_assoc($query);
 
 
 
-	<?php
-	$query=mysqli_query($c, "SELECT *FROM `banner`");
-while($banner=mysqli_fetch_assoc($query)){
-	
+
+<?php
 
 	if(isset($_POST['title'])){
 		$c = mysqli_connect('localhost', 'root', 'root', 'lightstore');
@@ -92,27 +81,11 @@ while($banner=mysqli_fetch_assoc($query)){
 
 			$upload=move_uploaded_file(
 									  $_FILES['img']['tmp_name'],
-									  'assets/img/'.$new_name
+									  'assets/images/'.$new_name
 			);	
-			
-$insert = mysqli_query($c, "INSERT INTO `banner` (`title`,`titlekz`,`des_ru`, `des_kz`,  `btn_text_ru`,`btn_text_kz`, `image` ) VALUES ('$_POST[title]', '$_POST[titlekz]', '$_POST[desk]', '$new_name', '$_POST[deskkz]', 
-'$_POST[btnru]','$_POST[btnkz]',    '$new_name' ");	
-// if($insert){
-// echo "news";
-// }
-// else{
-// 	echo "INSERT INTO `banner`(`btn_text_ru`, `btn_text_kz`, `des_ru`, `des_kz`, `image`) VALUES ('$_POST[title]', '$_POST[titlekz]', '$new_name', '$_POST[desk]', '$_POST[deskkz]')";
+							
+				$insert = mysqli_query($c, "INSERT INTO `banner` (`title`,`titlekz`,`des_ru`, `des_kz`,  `btn_text_ru`,`btn_text_kz`, `image` ) VALUES ('$_POST[title]', '$_POST[titlekz]', '$_POST[des_ru]',  '$_POST[des_kz]', '$_POST[btnru]','$_POST[btnkz]',    '$new_name')");	
 
-			echo "<div class='card' style='width: 18rem;'>
-<img src='assets/img/$banner[image]' class='card-img-top'>
-<div class='card-body'>
-  <p class='card-text'>
-   $banner[title]
-  </p>	 
-    
-</div>
-</div>";
-	}
 
 	}
 
