@@ -1,4 +1,5 @@
 <?php include "includes/head.php";?>
+
 </head>
 <div class="wrapper">
 
@@ -34,10 +35,15 @@
                             <div class="locationrequest  has-dist-picker" id="locationBox">
                                 <div class="clr rel">
                                     <div class="rel fleft input-container">
-                                        <input id="cityField" autocomplete="off" type="text"
-                                            data-cy="homepage_input_locationsearch" defaultval="Весь Казахстан"
-                                            defaultalternative="Введите город" value=""
-                                            class="with-x-clear-button fleft defaultval light ca2 cityfield ">
+                                       <select>
+                                      <?php
+                                      $query = mysqli_query($c,"SELECT * FROM `city`");
+                                       while($fetch=mysqli_fetch_assoc($query)){
+                                         echo " <option>$fetch[title_ru]</option>";
+                                       }
+                                       ?>  
+                                       
+                                       </select>
                                         <div class="cityfield" id="cityFieldGray">
                                             <span class="fbold vishid"></span><span class="color-9"> </span>
                                         </div>

@@ -28,13 +28,11 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html">Analytics</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
-<<<<<<< HEAD
-							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="admin/forms.php">Cities</a></li>
-=======
-							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>
->>>>>>> ee2d8eb00b63cad2bbe0846a1c7e476f5ed38bfb
+							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
+							
+
 						</ul>
 					</li>
 					<li class="sidebar-item">
