@@ -266,7 +266,7 @@ if (color == 'dark') {
     document.documentElement.style.setProperty('--color-bg1232', '#232526');
    
     document.documentElement.style.setProperty('--color-font12', 'white');
-    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
+    document.documentElement.style.setProperty('--logo-theme', "url('/assets/img/logo-dark.png')");
     
 } else {
     document.documentElement.style.setProperty('--color-bg', '#386caa');
@@ -275,7 +275,8 @@ if (color == 'dark') {
 
    
     document.documentElement.style.setProperty('--color-font12', 'black');
-    document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
+    document.documentElement.style.setProperty('--logo-theme', "url('/assets/img/logo-light.png')");
+    
    
 }
 }
@@ -284,6 +285,27 @@ LightOrDark(localStorage.getItem('toogle'));
     </script>
         
     </div> <!-- BODY CONTRIB -->
+
+    <?php
+        $q = mysqli_query($c, "SELECT * FROM `advert`");
+
+        while($newArray = mysqli_fetch_assoc($q)){
+
+            echo"
+
+                <div class='adverts'>
+                    <div class='img_adv' style=\"background-image: url('images/$newArray[images]');\"></div> 
+                    <h3 class='title_adv'>$newArray[title]</h3> 
+                    <div class='info'>
+                        <h5>$newArray[city_id],$newArray[author_id]</h5>
+                        <h5>$newArray[public_time]</h5>  
+                    </div>
+                </div>
+
+            ";
+
+        }
+    ?>
 </body>
 
 </html>

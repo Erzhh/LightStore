@@ -1,7 +1,9 @@
 <?php 
     include "components/checkUser.php";
-    include "setting/language.php"
+    include "includes/head.php";
 ?>
+<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,14 +13,25 @@
     <title>Light Store</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <?php include "../includes/head.php";?>
+    <?php include "includes/head.php";?>
 </head>
-<body>   
-    <?php include "includes/header.php";?>
+=======
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/form.css">
 
+>>>>>>> 8ac6b3db1ff4a3cc0b498ccdf77c57b173253c16
+<body>   
+<?php include "includes/header.php";?>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<div class="wrapper"  >
     <form method="POST">
 
-
+       
         <div class="nik_main">
             <h1><?=$L['aDvert']?></h1>
             <div class="nik_title div">
@@ -114,14 +127,14 @@
 
 
             <div class="nik_doIt  div">
-                <button>
+                <button >
                     <h2><?=$L['PUBLik']?></h2>
                 </button>
             </div>
         </div>
 
     </form>
-
+</div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script>
@@ -149,43 +162,8 @@
             document.getElementsByClassName('contract')[0].style.display = 'flex';
         }
     </script>
-    <script>
-        document.getElementsByClassName('l')[0].onclick = function () {
-
-            if (localStorage.getItem('toogle')) {
-                if (localStorage.getItem('toogle') == 'dark') {
-                    LightOrDark('light')
-                    localStorage.setItem('toogle', 'light');
-                } else {
-                    LightOrDark('dark')
-                    localStorage.setItem('toogle', 'dark');
-                }
-            } else {
-                localStorage.setItem('toogle', 'light');
-                LightOrDark('light')
-            }
-
-        }
-
-        function LightOrDark(color) {
-            if (color == 'dark') {
-                document.documentElement.style.setProperty('--color-bg', 'white');
-                document.documentElement.style.setProperty('--color-bg2', 'black');
-                document.documentElement.style.setProperty('--color-font', 'black');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-dark.png')");
-                document.documentElement.style.setProperty('--color-bgD', '#333333');
-            } else {
-                document.documentElement.style.setProperty('--color-bg', 'black');
-                document.documentElement.style.setProperty('--color-bg2', 'white');
-                document.documentElement.style.setProperty('--color-font', 'white');
-                document.documentElement.style.setProperty('--logo-theme', "url('../img/logo-light.png')");
-                document.documentElement.style.setProperty('--color-bgD', 'white');
-            }
-        }
-
-        LightOrDark(localStorage.getItem('toogle'));
-    </script>
-
+    
+    <script src="assets/js/dark_light.js"></script>
 
 
     <?php

@@ -1,6 +1,3 @@
-<?php 
-    include "setting/language.php";
-?>
 <?php include "includes/head.php";?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +15,8 @@
 <link href="assets/font/css/icons.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="wrapper">
 <?php include "includes/header.php";?>
 
 
@@ -30,7 +29,7 @@
 
 
 
-<h2 style="margin-top:70px "><?=$L['izbrannoe']?></h2>
+<h2 style="margin-top:130px "><?=$L['izbrannoe']?></h2>
 
 
 
@@ -107,6 +106,7 @@
 
 
 
+</div>
 </div>
 
 <script>

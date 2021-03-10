@@ -19,7 +19,7 @@ form{
 	margin-top: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
-	background-color: var(--color-bgD) ;  
+	background-color: var(--color-bg);
 }
 .text{
 	width: 650px;
@@ -38,14 +38,15 @@ form{
 .r{
 	display: none;
 }
-.radio{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100px;
-	height: 40px;
-	border-radius: 7px;
-	border: 2px solid #1a1a1a;
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid #1a1a1a;
+    color: white;
 }
 input{
 	font-size: 14px;
@@ -69,6 +70,12 @@ input{
 	justify-content: flex-end;
 	align-items: center;
 }
+
+.nik_doIt h2{
+	
+	color: var(--color-font12);
+}
+
 .inputfile{
 	display: flex;
 }
@@ -79,12 +86,12 @@ button{
 	margin-right: 20px;
 	background-color: #FCFF00;
 }
-.opt{
-	width: 200px;
-	height: 40px;
-	border-radius: 7px;
+.opt {
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    color: var(--color-font12);
 }
-
 
 /* SLIDE TWO */
 .slideTwo {
@@ -224,3 +231,6 @@ button{
 input{
 	font-size: 14px;
 }
+
+
+
