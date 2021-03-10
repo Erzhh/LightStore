@@ -24,13 +24,7 @@
               <span class="badge badge-sidebar-primary">5</span>
             </a>
 						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
-							<li class="sidebar-item active"><a class="sidebar-link" href="dashboard-default.html">Default</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-analytics.html">Analytics</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-saas.html">SaaS</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-social.html">Social</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="admin/forms.php">Cities</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="dashboard-crypto.html">Crypto</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="admin/advert_for_admin.php">advert</a></li>
+				
 							
 
 							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>

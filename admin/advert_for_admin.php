@@ -44,13 +44,13 @@
 					<input class="tit" type="text" id="ad_title" name="title"><br>
 
 
-					<div id="ad.category">
+					<div id="ad.category" style="display: flex; flex-direction: column">
 						<label for="ad_сategory"><?=$L['CATEGory']?>*</label>
 					<select class="opt" id="ad_city" name="city_id">
 						<?php 
 								$cat =mysqli_query($c, "SELECT * FROM `categories`");
 							while($category =  mysqli_fetch_assoc($cat)){
-								echo "<option value='$category[id]'>$category[title_ru]</option>";
+								echo "<option value='$category[id]' name='categ'>$category[title_ru]</option>";
 							}
 						?>
 					</select>
@@ -68,7 +68,7 @@
 						<?php 
 								$cities =mysqli_query($c, "SELECT * FROM `city`");
 							while($city =  mysqli_fetch_assoc($cities)){
-								echo "<option value='$city[id]'>$city[title_ru]</option>";
+								echo "<option value='$city[id]' name='city'>$city[title_ru]</option>";
 							}
 						?>
 					</select>
@@ -186,7 +186,7 @@ if(isset($_POST['title'])){
 
 	$img_name = $new_name.'.'.$format;
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
-	$upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img/advert/'.$img_name);
+	$upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
 	
 
 	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`author_id`)
