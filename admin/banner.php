@@ -1,4 +1,4 @@
-<?php include "../assets/img/iphone.jpg";?>
+
 
 
 <!DOCTYPE html>
