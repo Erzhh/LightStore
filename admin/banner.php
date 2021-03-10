@@ -1,3 +1,5 @@
+<?php include "../assets/img/iphone.jpg";?>
+
 
 <!DOCTYPE html>
 <html>
@@ -81,7 +83,7 @@
 
 			$upload=move_uploaded_file(
 									  $_FILES['img']['tmp_name'],
-									  'assets/images/'.$new_name
+									  '../assets/img/'.$new_name
 			);	
 							
 				$insert = mysqli_query($c, "INSERT INTO `banner` (`title`,`titlekz`,`des_ru`, `des_kz`,  `btn_text_ru`,`btn_text_kz`, `image` ) VALUES ('$_POST[title]', '$_POST[titlekz]', '$_POST[des_ru]',  '$_POST[des_kz]', '$_POST[btnru]','$_POST[btnkz]',    '$new_name')");	
