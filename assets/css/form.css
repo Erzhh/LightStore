@@ -21,10 +21,11 @@ form{
 	padding-bottom: 20px;
 	background-color: var(--color-bg);
 }
-.text{
-	width: 650px;
-	height: 300px;
-	border-radius: 7px;
+.text {
+    width: 650px;
+    height: 300px;
+    border-radius: 7px;
+    color: var(--color-font12);
 }
 .tit{
 	width: 450px;
@@ -71,9 +72,8 @@ input{
 	align-items: center;
 }
 
-.nik_doIt h2{
-	
-	color: var(--color-font12);
+.nik_doIt h2 {
+    color: black;
 }
 
 .inputfile{
@@ -215,9 +215,11 @@ button{
 	.tit{
 		width: 230px;
 	}
-	.text{
-		width: 280px;
-		height: 150px;
+	.text {
+		width: 650px;
+		height: 300px;
+		border-radius: 7px;
+		color: var(--color-font12);
 	}
 	.cost{
 		width: 230px;
