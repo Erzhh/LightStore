@@ -46,6 +46,14 @@
 
 					<div id="ad.category">
 						<label for="ad_сategory"><?=$L['CATEGory']?>*</label>
+					<select class="opt" id="ad_city" name="city_id">
+						<?php 
+								$cat =mysqli_query($c, "SELECT * FROM `categories`");
+							while($category =  mysqli_fetch_assoc($cat)){
+								echo "<option value='$category[id]'>$category[title_ru]</option>";
+							}
+						?>
+					</select>
 						
 					</div>
 
