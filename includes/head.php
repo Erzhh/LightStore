@@ -22,5 +22,6 @@
 <link rel="stylesheet" href="/assets/css/olx-demo.css">
 <link rel="stylesheet" href="/assets/css/main.css">
 <link rel="stylesheet" href="/assets/css/select_city.css">
+<link rel="stylesheet" href="../assets/css/aa.css">
 
 </head>

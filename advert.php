@@ -2,7 +2,6 @@
     include "components/checkUser.php";
     include "includes/head.php";
 ?>
-<<<<<<< HEAD
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +12,7 @@
     <title>Light Store</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <?php include "includes/head.php";?>
 </head>
-=======
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/form.css">
-
->>>>>>> 8ac6b3db1ff4a3cc0b498ccdf77c57b173253c16
 <body>   
 <?php include "includes/header.php";?>
     <br>
@@ -27,7 +20,6 @@
     <br>
     <br>
     <br>
-    
 <div class="wrapper"  >
     <form method="POST">
 
@@ -168,20 +160,12 @@
 
     <?php
           
-          if(isset($_POST['title'])){
-         $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
-        mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`city_id`)
-        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
-
-        echo "INSERT INTO `advert`(`description`,`title`,`price`)
-        VALUES ('$_POST[title]','$_POST[description]','$_POST[price]',$_POST[city_id])";
+        if(isset($_POST['title'])){
+            $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
+            mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`city_id`)
+                                 VALUES ('$_POST[title]','$_POST[description]','$_POST[price]')");
+                                 
         }
-
-        // if(isset($_POST['title'])){
-        //     $c = mysqli_connect('localhost', 'root' , 'root' , 'lightstore');
-        //    mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`p`); 
-        //    VALUES ('$_POST[title]','$_POST[description]','$_POST[images]',)");
-        //    }
 
      ?>
 
