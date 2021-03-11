@@ -55,7 +55,8 @@
 <body>
 	<div class="wrapper">
 	<?php 
-			include "../includes/site_bar.php"		
+			include "../includes/site_bar.php"
+			
 		?>
 		<div class="main">
 			
@@ -65,7 +66,7 @@
 						<div class="col-12 col-xl-6">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title">Basic form</h5>
+									<h5 class="card-title">Города</h5>
 									<h6 class="card-subtitle text-muted"></h6>
 								</div>
 													<?php
@@ -95,17 +96,6 @@
 						<div class="card-header">
 							<div class="card-actions float-right">
 								<div class="dropdown show">
-									<a href="#" data-toggle="dropdown" data-display="static">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-											viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-											stroke-linecap="round" stroke-linejoin="round"
-											class="feather feather-more-horizontal align-middle">
-											<circle cx="12" cy="12" r="1"></circle>
-											<circle cx="19" cy="12" r="1"></circle>
-											<circle cx="5" cy="12" r="1"></circle>
-										</svg>
-									</a>
-
 									<div class="dropdown-menu dropdown-menu-right">
 										<a class="dropdown-item" href="#">Action</a>
 										<a class="dropdown-item" href="#">Another action</a>
@@ -131,7 +121,7 @@
 									<div class="notyf-announcer" aria-atomic="true" aria-live="polite"
 										style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; outline: 0px;">
 									</div>
-										
+								
 										<div class="row">
 											<div class="col-sm-12">
 												<table id="datatables-dashboard-projects"
@@ -159,15 +149,14 @@
 													<tbody>
 													
 														<?php 
-											
-												$query = mysqli_query($c,"SELECT * FROM `city`");
 												$i = 1;
+												$query = mysqli_query($c,"SELECT * FROM `city`");
+												
 												while($fetch=mysqli_fetch_assoc($query)){
 													echo "
 													
 													<tr role='row' class='odd'>
 														<td class='d-none d-md-table-cell'>$i</td>												
-														<td class='d-none d-md-table-cell'>$fetch[id]</td>												
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
@@ -177,7 +166,7 @@
 													";
 													$i++;
 												}
-
+													
 														?>
 													</tbody>
 												<?php 
@@ -185,114 +174,7 @@
 													mysqli_query($c,"DELETE FROM `city` WHERE id='$_GET[title_id]'");
 												}
 												?>
-													<script src="js/app.js"></script>
-													<script>
-														document.addEventListener("DOMContentLoaded", function () {
-															// Bar chart
-															new Chart(document.getElementById("chartjs-dashboard-bar"), {
-																type: "bar",
-																data: {
-																	labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct",
-																		"Nov", "Dec"
-																	],
-																	datasets: [{
-																		label: "Last year",
-																		backgroundColor: window.theme.primary,
-																		borderColor: window.theme.primary,
-																		hoverBackgroundColor: window.theme.primary,
-																		hoverBorderColor: window.theme.primary,
-																		data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-																		barPercentage: .325,
-																		categoryPercentage: .5
-																	}, {
-																		label: "This year",
-																		backgroundColor: window.theme["primary-light"],
-																		borderColor: window.theme["primary-light"],
-																		hoverBackgroundColor: window.theme["primary-light"],
-																		hoverBorderColor: window.theme["primary-light"],
-																		data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
-																		barPercentage: .325,
-																		categoryPercentage: .5
-																	}]
-																},
-																options: {
-																	maintainAspectRatio: false,
-																	cornerRadius: 15,
-																	legend: {
-																		display: false
-																	},
-																	scales: {
-																		yAxes: [{
-																			gridLines: {
-																				display: false
-																			},
-																			stacked: false,
-																			ticks: {
-																				stepSize: 20
-																			},
-																			stacked: true,
-																		}],
-																		xAxes: [{
-																			stacked: false,
-																			gridLines: {
-																				color: "transparent"
-																			},
-																			stacked: true,
-																		}]
-																	}
-																}
-															});
-														});
-													</script>
-													<script>
-														document.addEventListener("DOMContentLoaded", function () {
-															$("#datetimepicker-dashboard").datetimepicker({
-																inline: true,
-																sideBySide: false,
-																format: "L"
-															});
-														});
-													</script>
-													<script>
-														document.addEventListener("DOMContentLoaded", function () {
-															// Pie chart
-															new Chart(document.getElementById("chartjs-dashboard-pie"), {
-																type: "pie",
-																data: {
-																	labels: ["Direct", "Affiliate", "E-mail", "Other"],
-																	datasets: [{
-																		data: [2602, 1253, 541, 1465],
-																		backgroundColor: [
-																			window.theme.primary,
-																			window.theme.warning,
-																			window.theme.danger,
-																			"#E8EAED"
-																		],
-																		borderWidth: 5,
-																		borderColor: window.theme.white
-																	}]
-																},
-																options: {
-																	responsive: !window.MSInputMethodContext,
-																	maintainAspectRatio: false,
-																	cutoutPercentage: 70,
-																	legend: {
-																		display: false
-																	}
-																}
-															});
-														});
-													</script>
-													<script>
-														document.addEventListener("DOMContentLoaded", function () {
-															$("#datatables-dashboard-projects").DataTable({
-																pageLength: 6,
-																lengthChange: false,
-																bFilter: false,
-																autoWidth: false
-															});
-														});
-													</script>
+												
 
 
 
