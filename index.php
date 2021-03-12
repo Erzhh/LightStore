@@ -68,7 +68,7 @@
                             echo"
 
                             <div class='categories'>
-                                <div class='img' style=\"background-image: url('images/$newArray[image]');\"></div> 
+                                <div class='img' style=\"background-image: url('assets/img/categories/$newArray[image]');\"></div> 
                                 <p>$newArray[title_ru]</p>               
                             </div>
 
