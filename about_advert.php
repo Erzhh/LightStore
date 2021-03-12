@@ -1,7 +1,19 @@
 <?php 
     include "setting/language.php";
-    ?>
-    <?php include "includes/head.php";?>
+?>
+<?php include "includes/head.php";?>
+<?php
+
+    include "connect.php";
+
+      $check_query = mysqli_query($c,"SELECT * FROM `view` WHERE `advert_id`='$_GET[advert_id]' and
+      `ip_address`='$_SERVER[REMOTE_ADDR]'");
+
+      if(!mysqli_num_rows($check_query)){
+         mysqli_query($c , "INSERT INTO `view`(`advert_id`, `ip_address`) VALUES('$_GET[advert_id]','$_SERVER[REMOTE_ADDR]')");
+       }
+
+?>
 
 
 <!DOCTYPE html>
