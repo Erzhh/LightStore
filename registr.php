@@ -72,7 +72,5 @@
 	}
 ?>
 		<script src="assets/js/dark_light.js"></script>
-
-		
 	</body> 
 		</html>

@@ -1,6 +1,7 @@
 <?php include "../components/db.php"; ?>
+
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
@@ -8,58 +9,24 @@
 	<title>Default Dashboard | AppStack - Admin &amp; Dashboard Template</title>
 	<link rel="shortcut icon" href="img/favicon.ico">
 
-	
+
 	<link class="js-stylesheet" href="https://appstack.bootlab.io/css/light.css" rel="stylesheet">
 	<script src="js/settings.js"></script>
 	<link rel="stylesheet" href="assets/font/css/icons.css">
-
+	<link rel="stylesheet" href="../assets/css/select_city.css">
 	<script src="js/settings.js"></script>
 	<!-- END SETTINGS -->
 
 </head>
-<style>
-.btn_delete{
-	float:right;
-	border: none;
-    background: red;
-    color: white;
-	border-radius:5px;
-	width:20px;
-	display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.wrapper2{
-	display: flex;
-    flex-direction: row;
-}
-.margin{
-	height:60px;
-}
-.btn2{
-	border: none;
-    background:#3f80ea;
-    color: white;
-}
-.mysqli_true{
-	color:green;
-	font-family: Helvetica,Arial,sans-serif;
-	text-align:center;
-}
-.mysqli_false{
-	color:green;
-}
-
-</style>
 
 <body>
 	<div class="wrapper">
-	<?php 
+		<?php 
 			include "../includes/site_bar.php"
 			
 		?>
 		<div class="main">
-			
+
 			<main class="content">
 				<form method="POST">
 					<div class="row">
@@ -69,59 +36,40 @@
 									<h5 class="card-title">Города</h5>
 									<h6 class="card-subtitle text-muted"></h6>
 								</div>
-													<?php
+								<?php
 													if(isset($_POST['title_ru'])){
-														 mysqli_query($c,"INSERT INTO `city`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')");
+														 mysqli_query($c,"INSERT INTO `city`( `title_ru`, `title_kz`) 
+														 VALUES ('$_POST[title_ru]','$_POST[title_kz]')");
 													}	
 													?>
 								<div class="card-body">
 									<form>
-										
+
 										<div class="form-group">
 											<label class="form-label">Title-ru</label>
 											<input type="text" class="form-control" placeholder="Город" name="title_ru">
 										</div>
 										<div class="form-group">
 											<label class="form-label">Title-kz</label>
-											<input type="text" class="form-control" placeholder="Қала" name="title_kz"></textarea>
+											<input type="text" class="form-control" placeholder="Қала"
+												name="title_kz"></textarea>
 										</div>
 								</div>
 							</div>
 							<button class="btn2">SEND</button>
-							
+
 				</form>
 				<div class="margin"></div>
 				<div class="wrapper2" style="width:100%">
 					<div class="card flex-fill" style="width:100%">
 						<div class="card-header">
-							<div class="card-actions float-right">
-								<div class="dropdown show">
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="#">Action</a>
-										<a class="dropdown-item" href="#">Another action</a>
-										<a class="dropdown-item" href="#">Something else here</a>
-									</div>
-									
-								</div>
-							</div>
 							<h5 class="card-title mb-0">Cities</h5>
 						</div>
 						<div id="datatables-dashboard-projects_wrapper"
-							class="dataTables_wrapper dt-bootstrap4 no-footer">
-							<div class="row">
-								<div class="col-sm-12 col-md-6"></div>
-								<div class="col-sm-12 col-md-6"></div>
-							</div>
+							class="dataTables_wrapper dt-bootstrap4 no-footer">							
 							<div class="row">
 								<div class="col-sm-12">
-									<footer class="footer">
-										
-									</footer>
-									<div class="notyf"></div>
-									<div class="notyf-announcer" aria-atomic="true" aria-live="polite"
-										style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; outline: 0px;">
-									</div>
-								
+									<form method="GET">
 										<div class="row">
 											<div class="col-sm-12">
 												<table id="datatables-dashboard-projects"
@@ -129,17 +77,17 @@
 													aria-describedby="datatables-dashboard-projects_info">
 													<thead>
 														<tr role="row">
-														<th class="d-none d-xl-table-cell sorting" tabindex="0"
+															<th class="d-none d-xl-table-cell sorting" tabindex="0"
 																aria-controls="datatables-dashboard-projects"
 																rowspan="1" colspan="1"
 																aria-label="Start Date: activate to sort column ascending">
-																</th>
+															</th>
 															<th class="d-none d-xl-table-cell sorting" tabindex="0"
 																aria-controls="datatables-dashboard-projects"
 																rowspan="1" colspan="1"
 																aria-label="End Date: activate to sort column ascending">
 																Русский</th>
-																<th class="d-none d-xl-table-cell sorting" tabindex="0"
+															<th class="d-none d-xl-table-cell sorting" tabindex="0"
 																aria-controls="datatables-dashboard-projects"
 																rowspan="1" colspan="1"
 																aria-label="Start Date: activate to sort column ascending">
@@ -147,38 +95,32 @@
 														</tr>
 													</thead>
 													<tbody>
-													
+
 														<?php 
 												$i = 1;
-												$query = mysqli_query($c,"SELECT * FROM `city`");
-												
+												$query = mysqli_query($c,"SELECT * FROM `city`");												
 												while($fetch=mysqli_fetch_assoc($query)){
-													echo "
-													
+													echo "		
+																								
 													<tr role='row' class='odd'>
 														<td class='d-none d-md-table-cell'>$i</td>												
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
 														</td>														
-													</tr>
-																																						
+													</tr>																																						
 													";
 													$i++;
-												}
-													
+												}													
 														?>
 													</tbody>
-												<?php 
+													<?php 
 												if(isset($_GET['title_id'])){
 													mysqli_query($c,"DELETE FROM `city` WHERE id='$_GET[title_id]'");
 												}
 												?>
-												
-
-
-
 												</table>
+
 											</div>
 										</div>
 										<div class="container-fluid">
@@ -192,21 +134,16 @@
 												</div>
 											</div>
 										</div>
-									</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-
-			</main>
-
 		</div>
-
+		</main>
 	</div>
-
-
+	</div>
 </body>
 
 </html>
