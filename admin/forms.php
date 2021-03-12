@@ -26,7 +26,6 @@
 			
 		?>
 		<div class="main">
-
 			<main class="content">
 				<form method="POST">
 					<div class="row">
@@ -129,7 +128,7 @@
 												</div>
 												<div class="col-6 text-right">
 													<p class="mb-0">
-														© 2021 - <a href="index.html" class="text-muted">LightStore</a>
+														© 2021 - <a href="../index.php" class="text-muted">LightStore</a>
 													</p>
 												</div>
 											</div>
@@ -140,8 +139,9 @@
 						</div>
 					</div>
 				</div>
-		</div>
-		</main>
+				</div>
+			</main>		
+		
 	</div>
 	</div>
 </body>
