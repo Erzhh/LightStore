@@ -31,101 +31,17 @@
                             </div>
                         </div>
 
-                        <div class="fblock fleft fcity clr rel">
-                            <div class="locationrequest  has-dist-picker" id="locationBox">
-                                <div class="clr rel">
-                                    <div class="rel fleft input-container">
-                                       <select class = "select_city">
+                        <div class="select_box">             
+                                       <select class = "select_city">                               
                                       <?php
                                       $query = mysqli_query($c,"SELECT * FROM `city`");
                                        while($fetch=mysqli_fetch_assoc($query)){
                                          echo " <option>$fetch[title_ru]</option>";
                                        }
                                        ?>  
-                                       
-                                       </select>
-                                        <div class="cityfield" id="cityFieldGray">
-                                            <span class="fbold vishid"></span><span class="color-9"> </span>
-                                        </div>
-                                        <a href="#" class="clear-input-button hidden" data-icon="close"></a>
-                                        <div class="distanceseparator abs"></div>
-                                        <i data-icon="location"></i>
-                                      <div class="proposals hidden" id="proposalContainer">
-                                            <div class="lastbox">
-                                                <p>Недавно избранные:</p>
-                                                <ul id="last-locations-ul">
-                                                </ul>
-                                            </div>
-                                            <div class="abs categorySelectContainer">
-                                                <ul class="categorySelectList regionsList">
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <input class="autosuggest-geo-input" type="hidden" name="search[city_id]"
-                                            value="">
-                                        <input class="autosuggest-geo-input-region" type="hidden"
-                                            name="search[region_id]" value="">
-                                        <input class="autosuggest-geo-district-input" type="hidden"
-                                            name="search[district_id]" value="0">
-                                        <input class="autosuggest-geo-dist-input" type="hidden" name="search[dist]"
-                                            value="">
-
-                                        <div class="autosuggest-geo-div suggestmain">
-                                            <!-- via ajax -->
-                                        </div>
-                                        <div id="geo-suggestions" class="chooselocation br3 hidden">
-                                            <div class="target abs"></div>
-                                            <a id="geo-suggestions-close" href="#" class="abs close"
-                                                data-icon="close"></a>
-                                            <p>Где Вы:</p>
-                                            <div id="geo-suggestions-options" class="items"></div>
-                                        </div>
-                                    </div>
-                                    <dl class="distancelist fleft  " id="distanceSelect">
-                                        <dt>
-                                            <a href="#" class="topLink">
-                                                <span class="label">+ 0 km</span>
-                                                <span class="value">0</span>
-                                            </a>
-                                        </dt>
-                                        <dd>
-                                            <ul style="display: none;">
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 0 km<span class="value">0</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 2 km<span class="value">2</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 5 km<span class="value">5</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 10 km<span class="value">10</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 15 km<span class="value">15</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 30 km<span class="value">30</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 50 km<span class="value">50</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 75 km<span class="value">75</span></a>
-                                                </li>
-                                                <li class="">
-                                                    <a href="#" class="dist">+ 100 km<span class="value">100</span></a>
-                                                </li>
-                                            </ul>
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <div class="suggest bottom abs zi2 br3 error hidden" id="cityFieldError">
-                                    <p>Выберите населенный пункт или почтовый код</p>
-                                </div>
-                            </div>
+                                       </select>        
                         </div>
+                        <div class="margin_div"></div>
                         <span class="button big4 fright br3">
                             <i data-icon="search"></i>
                             <input id="submit-searchmain" data-cy="homepage_button_search" type="submit" value="Поиск"
