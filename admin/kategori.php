@@ -92,24 +92,64 @@
 								<?php
 
 													if(isset($_POST['title_ru'])){
-														$mysqli_q = mysqli_query($c,"INSERT INTO `categories`( `title_ru`, `title_kz`,`images`) VALUES ('$_POST[title_ru]','$_POST[title_kz]','$_POST[images]')");
 
-															// if($_POST['title_ru']==''){
-															// 		echo "напишите что то";
-															// 	}
-															// if(isset($mysqli_q)){
-															// 	echo "<span class='mysqli_true'>Успешно отправленo!</span>";
-															// }	
+                                                                 $time = time(); // 1977 - now time
+                                                                      $random = mt_rand(10000,99999);
+                                                                      $new_name = md5( $time.$random ); 
+                                                                      //160876843567123
+                                                                      //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
+                                                                      $exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+                                                                      $format = $exp[1];
+                                                                      //jpg
+                                                                    
+                                                                      $img_name = $new_name.'.'.$format;
+                                                                      //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
+                                                                      $upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
+
+
+														$mysqli_q = mysqli_query($c,"INSERT INTO `categories`( `title_ru`, `title_kz`,`image`) VALUES ('$_POST[title_ru]','$_POST[title_kz]','$img_name')");
+
+													// 		if($_POST['title_ru']==''){
+													// 				echo "напишите что то";
+													// 		 	}
+													// 		 if(isset($mysqli_q)){
+													// 		 	echo "<span class='mysqli_true'>Успешно отправленo!</span>";
+													// 		 }	
 														
-													}
-													 // echo "INSERT INTO `city`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')";
+													 }
+													//  echo "INSERT INTO `categories`( `title_ru`, `title_kz`) VALUES ('$_POST[title_ru]','$_POST[title_kz]')";
 													 
 															
 															
 													
 													?>
+                                                      <?php
+  
+                                                                //   if(isset($_POST['title'])){
+                                                                        
+                                                                //       $time = time(); // 1977 - now time
+                                                                //       $random = mt_rand(10000,99999);
+                                                                //       $new_name = md5( $time.$random ); 
+                                                                //       //160876843567123
+                                                                //       //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
+                                                                //       $exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+                                                                //       $format = $exp[1];
+                                                                //       //jpg
+                                                                    
+                                                                //       $img_name = $new_name.'.'.$format;
+                                                                //       //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
+                                                                //       $upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
+                                                                        
+                                                                    
+                                                                //       mysqli_query( $c , "INSERT INTO `categories`(`image`,`city_id`,`author_id`)
+                                                                //       VALUES ('$img_name')");
+                                                                    
+                                                                //   }
+                                                                    
+                                                                    
+                                                                    ?>
 								<div class="card-body">
-									<form method ="POST">
+									<form method ="POST" enctype="multipart/form-data">
 										
 										<div class="form-group">
 											<label class="form-label">Title-ru</label>
@@ -121,13 +161,13 @@
 										</div>
 								</div>
 <!-- lfkfmkigmkifgnfikjfnjigjfnjkbjnfjkgmnfmkgmnmk -->
-
+                     
                                 <div class="example-1">
                                     <div class="form-group">
                                         <label class="label">
                                             <i class="material-icons">attach_file</i>
                                             <span class="title">Добавить файл</span>
-                                            <input type="file" class="form-control" placeholder="title" name="images">
+                                            <input type="file" class="form-control" placeholder="title" name="image">
                                         </label>
                                     </div>
                                 </div>
@@ -426,6 +466,7 @@
 																Қазақ тілі</th>
 														</tr>
 													</thead>
+													<!-- добавление строкаааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа -->
 													<tbody>
 													
 														<?php 
@@ -436,18 +477,24 @@
 													echo "
 													
 													<tr role='row' class='odd'>
-														<td class='d-none d-md-table-cell'>1</td>												
+														<td class='d-none d-md-table-cell'>$i</td>	
+														<td class='d-none d-md-table-cell'>$fetch[id]</td>											
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
+                                                        <td class='d-none d-md-table-cell'>$img_name</td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
-														</td>														
+                                                            
+														</td>
+                                                        														
 													</tr>
 																																						
 													";
+													$i++;
 												}
 
 														?>
-													</tbody>
+														</tbody>
+													
 												<?php 
 												if(isset($_GET['title_id'])){
 													mysqli_query($c,"DELETE FROM `categories` WHERE id='$_GET[title_id]'");
@@ -601,31 +648,30 @@
 </html>
 
 
-<tbody>
-													
-														<?php 
-											
-												$query = mysqli_query($c,"SELECT * FROM `categories`");
-												
-												while($fetch=mysqli_fetch_assoc($query)){
-													echo "
-													
-													<tr role='row' class='odd'>
-														<td class='d-none d-md-table-cell'>1</td>												
-														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
-														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
-															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
-														</td>														
-													</tr>
-																																						
-													";
-												}
 
-														?>
-													</tbody>
-												<?php 
-												if(isset($_GET['title_id'])){
-													mysqli_query($c,"DELETE FROM `categories` WHERE id='$_GET[title_id]'");
-												}
-												?>
+<?php
+  
+//   if(isset($_POST['title'])){
+      
+//       $time = time(); // 1977 - now time
+//       $random = mt_rand(10000,99999);
+//       $new_name = md5( $time.$random ); 
+//       //160876843567123
+//       //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
+//       $exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+//       $format = $exp[1];
+//       //jpg
+  
+//       $img_name = $new_name.'.'.$format;
+//       //E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
+//       $upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
+      
+  
+//       mysqli_query( $c , "INSERT INTO `categories`(`image`,`city_id`,`author_id`)
+//       VALUES ('$img_name')");
+  
+//   }
+  
+  
+  ?>
 												
