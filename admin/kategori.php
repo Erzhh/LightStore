@@ -49,6 +49,7 @@
     justify-content: center;
 }
 .wrapper2{
+	width:225%;
 	display: flex;
     flex-direction: row;
 }
@@ -480,12 +481,14 @@
 														<td class='d-none d-md-table-cell'>$i</td>	
 														<td class='d-none d-md-table-cell'>$fetch[id]</td>											
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
-                                                        <td class='d-none d-md-table-cell'>$img_name</td>
+                                                        
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
+														
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
                                                             
 														</td>
-                                                        														
+														<td class='d-none d-md-table-cell'>$img_name</td> 	
+                                                        									
 													</tr>
 																																						
 													";
