@@ -33,7 +33,7 @@
 
 
 
-		<form method="POST">
+		<form method="POST" enctype="multipart/form-data">
 
 			<div class="nik_main">
 				<h1><?=$L['aDvert']?></h1>
@@ -180,13 +180,13 @@ if(isset($_POST['title'])){
 	$new_name = md5( $time.$random ); 
 	//160876843567123
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
-	$exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+	$exp = explode('.',$_FILES['images']['name']);   // 123.jpg to [ 123 , jpg ]
 	$format = $exp[1];
 	//jpg
 
 	$img_name = $new_name.'.'.$format;
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
-	$upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
+	$upload = move_uploaded_file( $_FILES['images']['tmp_name'] , '../assets/img/advert/'.$img_name);
 	
 
 	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`author_id`)
