@@ -1,7 +1,7 @@
 <?php
 	include "../setting/language.php";
 	include "../components/db.php";
-
+	include "../components/check_admin.php";
 ?>
 <html lang="en">
 
@@ -46,11 +46,11 @@
 
 					<div id="ad.category" style="display: flex; flex-direction: column">
 						<label for="ad_сategory"><?=$L['CATEGory']?>*</label>
-					<select class="opt" id="ad_city" name="city_id">
+					<select class="opt" id="ad_city" name="category_id">
 						<?php 
 								$cat =mysqli_query($c, "SELECT * FROM `categories`");
 							while($category =  mysqli_fetch_assoc($cat)){
-								echo "<option value='$category[id]' name='categ'>$category[title_ru]</option>";
+								echo "<option value='$category[id]'>$category[title_ru]</option>";
 							}
 						?>
 					</select>
@@ -68,12 +68,11 @@
 						<?php 
 								$cities =mysqli_query($c, "SELECT * FROM `city`");
 							while($city =  mysqli_fetch_assoc($cities)){
-								echo "<option value='$city[id]' name='city'>$city[title_ru]</option>";
+								echo "<option value='$city[id]'>$city[title_ru]</option>";
 							}
 						?>
 					</select>
 				</div>
-
 
 				<div class="nik_price  div">
 					<h2><?=$L['COst']?></h2>
@@ -90,15 +89,11 @@
 
 				</div>
 
-
-
 				<div class="nik_discription  div">
 					<h2><?=$L['DISCription']?></h2>
-
 					<label for="ad_text"><?=$L['DISCription']?>*</label><br>
-					<textarea class="text" id="ad_text" name="discription"></textarea>
+					<textarea class="text" name="discription"></textarea>
 				</div>
-
 
 				<div class="nik_images  div">
 					<h2><?=$L['PHOTos']?></h2>
@@ -180,18 +175,20 @@ if(isset($_POST['title'])){
 	$new_name = md5( $time.$random ); 
 	//160876843567123
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e
-	$exp = explode('.',$_FILES['photo']['name']);   // 123.jpg to [ 123 , jpg ]
+	$exp = explode('.',$_FILES['images']['name']);   // 123.jpg to [ 123 , jpg ]
 	$format = $exp[1];
 	//jpg
 
 	$img_name = $new_name.'.'.$format;
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
-	$upload = move_uploaded_file( $_FILES['photo']['tmp_name'] , '../assets/img'.$img_name);
+	$upload = move_uploaded_file( $_FILES['images']['tmp_name'] , '../assets/img'.$img_name);
 	
 
-	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`author_id`)
-	VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$img_name','$_POST[city_id]','$_SESSION[id]')");
+	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`category_id`,`author_id`)
+	VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$img_name','$_POST[city_id]','$_POST[category_id]','$_SESSION[id]')");
 
+echo  "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`category_id`,`author_id`)
+VALUES ('$_POST[title]','$_POST[description]','$_POST[price]','$img_name','$_POST[city_id]','$_POST[category_id]','$_SESSION[id]')";
 }
 
 
