@@ -105,18 +105,18 @@
 														<td class='d-none d-md-table-cell'>$i</td>												
 														<td class='d-none d-md-table-cell'>$fetch[title_ru] </td>
 														<td class='d-none d-md-table-cell'>$fetch[title_kz] 
-															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
+															<a class='btn_delete' href='Location_city.php?title_id=$fetch[id]'>-</a>
 														</td>														
 													</tr>																																						
 													";
 													$i++;
-												}													
+												}
+
 														?>
 													</tbody>
 													<?php 
-												if(isset($_GET['title_id'])){
-													mysqli_query($c,"DELETE FROM `city` WHERE id='$_GET[title_id]'");
-												}
+												
+												
 												?>
 												</table>
 
