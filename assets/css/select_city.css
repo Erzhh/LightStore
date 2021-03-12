@@ -32,3 +32,39 @@
     width: 510px;
 }
 }
+.btn_delete {
+  float: right;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.margin {
+  height: 60px;
+}
+
+.btn2 {
+  border: none;
+  background: #3f80ea;
+  color: white;
+}
+
+.mysqli_true {
+  color: green;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.mysqli_false {
+  color: green;
+}
