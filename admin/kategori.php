@@ -79,10 +79,10 @@
 			<main class="content">
 				<div>
 					<div class="row">
-						<div class="col-12 col-xl-6">
+						<div class="col-12 col-xl-12">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title">Basic form</h5>
+									<h5 class="card-title">Форма категорий</h5>
 									<h6 class="card-subtitle text-muted"></h6>
 									
 								</div>
@@ -206,7 +206,9 @@
 															<a class='btn_delete' href='?title_id=$fetch[id]'>-</a>
                                                             
 														</td>
-														<td class='d-none d-md-table-cell'>$img_name</td> 	
+														<td class='d-none d-md-table-cell'>
+															<img	 src='../assets/img/categories/$fetch[image]' width='100'/>
+														</td> 	
                                                         									
 													</tr>
 																																						
