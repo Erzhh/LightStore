@@ -76,10 +76,10 @@
 													aria-describedby="datatables-dashboard-projects_info">
 													<thead>
 														<tr role="row">
-															<th class="d-none d-xl-table-cell sorting" tabindex="0"
+															<th class="d-none d-xl-table-cell sorting" 
 																aria-controls="datatables-dashboard-projects"
 																rowspan="1" colspan="1"
-																aria-label="Start Date: activate to sort column ascending">
+																>
 															</th>
 															<th class="d-none d-xl-table-cell sorting" tabindex="0"
 																aria-controls="datatables-dashboard-projects"
@@ -142,7 +142,7 @@
 				</div>
 			</main>		
 		
-	</div>
+		</div>
 	</div>
 </body>
 
