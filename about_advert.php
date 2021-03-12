@@ -2,9 +2,7 @@
     include "setting/language.php";
 ?>
 <?php include "includes/head.php";?>
-<?php
-
-    include "connect.php";
+<?php session_start();
 
       $check_query = mysqli_query($c,"SELECT * FROM `view` WHERE `advert_id`='$_GET[advert_id]' and
       `ip_address`='$_SERVER[REMOTE_ADDR]'");
@@ -29,90 +27,103 @@
     <title>Document</title>
 </head>
 <body>
-<div class="wrapper">
-<section id="searchmain-container">
-         <?php include "includes/header.php";?>
+
+<?php session_start();
+
+        include "connect.php";
+        $q = mysqli_query($c, "SELECT * FROM `advert` WHERE `id`='$_GET[advert_id]'");
+        $newArray = mysqli_fetch_assoc($q);
+
+        echo
+
+           "
+<div class='wrapper'>
+<section id='searchmain-container'>
+         <?php include 'includes/header.php';?>
 
 
-        <div class="bekasylobw">
-                <div class="bekx"></div>
-             <div class="bekasylobw1">
+        <div class='bekasylobw'>
+                <div class='bekx'></div>
+             <div class='bekasylobw1'>
 
-                <div class="bekimg">
-                    <div class="bekimg1">
-                        <img src="assets/img/вело.jpg" alt="">
+                <div class='bekimg'>
+                    <div class='bekimg1'>
+                        <img src='assets/img/$newArray[images]' alt=''>
                     </div>
-                    <div class="bekbigimg">
-                        <div class="bekbigimg1"></div>
-                        <div class="bekbigimgxx"></div>
-                        <div class="bekbigimg2">Большие фото</div>
+                    <div class='bekbigimg'>
+                        <div class='bekbigimg1'></div>
+                        <div class='bekbigimgxx'></div>
+                        <div class='bekbigimg2'>Большие фото</div>
                     </div>
                 </div>
 
-                <div class="bekxx2"></div>
+                <div class='bekxx2'></div>
 
                
-                <div class="bekasyltrade">
-                    <div class="bektr">Велосипед. цена оканчательная</div>                                                                         
-                    <div class="bektrade">78000 тг </div>
-                    <div class="bekdescription"><?=$L['description']?></div>
-                    <div class="bekdescription1">Велосипед новый цена оканчательная</div>
-                    <div class="bektradehistory">
-                        <div class="bektradehistory1">Добавлено в 18:48,27 января 2021</div>
-                        <div class="bektradeviews"> <?=$L['views']?> </div>
-                        <div class="bektradeid">Номер объявления:27783748</div>
+                <div class='bekasyltrade'>
+                    <div class='bektr'>$newArray[title]</div>                                                                         
+                    <div class='bektrade'>78000 тг </div>
+                    <div class='bekdescription'><?=$L[description]?></div>
+                    <div class='bekdescription1'>Велосипед новый цена оканчательная</div>
+                    <div class='bektradehistory'>
+                        <div class='bektradehistory1'>Добавлено в 18:48,27 января 2021</div>
+                        <div class='bektradeviews'> <?=$L[views]?> </div>
+                        <div class='bektradeid'>Номер объявления:27783748</div>
                     </div>
                 </div>
 
             </div>
 
 
-            <div class="bekxx"></div>
+            <div class='bekxx'></div>
 
-            <div class="bekusermap">
-                <div class="bekuser">
+            <div class='bekusermap'>
+                <div class='bekuser'>
                     
-                    <div class="bekuser1"> <?=$L['user']?> </div>
+                    <div class='bekuser1'> <?=$L[user]?> </div>
 
-                    <div class="userbek">
-                        <div class="bekimguser">
-                            <img src="assets/img/user.png" alt="">
+                    <div class='userbek'>
+                        <div class='bekimguser'>
+                            <img src='assets/img/user.png' alt=''>
                         </div>
-                        <div class="bekadnik">
-                        <div class="beknik">Бекасыл</div>
-                        <div class="bekaduser"><?=$L['aduser']?></div>
+                        <div class='bekadnik'>
+                        <div class='beknik'>Бекасыл</div>
+                        <div class='bekaduser'><?=$L[aduser]?></div>
                         </div>
                     </div>
 
-                    <div class="bektelmess">
-                        <div class="bektel"><?=$L['tell']?></div>
-                        <div class="bekmess"><?=$L['mess']?></div>
+                    <div class='bektelmess'>
+                        <div class='bektel'><?=$L[tell]?></div>
+                        <div class='bekmess'><?=$L[mess]?></div>
                     </div>
                 </div>
 
-                <div class="bek1x"></div>
+                <div class='bek1x'></div>
 
-                <div class="bekmap1">
-                    <div class="bekadd"><?=$L['add']?></div>
-                    <div class="bekmapadd">
-                    <?=$L['mapadd']?>
+                <div class='bekmap1'>
+                    <div class='bekadd'><?=$L[add]?></div>
+                    <div class='bekmapadd'>
+                    <?=$L[mapadd]?>
 
                     </div>
-                    <div class="bekmap">
-                        <img src="assets/img/карта-шымкента.jpg" alt="" srcset="">
+                    <div class='bekmap'>
+                        <img src='assets/img/карта-шымкента.jpg' alt='' srcset=''>
                     </div>
                 </div>
             </div>
 
-            <div class="bekx"></div>
+            <div class='bekx'></div>
         </div>
 
-        <div class="bek1x"></div>
+        <div class='bek1x'></div>
 
 
        
   </session>  
 </div>
+";
+?>
+
   <script src="assets/js/dark_light.js"></script>
        
         <script>
