@@ -269,3 +269,37 @@ form input[type="text"], form input[type="password"] {
 #header-container .navi .postnewlink span{
     color:black;
 }
+
+
+form.searchmain input.queryfield {
+    width: 980px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 56px;
+    height: 56px;
+    margin: 0 65px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #002f34;
+}
+.select_box select {
+    background-color: var(--color-bg);
+    color: white;
+    padding: 12px;
+    width: 330px;
+    position: relative;
+    left: 355px;
+    /* size: ledger; */
+    /* position: absolute; */
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    position: relative;
+    top: 25px;
+    font-size: 25px;
+}
