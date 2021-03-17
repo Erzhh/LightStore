@@ -1,17 +1,21 @@
-
+<?php include "includes/head.php";?>
 <header id="header-container">
 <div class="wrapper">
             <div class="navi">
                 <div class="wrapper clr rel">
 
                     <div class="col-md-3">
+                      <a href="index.php">
                         <div class="logo">
                             <img src="/assets/img/logo-light.png" alt="">
                         </div>
+                      </a>
                     </div>
                     <div class="col-md-9">
                         <input class="l" type="checkbox">
-                        
+                        <a href="aa.php">
+                        <i class="far fa-heart"></i>
+                        </a>
                         <div class="lang-selector small">
                             <ul class="breaklist inlblk">
                                 <li class="inlblk">
