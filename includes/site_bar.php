@@ -30,6 +30,7 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="advert_for_admin.php">advert</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="forms.php">Город</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="kategori.php">Категории</a></li>
+                            <li class="sidebar-item"><a class="sidebar-link" href="banner.php">Баннер</a></li>
 						</ul>
 					</li>
 					<li class="sidebar-item">
