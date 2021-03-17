@@ -4,7 +4,12 @@
 <div class="wrapper">
 
 
-
+<!-- if(isset($_POST['search']) && $_POST['search'] !== '' ){
+  $query=mysqli_query($connect,"SELECT * FROM `r1` WHERE `title` LIKE '%$_POST[search]%'");
+}
+else{
+  $query=mysqli_query($connect,"SELECT * FROM `r1`"); -->
+}
 <body class="homepage">
 
     <div id="innerLayout" class="index121">
