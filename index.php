@@ -111,7 +111,7 @@ else{
                         <a href='about_advert.php'
                             class='thumb tdnone scale1 rel detailsLinkPromoted linkWithHash '>
                             <img alt=''
-                                src='assets/img/$newArray[images]' style='background-size: cover;'>
+                                src='assets/img/advert/$newArray[images]' style='background-size: cover;'>
                             <span class='inlblk icon paid  abs zi2'></span>
                         </a>
                     </div>
