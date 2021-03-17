@@ -182,6 +182,7 @@ if(isset($_POST['title'])){
 	$img_name = $new_name.'.'.$format;
 	//E^&7btgn23br7b8fn8oq7etbrfiwbut7roo1e3t26e.jpg
 	$upload = move_uploaded_file( $_FILES['images']['tmp_name'] , '../assets/img/advert/'.$img_name);
+	$upload = move_uploaded_file( $_FILES['image']['tmp_name'] , '../assets/img/categories/'.$img_name);
 	
 
 	mysqli_query( $c , "INSERT INTO `advert`(`description`,`title`,`price`,`images`,`city_id`,`category_id`,`author_id`)
